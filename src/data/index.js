@@ -36,7 +36,6 @@ export const loadData = async () => {
     });
   } catch (e) {
     console.error('❌ Error cargando datos:', e);
-    // Dejar arrays vacíos para que la app no rompa
     rutinasData = [];
     articulosData = [];
     ejerciciosData = [];
@@ -49,33 +48,20 @@ export const initializeData = () => {
   const STORAGE_KEY = 'prenatal_move_data';
 
   const existing = localStorage.getItem(STORAGE_KEY);
-  if (existing) {
-    const parsed = JSON.parse(existing);
-    if (!parsed.rutinas || parsed.rutinas.length === 0) {
-      parsed.rutinas = rutinasData;
-    }
-    if (!parsed.articulos || parsed.articulos.length === 0) {
-      parsed.articulos = articulosData;
-    }
-    if (!parsed.ejercicios || parsed.ejercicios.length === 0) {
-      parsed.ejercicios = ejerciciosData;
-    }
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
-    return parsed;
-  }
+  const parsed = existing ? JSON.parse(existing) : null;
 
-  const initialData = {
-    profile: null,
-    sessions: [],
-    diario: [],
-    favorites: [],
-    rutinas: rutinasData,
-    articulos: articulosData,
-    ejercicios: ejerciciosData
+  const data = {
+    profile: parsed?.profile || null,
+    sessions: parsed?.sessions || [],
+    diario: parsed?.diario || [],
+    favorites: parsed?.favorites || [],
+    rutinas: rutinasData.length > 0 ? rutinasData : (parsed?.rutinas || []),
+    articulos: articulosData.length > 0 ? articulosData : (parsed?.articulos || []),
+    ejercicios: ejerciciosData.length > 0 ? ejerciciosData : (parsed?.ejercicios || []),
   };
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(initialData));
-  return initialData;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  return data;
 };
 
 // ===== CRUD LOCALSTORAGE =====
@@ -162,32 +148,7 @@ export const getRutinasByTrimestre = (trimestre) => {
 // Exportar datos crudos (después de loadData)
 export { rutinasData, articulosData, ejerciciosData };
 
-// ===== ALIAS PARA COMPATIBILIDAD CON src/lib/localStorage.js =====
+// ===== ALIAS PARA COMPATIBILIDAD =====
 export const RUTINAS = rutinasData;
 export const ARTICULOS = articulosData;
 export const EJERCICIOS = ejerciciosData;
-// ===== HELPERS ADICIONALES =====
-
-export const getRutinas = () => rutinasData;
-export const getArticulos = () => articulosData;
-
-// Versión síncrona de initializeData para localStorage.js
-export const initializeData = () => {
-    const STORAGE_KEY = 'prenatal_move_data';
-  
-    const existing = localStorage.getItem(STORAGE_KEY);
-    const parsed = existing ? JSON.parse(existing) : null;
-  
-    const data = {
-      profile: parsed?.profile || null,
-      sessions: parsed?.sessions || [],
-      diario: parsed?.diario || [],
-      favorites: parsed?.favorites || [],
-      rutinas: rutinasData.length > 0 ? rutinasData : (parsed?.rutinas || []),
-      articulos: articulosData.length > 0 ? articulosData : (parsed?.articulos || []),
-      ejercicios: ejerciciosData.length > 0 ? ejerciciosData : (parsed?.ejercicios || []),
-    };
-  
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    return data;
-  };

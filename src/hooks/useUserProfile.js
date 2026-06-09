@@ -21,12 +21,12 @@ export function useUserProfile() {
     if (profile.fecha_ultima_menstruacion) {
       const fum = new Date(profile.fecha_ultima_menstruacion);
       const hoy = new Date();
-      const dias = Math.floor((hoy - fum) / (1000 * 60 * 60 * 24));
+      const dias = Math.floor((hoy.getTime() - fum.getTime()) / (1000 * 60 * 60 * 24));
       semana = Math.floor(dias / 7);
     } else if (profile.fecha_probable_parto) {
       const fpp = new Date(profile.fecha_probable_parto);
       const hoy = new Date();
-      const diasRestantes = Math.floor((fpp - hoy) / (1000 * 60 * 60 * 24));
+      const diasRestantes = Math.floor((fpp.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24));
       semana = 40 - Math.floor(diasRestantes / 7);
     }
     return semana && semana > 0 && semana <= 42 ? semana : null;
