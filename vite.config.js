@@ -10,8 +10,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Permitir importar JSON como módulos
-  json: {
-    stringify: true,
-  },
 })
