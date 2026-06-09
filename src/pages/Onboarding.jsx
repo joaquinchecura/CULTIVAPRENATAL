@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { base44 } from '@/api/base44Client';
 import { motion, AnimatePresence } from 'framer-motion';
+import { saveProfile } from '@/lib/localStorage';
 import { ChevronRight, Baby, Heart, Stethoscope, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -51,13 +51,13 @@ export default function Onboarding() {
     else handleSubmit();
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = () => {
     setSaving(true);
     try {
-      await base44.entities.UserProfile.create(data);
+      saveProfile(data);
       navigate('/');
     } catch (e) {
-      console.error(e);
+      console.error('Error guardando perfil:', e);
     } finally {
       setSaving(false);
     }
@@ -109,7 +109,7 @@ export default function Onboarding() {
             {/* Step 0: Nombre */}
             {step === 0 && (
               <div className="space-y-4">
-                <p className="text-muted-foreground">Bienvenida a PreNatal Move. Estamos aquí para acompañarte en este camino especial. 🌸</p>
+                <p className="text-muted-foreground">Bienvenida a Cultiva PreNatal. Estamos aquí para acompañarte en este camino especial. 🌸</p>
                 <div className="space-y-2">
                   <Label className="text-foreground font-medium">Tu nombre</Label>
                   <Input

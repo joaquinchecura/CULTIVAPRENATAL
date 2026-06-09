@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getRutinaById, getEjerciciosByRutina, addSession } from '@/lib/localStorage';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { useSounds } from '@/hooks/useSounds';
 import { Pause, Play, SkipForward, Info, X, ChevronLeft, AlertTriangle, Stethoscope, Check, Volume2, VolumeX } from 'lucide-react';
@@ -74,15 +74,12 @@ export default function RutinaActiva() {
     };
   }, [isPlaying]);
 
-  const loadRutina = async () => {
+  const loadRutina = () => {
     try {
-      const [r, ejs] = await Promise.all([
-        base44.entities.Rutina.filter({ id }),
-        base44.entities.Ejercicio.filter({ rutina_id: id }),
-      ]);
-      const rutinaData = r[0] || null;
-      setRutina(rutinaData);
+      const r = getRutinaById(id);
+      setRutina(r);
 
+      let ejs = getEjerciciosByRutina(id);
       let ejerciciosFiltrados = (ejs || []).sort((a, b) => (a.orden || 0) - (b.orden || 0));
       // Filter exercises not suitable for current week
       if (semanaActual && semanaActual > 16) {
@@ -90,7 +87,9 @@ export default function RutinaActiva() {
       }
       setEjercicios(ejerciciosFiltrados);
       if (ejerciciosFiltrados[0]) setTimeLeft(ejerciciosFiltrados[0].duracion_segundos || 60);
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error cargando rutina:', e);
+    } finally {
       setLoading(false);
     }
   };
@@ -103,6 +102,7 @@ export default function RutinaActiva() {
 
   const handleNextExercise = () => {
     if (currentIdx < ejercicios.length - 1) {
+      setIsPlaying(false);
       setCurrentIdx(i => i + 1);
     } else {
       setIsPlaying(false);
@@ -115,9 +115,9 @@ export default function RutinaActiva() {
     setMolestias(prev => prev.includes(m) ? prev.filter(x => x !== m) : [...prev, m]);
   };
 
-  const handleFinish = async () => {
+  const handleFinish = () => {
     try {
-      await base44.entities.Sesion.create({
+      addSession({
         rutina_id: id,
         rutina_nombre: rutina?.nombre,
         fecha_inicio: format(startTime, "yyyy-MM-dd'T'HH:mm:ss"),
@@ -128,7 +128,9 @@ export default function RutinaActiva() {
         molestias_reportadas: molestias,
         semana_gestacion: semanaActual,
       });
-    } catch (e) {}
+    } catch (e) {
+      console.error('Error guardando sesión:', e);
+    }
     navigate('/');
   };
 

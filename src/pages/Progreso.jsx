@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getSessions, getDiario, addDiarioEntry } from '@/lib/localStorage';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, parseISO } from 'date-fns';
 import { es } from 'date-fns/locale';
@@ -25,15 +25,15 @@ export default function Progreso() {
     loadData();
   }, []);
 
-  const loadData = async () => {
+  const loadData = () => {
     try {
-      const [s, d] = await Promise.all([
-        base44.entities.Sesion.list('-fecha_inicio', 200),
-        base44.entities.Diario.list('-fecha', 50),
-      ]);
+      const s = getSessions();
+      const d = getDiario();
       setSesiones(s.filter(x => x.completada));
       setDiarios(d);
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error cargando datos:', e);
+    } finally {
       setLoading(false);
     }
   };
@@ -198,11 +198,11 @@ function DiarioEntry({ onSave, semanaActual }) {
   const [mood, setMood] = useState('');
   const [saving, setSaving] = useState(false);
 
-  const handleSave = async () => {
+  const handleSave = () => {
     if (!texto.trim() && !mood) return;
     setSaving(true);
     try {
-      await base44.entities.Diario.create({
+      addDiarioEntry({
         fecha: format(new Date(), 'yyyy-MM-dd'),
         entrada_texto: texto,
         estado_animo: mood,
@@ -211,7 +211,9 @@ function DiarioEntry({ onSave, semanaActual }) {
       setTexto('');
       setMood('');
       onSave();
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error guardando diario:', e);
+    } finally {
       setSaving(false);
     }
   };

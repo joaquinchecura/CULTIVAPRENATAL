@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getSessions, saveProfile } from '@/lib/localStorage';
 import { useUserProfile } from '@/hooks/useUserProfile';
+import { useAuth } from '@/lib/AuthContext';
 import { Save, AlertCircle, Baby, Phone, Bell, Shield, FileDown, LogOut } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -15,6 +16,7 @@ const COMPLICACIONES = [
 
 export default function Perfil() {
   const { profile, loading, refetch, semanaActual, trimestre } = useUserProfile();
+  const { logout } = useAuth();
   const [form, setForm] = useState(null);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -27,22 +29,23 @@ export default function Perfil() {
   }, [profile]);
 
   useEffect(() => {
-    base44.entities.Sesion.list('-fecha_inicio', 100).then(setSesiones).catch(() => {});
+    try {
+      const s = getSessions();
+      setSesiones(s);
+    } catch (e) {}
   }, []);
 
-  const handleSave = async () => {
+  const handleSave = () => {
     if (!form) return;
     setSaving(true);
     try {
-      if (profile?.id) {
-        await base44.entities.UserProfile.update(profile.id, form);
-      } else {
-        await base44.entities.UserProfile.create(form);
-      }
-      await refetch();
+      saveProfile(form);
+      refetch();
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error guardando perfil:', e);
+    } finally {
       setSaving(false);
     }
   };
@@ -58,20 +61,24 @@ export default function Perfil() {
 
   const update = (key, val) => setForm(f => ({ ...f, [key]: val }));
 
-  const handleDescargarPDF = async () => {
+  const handleDescargarPDF = () => {
     setGenerandoPDF(true);
     try {
-      const response = await base44.functions.invoke('generarInformePDF', {});
-      const blob = new Blob([response.data], { type: 'application/pdf' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `informe-prenatal-${new Date().toISOString().slice(0, 10)}.pdf`;
-      a.click();
-      URL.revokeObjectURL(url);
+      // Generar PDF en el frontend con jsPDF (ya está en package.json)
+      import('jspdf').then(({ jsPDF }) => {
+        const doc = new jsPDF();
+        doc.setFontSize(20);
+        doc.text('Informe PreNatal Move', 20, 30);
+        doc.setFontSize(12);
+        doc.text(`Nombre: ${profile?.nombre || 'N/A'}`, 20, 50);
+        doc.text(`Semana de gestación: ${semanaActual || 'N/A'}`, 20, 60);
+        doc.text(`Rutinas completadas: ${sesiones.filter(s => s.completada).length}`, 20, 70);
+        doc.text(`Minutos totales: ${sesiones.reduce((sum, s) => sum + (s.duracion_real_minutos || 0), 0)}`, 20, 80);
+        doc.save(`informe-prenatal-${new Date().toISOString().slice(0, 10)}.pdf`);
+        setGenerandoPDF(false);
+      });
     } catch (e) {
-      console.error(e);
-    } finally {
+      console.error('Error generando PDF:', e);
       setGenerandoPDF(false);
     }
   };
@@ -296,7 +303,7 @@ export default function Perfil() {
             </div>
 
             <button
-              onClick={() => base44.auth.logout('/')}
+              onClick={() => logout('/')}
               className="w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-destructive/10 text-destructive hover:bg-destructive/20"
             >
               <LogOut size={18} />

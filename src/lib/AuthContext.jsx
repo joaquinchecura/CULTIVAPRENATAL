@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
   const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
-    // Simular carga de settings públicos (antes venían de Base44)
+    // Simular carga de settings públicos
     const timer = setTimeout(() => {
       setIsLoadingPublicSettings(false);
       setAuthChecked(true);
