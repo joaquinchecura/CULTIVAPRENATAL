@@ -1,0 +1,756 @@
+[
+  {
+    "id": "6a06195a76bc7c747ebec2c5",
+    "nombre": "Bienvenida suave",
+    "descripcion": "Una rutina gentil para comenzar tu camino de bienestar prenatal. Perfecta para las primeras semanas.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 4,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2c6",
+    "nombre": "Suelo pélvico básico",
+    "descripcion": "Ejercicios fundamentales para fortalecer el suelo pélvico desde el inicio del embarazo.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 8,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Infección urinaria activa"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 4,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2c7",
+    "nombre": "Alivio de náuseas",
+    "descripcion": "Técnicas suaves de respiración y movimiento para aliviar las náuseas del primer trimestre.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 4,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2c8",
+    "nombre": "Movilidad matutina",
+    "descripcion": "Despierta tu cuerpo suavemente cada mañana con esta rutina de movilidad adaptada al embarazo.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "movilidad"
+    ],
+    "contraindicaciones": [
+      "Sangrado vaginal"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 6,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2c9",
+    "nombre": "Respiración consciente",
+    "descripcion": "Aprende técnicas de respiración esenciales que te acompañarán durante todo el embarazo y el parto.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 8,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 4,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2ca",
+    "nombre": "Fortalece tu core",
+    "descripcion": "Fortalece de forma segura tu núcleo para apoyar el crecimiento del bebé y prevenir dolores lumbares.",
+    "trimestre": "2",
+    "nivel": "moderado",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [
+      "Diástasis abdominal conocida"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 13,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2cb",
+    "nombre": "Alivio lumbar",
+    "descripcion": "Ejercicios específicos para aliviar el dolor de espalda baja, muy común en el segundo trimestre.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Dolor agudo no diagnosticado"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 16,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2cc",
+    "nombre": "Suelo pélvico intermedio",
+    "descripcion": "Progresa en el entrenamiento de suelo pélvico con ejercicios más desafiantes y variados.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Infección urinaria activa"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 13,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2cd",
+    "nombre": "Ciática suave",
+    "descripcion": "Alivio específico para el dolor ciático que puede aparecer en la segunda mitad del embarazo.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Ciática severa - consultar médico primero"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 20,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2ce",
+    "nombre": "Energía de medio día",
+    "descripcion": "Reactívate con esta rutina energizante moderada, perfecta para combatir el cansancio del segundo trimestre.",
+    "trimestre": "2",
+    "nivel": "moderado",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 14,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2cf",
+    "nombre": "Caderas abiertas",
+    "descripcion": "Abre y moviliza tus caderas para preparar el cuerpo para el parto desde el segundo trimestre.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [
+      "Dolor pélvico agudo"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 20,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d0",
+    "nombre": "Respiración para dos",
+    "descripcion": "Técnicas de respiración profunda que benefician tanto a la mamá como al bebé en el segundo trimestre.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 13,
+    "semana_maxima": 27,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d1",
+    "nombre": "Preparación al parto 1",
+    "descripcion": "Primera parte de la preparación activa para el parto. Enfocada en respiración y posiciones tempranas.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [
+      "Contracciones regulares - acude a urgencias"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 32,
+    "semana_maxima": 36,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d2",
+    "nombre": "Preparación al parto 2",
+    "descripcion": "Segunda parte de la preparación: técnicas avanzadas de respiración y posiciones para el parto activo.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [
+      "Ruptura prematura de membranas"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 34,
+    "semana_maxima": 38,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d3",
+    "nombre": "Suelo pélvico avanzado",
+    "descripcion": "Entrenamiento avanzado de suelo pélvico para el tercer trimestre, incluyendo preparación para el parto.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Infección urinaria activa"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 28,
+    "semana_maxima": 40,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d4",
+    "nombre": "Alivio de piernas hinchadas",
+    "descripcion": "Técnicas para reducir la hinchazón y mejorar la circulación en piernas y pies durante el tercer trimestre.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Trombosis conocida - consultar médico"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 28,
+    "semana_maxima": 40,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d5",
+    "nombre": "Posiciones para el parto",
+    "descripcion": "Práctica de las posiciones más efectivas para el parto. Conocerlas antes reduce el miedo y mejora el resultado.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 36,
+    "semana_maxima": 40,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d6",
+    "nombre": "Relajación pre-parto",
+    "descripcion": "Relajación profunda y visualización positiva para prepararte mentalmente para el gran día.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 37,
+    "semana_maxima": 40,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d7",
+    "nombre": "Recuperación suave",
+    "descripcion": "Primeros pasos de recuperación post-parto. Suave reconexión con tu cuerpo en las primeras semanas.",
+    "trimestre": "postparto",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "movilidad"
+    ],
+    "contraindicaciones": [
+      "Episiotomía reciente - consultar con matrona antes"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 0,
+    "semana_maxima": 6,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a06195a76bc7c747ebec2d8",
+    "nombre": "Retorno gradual",
+    "descripcion": "Retorno progresivo al ejercicio en la segunda fase del post-parto. Fortalece suelo pélvico y núcleo.",
+    "trimestre": "postparto",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Sangrado post-parto excesivo"
+    ],
+    "imagen_url": "",
+    "activa": true,
+    "semana_minima": 6,
+    "semana_maxima": 12,
+    "medico_validador": "",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:50:02.899000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b791",
+    "nombre": "Kegel y suelo pélvico básico",
+    "descripcion": "Rutina esencial para fortalecer el suelo pélvico durante el embarazo. Ejercicios suaves y progresivos validados por fisioterapeutas especializadas.",
+    "trimestre": "todos",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+    "activa": true,
+    "semana_minima": 8,
+    "semana_maxima": null,
+    "medico_validador": "Carmen Ruiz, Fisio",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b792",
+    "nombre": "Respiración consciente prenatal",
+    "descripcion": "Técnicas de respiración profunda y consciente para reducir el estrés, preparar el parto y oxigenar al bebé.",
+    "trimestre": "todos",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    "activa": true,
+    "semana_minima": 4,
+    "semana_maxima": null,
+    "medico_validador": "Dra. Lucía Martín",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b793",
+    "nombre": "Movilidad de cadera — Primer trimestre",
+    "descripcion": "Movimientos suaves para aliviar tensiones en la zona lumbar y preparar las caderas para el crecimiento uterino.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 20,
+    "objetivos": [
+      "movilidad"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    "activa": true,
+    "semana_minima": 6,
+    "semana_maxima": 12,
+    "medico_validador": "Dra. Ana Pérez",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b794",
+    "nombre": "Energía y bienestar — Segundo trimestre",
+    "descripcion": "Rutina energizante adaptada al segundo trimestre, cuando tu cuerpo está más estable. Mejora la circulación y el estado de ánimo.",
+    "trimestre": "2",
+    "nivel": "moderado",
+    "duracion_estimada_min": 25,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+    "activa": true,
+    "semana_minima": 14,
+    "semana_maxima": 27,
+    "medico_validador": "Dra. Ana Pérez",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b795",
+    "nombre": "Preparación activa al parto",
+    "descripcion": "Ejercicios específicos para preparar tu cuerpo y mente para el parto. Incluye posturas, respiración y técnicas de relajación.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 30,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [
+      "Placenta previa",
+      "Riesgo de parto prematuro"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    "activa": true,
+    "semana_minima": 28,
+    "semana_maxima": 40,
+    "medico_validador": "Matrona Julia Sánchez",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b796",
+    "nombre": "Alivio del dolor lumbar",
+    "descripcion": "Estiramientos específicos para aliviar el dolor de espalda baja, tan común durante el embarazo.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 18,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Hernia discal activa"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
+    "activa": true,
+    "semana_minima": 13,
+    "semana_maxima": null,
+    "medico_validador": "Carmen Ruiz, Fisio",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615f2d93f8ce6c055b797",
+    "nombre": "Recuperación post-parto suave",
+    "descripcion": "Primera rutina tras el parto. Movimientos muy suaves para reconectar con tu cuerpo y comenzar la recuperación del suelo pélvico.",
+    "trimestre": "postparto",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Matrona Julia Sánchez",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:35:30.022000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c4",
+    "nombre": "Introducción Suave al Movimiento",
+    "descripcion": "Rutina de bienvenida para comenzar tu camino de ejercicio prenatal. Movimientos gentiles y respiración consciente para el primer trimestre.",
+    "trimestre": "1",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "movilidad"
+    ],
+    "contraindicaciones": [
+      "Sangrado activo",
+      "Amenaza de aborto"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dra. Carmen López",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c5",
+    "nombre": "Suelo Pélvico Esencial",
+    "descripcion": "Ejercicios de Kegel y fortalecimiento del suelo pélvico, esenciales durante todo el embarazo para prevenir incontinencia y preparar el parto.",
+    "trimestre": "todos",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Infección urinaria activa"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dra. Carmen López",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c6",
+    "nombre": "Movilidad de Cadera - Segundo Trimestre",
+    "descripcion": "Círculos y movimientos de cadera para aliviar la tensión lumbar y mejorar la circulación. Perfecto para el segundo trimestre.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 12,
+    "objetivos": [
+      "movilidad"
+    ],
+    "contraindicaciones": [
+      "Placenta previa",
+      "Dolor pélvico agudo"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dr. Javier Ruiz",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c7",
+    "nombre": "Alivio de Dolor Lumbar",
+    "descripcion": "Secuencia de estiramientos y posturas para aliviar el dolor de espalda baja, uno de los síntomas más comunes del embarazo.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Hernia discal diagnosticada"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dra. María Fernández",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c8",
+    "nombre": "Respiración para el Parto - Técnica 4-7-8",
+    "descripcion": "Aprende la técnica de respiración 4-7-8 que te ayudará durante las contracciones y el trabajo de parto. Calma la mente y oxigena al bebé.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 15,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1573820258831-57d1ae6d5bf5?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Matrona Ana Torres",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5c9",
+    "nombre": "Preparación al Parto - Posiciones",
+    "descripcion": "Explora las posiciones más beneficiosas para el trabajo de parto: cuclillas, a cuatro patas, posición lateral. Fortalece y flexibiliza.",
+    "trimestre": "3",
+    "nivel": "moderado",
+    "duracion_estimada_min": 20,
+    "objetivos": [
+      "preparacion_parto"
+    ],
+    "contraindicaciones": [
+      "Embarazo múltiple sin supervisión",
+      "Bebé en posición transversal"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1571019613576-2b22c76fd955?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Matrona Ana Torres",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5ca",
+    "nombre": "Energía Matutina - Despertar Suave",
+    "descripcion": "Rutina corta y energizante para comenzar el día con vitalidad. Estira los principales grupos musculares y activa la circulación.",
+    "trimestre": "todos",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "energia"
+    ],
+    "contraindicaciones": [
+      "Hipotensión matutina severa"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dra. Carmen López",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5cb",
+    "nombre": "Relajación Total - Tercer Trimestre",
+    "descripcion": "Sesión de relajación profunda para el tercer trimestre. Reduce la ansiedad, mejora el sueño y prepara cuerpo y mente para el parto.",
+    "trimestre": "3",
+    "nivel": "suave",
+    "duracion_estimada_min": 18,
+    "objetivos": [
+      "respiracion"
+    ],
+    "contraindicaciones": [],
+    "imagen_url": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dra. María Fernández",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5cc",
+    "nombre": "Recuperación Post-Parto Semana 1",
+    "descripcion": "Primeros ejercicios suaves tras el parto. Activación mínima del suelo pélvico, respiración y movimientos básicos de recuperación.",
+    "trimestre": "postparto",
+    "nivel": "suave",
+    "duracion_estimada_min": 10,
+    "objetivos": [
+      "suelo_pelvico"
+    ],
+    "contraindicaciones": [
+      "Cesárea reciente sin alta médica",
+      "Episiotomía sin cicatrizar"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Matrona Ana Torres",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  },
+  {
+    "id": "6a0615a7626ad2a6c32ed5cd",
+    "nombre": "Alivio de Ciática y Piernas",
+    "descripcion": "Estiramientos específicos para aliviar el dolor ciático y la sensación de piernas pesadas e hinchadas durante el embarazo.",
+    "trimestre": "2",
+    "nivel": "suave",
+    "duracion_estimada_min": 14,
+    "objetivos": [
+      "alivio_dolor"
+    ],
+    "contraindicaciones": [
+      "Trombosis venosa profunda diagnosticada"
+    ],
+    "imagen_url": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
+    "activa": true,
+    "semana_minima": null,
+    "semana_maxima": null,
+    "medico_validador": "Dr. Javier Ruiz",
+    "validacion_medica": true,
+    "created_date": "2026-05-14T18:34:15.248000"
+  }
+]
