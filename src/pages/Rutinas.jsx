@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getRutinas } from '@/lib/localStorage';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Clock, Leaf, Stethoscope, AlertTriangle } from 'lucide-react';
 
@@ -33,15 +33,16 @@ export default function Rutinas() {
 
   useEffect(() => {
     loadRutinas();
-    // Set default trimester filter
     if (trimestre) setFiltroTrimestre(String(trimestre));
   }, [trimestre]);
 
-  const loadRutinas = async () => {
+  const loadRutinas = () => {
     try {
-      const data = await base44.entities.Rutina.list('-created_date', 50);
+      const data = getRutinas();
       setRutinas(data.filter(r => r.activa !== false));
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error cargando rutinas:', e);
+    } finally {
       setLoading(false);
     }
   };

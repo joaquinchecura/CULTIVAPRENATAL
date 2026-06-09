@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getArticulos } from '@/lib/localStorage';
 import { Clock, User, ChevronRight } from 'lucide-react';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
@@ -34,11 +34,13 @@ export default function Aprende() {
     loadArticulos();
   }, []);
 
-  const loadArticulos = async () => {
+  const loadArticulos = () => {
     try {
-      const data = await base44.entities.Articulo.list('-created_date', 30);
+      const data = getArticulos();
       setArticulos(data.filter(a => a.activo !== false));
-    } catch (e) {} finally {
+    } catch (e) {
+      console.error('Error cargando artículos:', e);
+    } finally {
       setLoading(false);
     }
   };

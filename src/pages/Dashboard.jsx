@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { base44 } from '@/api/base44Client';
+import { getRutinas, getSessions } from '@/lib/localStorage';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Flame, Phone, Stethoscope, ChevronRight, Clock, Leaf } from 'lucide-react';
 import ConsejoDelDia from '@/components/ConsejoDelDia';
@@ -20,12 +20,6 @@ const MOODS = [
   { id: 'con_molestias', emoji: '😣', label: 'Con molestias', color: 'bg-red-50 border-red-200' },
 ];
 
-const RUTINA_SUGERIDA_POR_MOOD = {
-  bien: null,
-  regular: 'respiracion',
-  con_molestias: null,
-};
-
 export default function Dashboard() {
   const navigate = useNavigate();
   const { profile, loading, semanaActual, trimestre } = useUserProfile();
@@ -42,16 +36,16 @@ export default function Dashboard() {
     if (profile) loadData();
   }, [profile]);
 
-  const loadData = async () => {
+  const loadData = () => {
     try {
-      const [r, s] = await Promise.all([
-        base44.entities.Rutina.list('-created_date', 10),
-        base44.entities.Sesion.list('-fecha_inicio', 30),
-      ]);
+      const r = getRutinas();
+      const s = getSessions();
       setRutinas(r);
       setSesiones(s);
       calcularStreak(s);
-    } catch (e) {}
+    } catch (e) {
+      console.error('Error cargando datos:', e);
+    }
   };
 
   const calcularStreak = (sesiones) => {
@@ -97,9 +91,6 @@ export default function Dashboard() {
 
   const handleMood = (mood) => {
     setMoodSeleccionado(mood);
-    if (mood === 'con_molestias' && profile?.contacto_matrona_telefono) {
-      // Show contact option
-    }
   };
 
   const getTrimestreLabel = () => {
