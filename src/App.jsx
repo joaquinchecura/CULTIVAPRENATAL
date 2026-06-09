@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ClerkProvider } from '@clerk/clerk-react'
 
-import { AuthProvider, useAuth } from '@/lib/ClerkAuthAdapter'
+import { AuthProvider, useAuth } from '@/lib/AuthContext'
 import PageNotFound from './lib/PageNotFound'
 import UserNotRegisteredError from '@/components/UserNotRegisteredError'
 import Layout from './components/Layout'
