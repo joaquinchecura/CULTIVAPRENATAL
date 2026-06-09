@@ -163,6 +163,10 @@ export { rutinasData, articulosData, ejerciciosData };
 export const RUTINAS = rutinasData;
 export const ARTICULOS = articulosData;
 export const EJERCICIOS = ejerciciosData;
+// ===== HELPERS ADICIONALES =====
+
+export const getRutinas = () => rutinasData;
+export const getArticulos = () => articulosData;
 
 // Versión síncrona de initializeData para localStorage.js
 export const initializeDataSync = () => {

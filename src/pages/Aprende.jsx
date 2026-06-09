@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getArticulos } from '@/lib/localStorage';
+import { getArticulos } from '@/data';
 import { Clock, User, ChevronRight } from 'lucide-react';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';

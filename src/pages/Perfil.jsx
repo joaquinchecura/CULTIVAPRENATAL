@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getSessions, saveProfile } from '@/lib/localStorage';
+import { getSessions, saveProfile } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { useAuth } from '@/lib/AuthContext';
 import { Save, AlertCircle, Baby, Phone, Bell, Shield, FileDown, LogOut } from 'lucide-react';

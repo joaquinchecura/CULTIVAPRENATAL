@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getSessions, getDiario, addDiarioEntry } from '@/lib/localStorage';
+import { getSessions, getDiario, addDiarioEntry } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, parseISO } from 'date-fns';
 import { es } from 'date-fns/locale';

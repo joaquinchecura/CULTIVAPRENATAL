@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { getRutinas, getSessions } from '@/lib/localStorage';
+import { getRutinas, getSessions } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Flame, Phone, Stethoscope, ChevronRight, Clock, Leaf } from 'lucide-react';
 import ConsejoDelDia from '@/components/ConsejoDelDia';

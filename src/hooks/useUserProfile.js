@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getProfile, saveProfile } from '@/lib/localStorage';
+import { getProfile, saveProfile } from '@/data';
 
 export function useUserProfile() {
   const [profile, setProfile] = useState(null);

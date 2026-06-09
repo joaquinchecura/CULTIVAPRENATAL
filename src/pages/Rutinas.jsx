@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { getRutinas } from '@/lib/localStorage';
+import { getRutinas } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Clock, Leaf, Stethoscope, AlertTriangle } from 'lucide-react';
 

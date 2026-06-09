@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getRutinaById, getEjerciciosByRutina, addSession } from '@/lib/localStorage';
+import { getRutinaById, getEjerciciosByRutina, addSession } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { useSounds } from '@/hooks/useSounds';
 import { Pause, Play, SkipForward, Info, X, ChevronLeft, AlertTriangle, Stethoscope, Check, Volume2, VolumeX } from 'lucide-react';

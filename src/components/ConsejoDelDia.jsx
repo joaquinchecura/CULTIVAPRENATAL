@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { getArticulosByCategoria } from '@/lib/localStorage';
+import { getArticulosByCategoria } from '@/data';
 import { BookOpen, Stethoscope } from 'lucide-react';
 
 const CATEGORIA_POR_TRIMESTRE = {

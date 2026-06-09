@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { saveProfile } from '@/lib/localStorage';
+import { saveProfile } from '@/data';
 import { ChevronRight, Baby, Heart, Stethoscope, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
