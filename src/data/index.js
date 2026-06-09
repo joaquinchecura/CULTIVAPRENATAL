@@ -1,17 +1,56 @@
-import rutinasData from './rutinas.json';
-import articulosData from './articulos.json';
-import ejerciciosData from './ejercicios.json';
+// Datos cargados desde public/data/ vía fetch
+let rutinasData = [];
+let articulosData = [];
+let ejerciciosData = [];
+let dataLoaded = false;
 
-// Función para inicializar localStorage con los datos por defecto
+// Cargar datos desde public/data/
+export const loadData = async () => {
+  if (dataLoaded) return;
+
+  try {
+    const [rutinasRes, articulosRes, ejerciciosRes] = await Promise.all([
+      fetch('/data/rutinas.json').then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} rutinas.json`);
+        return r.json();
+      }),
+      fetch('/data/articulos.json').then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} articulos.json`);
+        return r.json();
+      }),
+      fetch('/data/ejercicios.json').then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status} ejercicios.json`);
+        return r.json();
+      }),
+    ]);
+
+    rutinasData = Array.isArray(rutinasRes) ? rutinasRes : [];
+    articulosData = Array.isArray(articulosRes) ? articulosRes : [];
+    ejerciciosData = Array.isArray(ejerciciosRes) ? ejerciciosRes : [];
+    dataLoaded = true;
+
+    console.log('✅ Datos cargados:', {
+      rutinas: rutinasData.length,
+      articulos: articulosData.length,
+      ejercicios: ejerciciosData.length
+    });
+  } catch (e) {
+    console.error('❌ Error cargando datos:', e);
+    // Dejar arrays vacíos para que la app no rompa
+    rutinasData = [];
+    articulosData = [];
+    ejerciciosData = [];
+    dataLoaded = true;
+  }
+};
+
+// Inicializar localStorage con datos por defecto
 export const initializeData = () => {
   const STORAGE_KEY = 'prenatal_move_data';
-  
-  // Solo inicializar si no hay datos previos
+
   const existing = localStorage.getItem(STORAGE_KEY);
   if (existing) {
     const parsed = JSON.parse(existing);
-    // Si ya tiene datos, no sobreescribir (respetar perfil, sesiones, etc.)
-    // Pero actualizar rutinas/articulos/ejercicios si cambiaron
     if (!parsed.rutinas || parsed.rutinas.length === 0) {
       parsed.rutinas = rutinasData;
     }
@@ -24,8 +63,7 @@ export const initializeData = () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
     return parsed;
   }
-  
-  // Primera vez: crear todo
+
   const initialData = {
     profile: null,
     sessions: [],
@@ -35,17 +73,81 @@ export const initializeData = () => {
     articulos: articulosData,
     ejercicios: ejerciciosData
   };
-  
+
   localStorage.setItem(STORAGE_KEY, JSON.stringify(initialData));
   return initialData;
 };
 
-// Exportar datos crudos para uso directo
-export const RUTINAS = rutinasData;
-export const ARTICULOS = articulosData;
-export const EJERCICIOS = ejerciciosData;
+// ===== CRUD LOCALSTORAGE =====
 
-// Helpers de búsqueda
+const getStorageData = () => {
+  const raw = localStorage.getItem('prenatal_move_data');
+  return raw ? JSON.parse(raw) : initializeData();
+};
+
+const saveStorageData = (data) => {
+  localStorage.setItem('prenatal_move_data', JSON.stringify(data));
+};
+
+// Perfil
+export const getProfile = () => getStorageData().profile;
+export const saveProfile = (profile) => {
+  const data = getStorageData();
+  data.profile = { ...data.profile, ...profile, updatedAt: new Date().toISOString() };
+  saveStorageData(data);
+  return data.profile;
+};
+
+// Sesiones
+export const getSessions = () => getStorageData().sessions || [];
+export const addSession = (session) => {
+  const data = getStorageData();
+  const newSession = {
+    ...session,
+    id: `ses-${Date.now()}`,
+    createdAt: new Date().toISOString(),
+  };
+  data.sessions = [newSession, ...(data.sessions || [])];
+  saveStorageData(data);
+  return newSession;
+};
+export const updateSession = (id, updates) => {
+  const data = getStorageData();
+  data.sessions = (data.sessions || []).map(s => s.id === id ? { ...s, ...updates } : s);
+  saveStorageData(data);
+};
+
+// Diario
+export const getDiario = () => getStorageData().diario || [];
+export const addDiarioEntry = (entry) => {
+  const data = getStorageData();
+  const newEntry = {
+    ...entry,
+    id: `dia-${Date.now()}`,
+    fecha: new Date().toISOString(),
+  };
+  data.diario = [newEntry, ...(data.diario || [])];
+  saveStorageData(data);
+  return newEntry;
+};
+
+// Favoritos
+export const getFavorites = () => getStorageData().favorites || [];
+export const toggleFavorite = (rutinaId) => {
+  const data = getStorageData();
+  const favs = new Set(data.favorites || []);
+  if (favs.has(rutinaId)) {
+    favs.delete(rutinaId);
+  } else {
+    favs.add(rutinaId);
+  }
+  data.favorites = Array.from(favs);
+  saveStorageData(data);
+  return data.favorites;
+};
+
+// ===== HELPERS DE BÚSQUEDA =====
+
 export const getRutinaById = (id) => rutinasData.find(r => r.id === id);
 export const getEjerciciosByRutina = (rutinaId) => ejerciciosData.filter(e => e.rutina_id === rutinaId);
 export const getArticulosByCategoria = (categoria) => articulosData.filter(a => a.categoria === categoria && a.activo);
@@ -53,3 +155,6 @@ export const getRutinasByTrimestre = (trimestre) => rutinasData.filter(r => {
   if (trimestre === 'postparto') return r.trimestre === 'postparto';
   return r.trimestre === String(trimestre) || r.trimestre === 'todos';
 });
+
+// Exportar datos crudos (después de loadData)
+export { rutinasData, articulosData, ejerciciosData };
