@@ -158,3 +158,27 @@ export const getRutinasByTrimestre = (trimestre) => rutinasData.filter(r => {
 
 // Exportar datos crudos (después de loadData)
 export { rutinasData, articulosData, ejerciciosData };
+
+// ===== ALIAS PARA COMPATIBILIDAD CON src/lib/localStorage.js =====
+export const RUTINAS = rutinasData;
+export const ARTICULOS = articulosData;
+export const EJERCICIOS = ejerciciosData;
+
+// Versión síncrona de initializeData para localStorage.js
+export const initializeDataSync = () => {
+  const STORAGE_KEY = 'prenatal_move_data';
+  const existing = localStorage.getItem(STORAGE_KEY);
+  if (existing) return JSON.parse(existing);
+  
+  const initialData = {
+    profile: null,
+    sessions: [],
+    diario: [],
+    favorites: [],
+    rutinas: [],
+    articulos: [],
+    ejercicios: []
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(initialData));
+  return initialData;
+};

@@ -1,17 +1,17 @@
-import { initializeData, RUTINAS, ARTICULOS, EJERCICIOS } from '@/data';
+import { initializeDataSync, RUTINAS, ARTICULOS, EJERCICIOS } from '@/data';
 
 const STORAGE_KEY = 'prenatal_move_data';
 
 // Inicializar al importar
-initializeData();
+initializeDataSync();
 
 // Leer datos
 const getData = () => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : initializeData();
+    return raw ? JSON.parse(raw) : initializeDataSync();
   } catch {
-    return initializeData();
+    return initializeDataSync();
   }
 };
 
@@ -84,5 +84,5 @@ export const toggleFavorite = (routineId) => {
 // Reset todo
 export const clearAllData = () => {
   localStorage.removeItem(STORAGE_KEY);
-  initializeData(); // Recrear con datos por defecto
+  initializeDataSync(); // Recrear con datos por defecto
 };
