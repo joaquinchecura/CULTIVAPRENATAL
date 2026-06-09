@@ -1,0 +1,76 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "fecha_ultima_menstruacion": {
+      "type": "string",
+      "format": "date"
+    },
+    "fecha_probable_parto": {
+      "type": "string",
+      "format": "date"
+    },
+    "tipo_embarazo": {
+      "type": "string",
+      "enum": [
+        "unico",
+        "multiple"
+      ],
+      "default": "unico"
+    },
+    "autorizacion_medica": {
+      "type": "string",
+      "enum": [
+        "si",
+        "no",
+        "pendiente"
+      ],
+      "default": "pendiente"
+    },
+    "complicaciones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "objetivos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contacto_matrona_nombre": {
+      "type": "string"
+    },
+    "contacto_matrona_telefono": {
+      "type": "string"
+    },
+    "contacto_emergencia_nombre": {
+      "type": "string"
+    },
+    "contacto_emergencia_telefono": {
+      "type": "string"
+    },
+    "recordatorio_hora": {
+      "type": "string"
+    },
+    "notificaciones_activas": {
+      "type": "boolean",
+      "default": true
+    },
+    "onboarding_completado": {
+      "type": "boolean",
+      "default": false
+    },
+    "modo_oscuro": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "nombre"
+  ]
+}

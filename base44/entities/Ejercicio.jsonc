@@ -1,0 +1,65 @@
+{
+  "name": "Ejercicio",
+  "type": "object",
+  "properties": {
+    "rutina_id": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "instrucciones": {
+      "type": "string"
+    },
+    "duracion_segundos": {
+      "type": "number"
+    },
+    "repeticiones": {
+      "type": "number"
+    },
+    "imagen_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "semana_maxima": {
+      "type": "number"
+    },
+    "alertas_especificas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "beneficio_medico": {
+      "type": "string"
+    },
+    "orden": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "rutina_id",
+    "nombre",
+    "instrucciones"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {},
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

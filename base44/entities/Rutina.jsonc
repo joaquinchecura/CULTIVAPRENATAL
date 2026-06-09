@@ -1,0 +1,85 @@
+{
+  "name": "Rutina",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "trimestre": {
+      "type": "string",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "postparto",
+        "todos"
+      ]
+    },
+    "objetivo": {
+      "type": "string",
+      "enum": [
+        "suelo_pelvico",
+        "alivio_dolor",
+        "preparacion_parto",
+        "energia",
+        "movilidad",
+        "respiracion"
+      ]
+    },
+    "duracion_minutos": {
+      "type": "number"
+    },
+    "nivel_intensidad": {
+      "type": "string",
+      "enum": [
+        "suave",
+        "moderado"
+      ]
+    },
+    "validacion_medica": {
+      "type": "boolean",
+      "default": true
+    },
+    "fecha_validacion": {
+      "type": "string",
+      "format": "date"
+    },
+    "medico_validador": {
+      "type": "string"
+    },
+    "contraindicaciones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "instrucciones_generales": {
+      "type": "string"
+    },
+    "imagen_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "semana_minima": {
+      "type": "number"
+    },
+    "semana_maxima": {
+      "type": "number"
+    },
+    "activa": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "nombre",
+    "trimestre",
+    "objetivo",
+    "duracion_minutos"
+  ]
+}

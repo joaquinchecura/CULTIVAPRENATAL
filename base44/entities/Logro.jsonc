@@ -1,0 +1,33 @@
+{
+  "name": "Logro",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "icono": {
+      "type": "string"
+    },
+    "condicion_tipo": {
+      "type": "string"
+    },
+    "condicion_valor": {
+      "type": "number"
+    },
+    "desbloqueado": {
+      "type": "boolean",
+      "default": false
+    },
+    "fecha_desbloqueo": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "nombre",
+    "descripcion"
+  ]
+}

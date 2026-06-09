@@ -1,0 +1,50 @@
+{
+  "name": "Sesion",
+  "type": "object",
+  "properties": {
+    "rutina_id": {
+      "type": "string"
+    },
+    "rutina_nombre": {
+      "type": "string"
+    },
+    "fecha_inicio": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fecha_fin": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "duracion_real_minutos": {
+      "type": "number"
+    },
+    "completada": {
+      "type": "boolean",
+      "default": false
+    },
+    "sensacion_post": {
+      "type": "string",
+      "enum": [
+        "bien",
+        "regular",
+        "con_molestias"
+      ]
+    },
+    "molestias_reportadas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notas_personales": {
+      "type": "string"
+    },
+    "semana_gestacion": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "rutina_id"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Articulo",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "contenido": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "beneficios",
+        "seguridad",
+        "suelo_pelvico",
+        "respiracion",
+        "nutricion",
+        "descanso"
+      ]
+    },
+    "medico_revisor": {
+      "type": "string"
+    },
+    "fecha_revision": {
+      "type": "string",
+      "format": "date"
+    },
+    "imagen_url": {
+      "type": "string"
+    },
+    "tiempo_lectura_minutos": {
+      "type": "number"
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "titulo",
+    "contenido",
+    "categoria"
+  ]
+}

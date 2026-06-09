@@ -1,0 +1,40 @@
+{
+  "name": "Diario",
+  "type": "object",
+  "properties": {
+    "fecha": {
+      "type": "string",
+      "format": "date"
+    },
+    "entrada_texto": {
+      "type": "string"
+    },
+    "sintomas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "estado_animo": {
+      "type": "string",
+      "enum": [
+        "bien",
+        "regular",
+        "con_molestias"
+      ]
+    },
+    "consulta_medica": {
+      "type": "boolean",
+      "default": false
+    },
+    "notas_consulta": {
+      "type": "string"
+    },
+    "semana_gestacion": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "fecha"
+  ]
+}
