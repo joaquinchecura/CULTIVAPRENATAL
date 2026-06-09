@@ -1,24 +1,14 @@
 import { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
+import { getProfile, saveProfile } from '@/lib/localStorage';
 
 export function useUserProfile() {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchProfile = async () => {
-    try {
-      const user = await base44.auth.me();
-      const profiles = await base44.entities.UserProfile.filter({ created_by: user.email });
-      if (profiles.length > 0) {
-        setProfile(profiles[0]);
-      } else {
-        setProfile(null);
-      }
-    } catch (e) {
-      setProfile(null);
-    } finally {
-      setLoading(false);
-    }
+  const fetchProfile = () => {
+    const p = getProfile();
+    setProfile(p);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -53,5 +43,17 @@ export function useUserProfile() {
   const semanaActual = calcularSemana(profile);
   const trimestre = getTrimestre(semanaActual);
 
-  return { profile, loading, semanaActual, trimestre, refetch: fetchProfile };
+  const updateProfile = (newProfile) => {
+    saveProfile(newProfile);
+    setProfile(newProfile);
+  };
+
+  return { 
+    profile, 
+    loading, 
+    semanaActual, 
+    trimestre, 
+    refetch: fetchProfile,
+    updateProfile 
+  };
 }

@@ -1,21 +1,29 @@
 import { Toaster } from "@/components/ui/toaster"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ClerkProvider } from '@clerk/clerk-react'
+
+import { AuthProvider, useAuth } from '@/lib/ClerkAuthAdapter'
+import PageNotFound from './lib/PageNotFound'
+import UserNotRegisteredError from '@/components/UserNotRegisteredError'
+import Layout from './components/Layout'
+import Dashboard from './pages/Dashboard'
+import Rutinas from './pages/Rutinas'
+import RutinaActiva from './pages/RutinaActiva'
+import Aprende from './pages/Aprende'
+import Progreso from './pages/Progreso'
+import Perfil from './pages/Perfil'
+import Onboarding from './pages/Onboarding'
 
 const queryClientInstance = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false, retry: 1 } },
 });
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PageNotFound from './lib/PageNotFound';
-import { AuthProvider, useAuth } from '@/lib/AuthContext';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
-import Layout from './components/Layout';
-import Dashboard from './pages/Dashboard';
-import Rutinas from './pages/Rutinas';
-import RutinaActiva from './pages/RutinaActiva';
-import Aprende from './pages/Aprende';
-import Progreso from './pages/Progreso';
-import Perfil from './pages/Perfil';
-import Onboarding from './pages/Onboarding';
+
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing VITE_CLERK_PUBLISHABLE_KEY")
+}
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -58,14 +66,16 @@ const AuthenticatedApp = () => {
 
 function App() {
   return (
-    <AuthProvider>
-      <QueryClientProvider client={queryClientInstance}>
-        <Router>
-          <AuthenticatedApp />
-        </Router>
-        <Toaster />
-      </QueryClientProvider>
-    </AuthProvider>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <AuthProvider>
+        <QueryClientProvider client={queryClientInstance}>
+          <Router>
+            <AuthenticatedApp />
+          </Router>
+          <Toaster />
+        </QueryClientProvider>
+      </AuthProvider>
+    </ClerkProvider>
   )
 }
 
