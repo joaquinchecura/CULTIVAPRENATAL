@@ -1,9 +1,11 @@
+import { useEffect } from 'react'
 import { Toaster } from "@/components/ui/toaster"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ClerkProvider } from '@clerk/clerk-react'
 
 import { AuthProvider, useAuth } from '@/lib/AuthContext'
+import { loadData, initializeData } from '@/data'
 import PageNotFound from './lib/PageNotFound'
 import UserNotRegisteredError from '@/components/UserNotRegisteredError'
 import Layout from './components/Layout'
@@ -65,6 +67,12 @@ const AuthenticatedApp = () => {
 };
 
 function App() {
+  useEffect(() => {
+    loadData().then(() => {
+      initializeData();
+    });
+  }, []);
+
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <AuthProvider>
