@@ -1,11 +1,23 @@
 import { createContext, useState, useContext, useEffect } from 'react';
 import { useUser, useAuth as useClerkAuth, useClerk } from '@clerk/clerk-react';
 
-const AuthContext = createContext();
+const AuthContext = createContext({
+  user: null,
+  isAuthenticated: false,
+  isLoadingAuth: true,
+  isLoadingPublicSettings: true,
+  authError: null,
+  authChecked: false,
+  logout: () => {},
+  navigateToLogin: () => {},
+  getToken: async () => null,
+  checkUserAuth: () => Promise.resolve(),
+  checkAppState: () => Promise.resolve(),
+});
 
 export const AuthProvider = ({ children }) => {
   const { isLoaded, isSignedIn, user: clerkUser } = useUser();
-  const { getToken: clerkGetToken } = useClerkAuth(); // ✅ Solo acá, adentro del componente
+  const { getToken: clerkGetToken } = useClerkAuth();
   const { signOut, openSignIn } = useClerk();
 
   const [isLoadingPublicSettings, setIsLoadingPublicSettings] = useState(true);
@@ -65,8 +77,5 @@ export const AuthProvider = ({ children }) => {
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
   return context;
 };
