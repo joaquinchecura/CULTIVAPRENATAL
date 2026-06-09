@@ -303,7 +303,7 @@ export default function Perfil() {
             </div>
 
             <button
-              onClick={() => logout('/')}
+              onClick={() => logout(false)}
               className="w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-destructive/10 text-destructive hover:bg-destructive/20"
             >
               <LogOut size={18} />
