@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { SignIn } from '@clerk/clerk-react'
 import { Toaster } from "@/components/ui/toaster"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -7,7 +8,6 @@ import { ClerkProvider } from '@clerk/clerk-react'
 import { AuthProvider, useAuth } from '@/lib/AuthContext'
 import { loadData, initializeData } from '@/data'
 import PageNotFound from './lib/PageNotFound'
-import UserNotRegisteredError from '@/components/UserNotRegisteredError'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import Rutinas from './pages/Rutinas'
@@ -28,7 +28,7 @@ if (!PUBLISHABLE_KEY) {
 }
 
 const AuthenticatedApp = () => {
-  const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
+  const { isLoadingAuth, isLoadingPublicSettings, isAuthenticated } = useAuth();
 
   if (isLoadingPublicSettings || isLoadingAuth) {
     return (
@@ -41,13 +41,34 @@ const AuthenticatedApp = () => {
     );
   }
 
-  if (authError) {
-    if (authError.type === 'user_not_registered') {
-      return <UserNotRegisteredError />;
-    } else if (authError.type === 'auth_required') {
-      navigateToLogin();
-      return null;
-    }
+  // Si no está autenticada, mostrar SignIn de Clerk
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+        <div className="w-full max-w-sm">
+          <div className="text-center mb-6">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span className="text-3xl">🌸</span>
+            </div>
+            <h1 className="font-serif text-2xl font-semibold text-foreground">Cultiva PreNatal</h1>
+            <p className="text-muted-foreground text-sm mt-1">Tu compañera de ejercicio seguro</p>
+          </div>
+          <SignIn 
+            routing="hash"
+            signUpUrl="/sign-up"
+            afterSignInUrl="/"
+            appearance={{
+              elements: {
+                card: "shadow-card border border-border rounded-2xl bg-card",
+                headerTitle: "font-serif text-xl font-semibold",
+                formButtonPrimary: "bg-primary hover:bg-primary/90 rounded-xl",
+                footerActionLink: "text-primary",
+              }
+            }}
+          />
+        </div>
+      </div>
+    );
   }
 
   return (
