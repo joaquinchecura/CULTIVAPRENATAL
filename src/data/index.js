@@ -146,15 +146,18 @@ export const toggleFavorite = (rutinaId) => {
   return data.favorites;
 };
 
-// ===== HELPERS DE BÚSQUEDA =====
+// ===== HELPERS DE BÚSQUEDA (leen desde localStorage para que funcionen inmediatamente) =====
 
-export const getRutinaById = (id) => rutinasData.find(r => r.id === id);
-export const getEjerciciosByRutina = (rutinaId) => ejerciciosData.filter(e => e.rutina_id === rutinaId);
-export const getArticulosByCategoria = (categoria) => articulosData.filter(a => a.categoria === categoria && a.activo);
-export const getRutinasByTrimestre = (trimestre) => rutinasData.filter(r => {
-  if (trimestre === 'postparto') return r.trimestre === 'postparto';
-  return r.trimestre === String(trimestre) || r.trimestre === 'todos';
-});
+export const getRutinas = () => getStorageData().rutinas || [];
+export const getRutinaById = (id) => (getStorageData().rutinas || []).find(r => r.id === id);
+export const getEjerciciosByRutina = (rutinaId) => (getStorageData().ejercicios || []).filter(e => e.rutina_id === rutinaId);
+export const getArticulos = () => getStorageData().articulos || [];
+export const getArticulosByCategoria = (categoria) => (getStorageData().articulos || []).filter(a => a.categoria === categoria && a.activo);
+export const getRutinasByTrimestre = (trimestre) => {
+  const rutinas = getStorageData().rutinas || [];
+  if (trimestre === 'postparto') return rutinas.filter(r => r.trimestre === 'postparto');
+  return rutinas.filter(r => r.trimestre === String(trimestre) || r.trimestre === 'todos');
+};
 
 // Exportar datos crudos (después de loadData)
 export { rutinasData, articulosData, ejerciciosData };
@@ -169,20 +172,22 @@ export const getRutinas = () => rutinasData;
 export const getArticulos = () => articulosData;
 
 // Versión síncrona de initializeData para localStorage.js
-export const initializeDataSync = () => {
-  const STORAGE_KEY = 'prenatal_move_data';
-  const existing = localStorage.getItem(STORAGE_KEY);
-  if (existing) return JSON.parse(existing);
+export const initializeData = () => {
+    const STORAGE_KEY = 'prenatal_move_data';
   
-  const initialData = {
-    profile: null,
-    sessions: [],
-    diario: [],
-    favorites: [],
-    rutinas: [],
-    articulos: [],
-    ejercicios: []
+    const existing = localStorage.getItem(STORAGE_KEY);
+    const parsed = existing ? JSON.parse(existing) : null;
+  
+    const data = {
+      profile: parsed?.profile || null,
+      sessions: parsed?.sessions || [],
+      diario: parsed?.diario || [],
+      favorites: parsed?.favorites || [],
+      rutinas: rutinasData.length > 0 ? rutinasData : (parsed?.rutinas || []),
+      articulos: articulosData.length > 0 ? articulosData : (parsed?.articulos || []),
+      ejercicios: ejerciciosData.length > 0 ? ejerciciosData : (parsed?.ejercicios || []),
+    };
+  
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    return data;
   };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(initialData));
-  return initialData;
-};
