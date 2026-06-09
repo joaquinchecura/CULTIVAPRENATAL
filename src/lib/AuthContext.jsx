@@ -5,7 +5,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const { isLoaded, isSignedIn, user: clerkUser } = useUser();
-  const { getToken: clerkGetToken } = useClerkAuth();
+  const { getToken: clerkGetToken } = useClerkAuth(); // ✅ Solo acá, adentro del componente
   const { signOut, openSignIn } = useClerk();
 
   const [isLoadingPublicSettings, setIsLoadingPublicSettings] = useState(true);
@@ -13,7 +13,6 @@ export const AuthProvider = ({ children }) => {
   const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
-    // Simular carga de settings públicos
     const timer = setTimeout(() => {
       setIsLoadingPublicSettings(false);
       setAuthChecked(true);
@@ -56,7 +55,6 @@ export const AuthProvider = ({ children }) => {
       logout,
       navigateToLogin,
       getToken,
-      // Mantener compatibilidad con componentes que usen checkUserAuth/checkAppState
       checkUserAuth: () => Promise.resolve(),
       checkAppState: () => Promise.resolve(),
     }}>
