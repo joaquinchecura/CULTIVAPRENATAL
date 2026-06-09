@@ -7,13 +7,17 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración consciente post-parto comienza la reconexción mente-cuerpo, esencial para la recuperación física y emocional.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay dolor abdominal agudo"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "La respiración consciente post-parto comienza la reconexción mente-cuerpo, esencial para la recuperación física y emocional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec377",
@@ -23,13 +27,17 @@
     "duracion_segundos": 80,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La activación suave del transverso es el primer paso para recuperar el soporte lumbar y reducir el dolor de espalda post-parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar si hay diástasis no evaluada"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "La activación suave del transverso es el primer paso para recuperar el soporte lumbar y reducir el dolor de espalda post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec378",
@@ -39,13 +47,17 @@
     "duracion_segundos": 80,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Comenzar el entrenamiento pélvico suave en las primeras semanas post-parto acelera la recuperación y previene la incontinencia crónica.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay dolor perineal agudo"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "Comenzar el entrenamiento pélvico suave en las primeras semanas post-parto acelera la recuperación y previene la incontinencia crónica.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec379",
@@ -55,11 +67,15 @@
     "duracion_segundos": 30,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La activación de la bomba venosa de la pantorrilla previene la trombosis venosa profunda, principal complicación del puerperio.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "La activación de la bomba venosa de la pantorrilla previene la trombosis venosa profunda, principal complicación del puerperio.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec37a",
@@ -69,11 +85,15 @@
     "duracion_segundos": 30,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Junto con los círculos, es el ejercicio más importante de las primeras 48h post-parto para prevenir tromboembolismo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "Junto con los círculos, es el ejercicio más importante de las primeras 48h post-parto para prevenir tromboembolismo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec37b",
@@ -83,11 +103,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la tensión cervical acumulada por las largas horas de amamantamiento y el transporte del bebé.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "Alivia la tensión cervical acumulada por las largas horas de amamantamiento y el transporte del bebé.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec37c",
@@ -97,11 +121,15 @@
     "duracion_segundos": 120,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "El descanso activo post-parto reduce el cortisol, favorece la lactancia, mejora el estado de ánimo y acelera la cicatrización tisular.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.280000"
+    "beneficio_medico": "El descanso activo post-parto reduce el cortisol, favorece la lactancia, mejora el estado de ánimo y acelera la cicatrización tisular.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.280000",
+    "updated_date": "2026-05-14T18:58:04.280000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec36f",
@@ -111,11 +139,15 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La progresión del suelo pélvico en posición sentada aumenta la intensidad respecto a las primeras semanas, acelerando la recuperación.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "La progresión del suelo pélvico en posición sentada aumenta la intensidad respecto a las primeras semanas, acelerando la recuperación.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec370",
@@ -125,13 +157,17 @@
     "duracion_segundos": 100,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "El entrenamiento en posición vertical prepara el suelo pélvico para las actividades cotidianas, mejorando la continencia funcional.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar si hay prolapso diagnosticado"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "El entrenamiento en posición vertical prepara el suelo pélvico para las actividades cotidianas, mejorando la continencia funcional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec371",
@@ -141,13 +177,17 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El puente fortalece glúteos e isquiotibiales, recuperando la cadena posterior debilitada durante el embarazo y el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Consulta si hay diástasis antes de comenzar"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "El puente fortalece glúteos e isquiotibiales, recuperando la cadena posterior debilitada durante el embarazo y el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec372",
@@ -157,13 +197,17 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Las sentadillas recuperan la fuerza funcional del tren inferior, necesaria para el cuidado diario del bebé (coger, agacharse, cargar).",
+    "video_url": "",
     "alertas_especificas": [
       "No bajar demasiado al principio"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "Las sentadillas recuperan la fuerza funcional del tren inferior, necesaria para el cuidado diario del bebé (coger, agacharse, cargar).",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec373",
@@ -173,11 +217,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Los isquiotibiales acortados durante el embarazo contribuyen a la disfunción pélvica post-parto. Estirarlos mejora la alineación.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "Los isquiotibiales acortados durante el embarazo contribuyen a la disfunción pélvica post-parto. Estirarlos mejora la alineación.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec374",
@@ -187,11 +235,15 @@
     "duracion_segundos": 30,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Contrarresta la cifosis torácica y la protracción de hombros causada por la lactancia, previniendo el dolor de cuello y espalda.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "Contrarresta la cifosis torácica y la protracción de hombros causada por la lactancia, previniendo el dolor de cuello y espalda.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b3c76bc7c747ebec375",
@@ -201,11 +253,15 @@
     "duracion_segundos": 120,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La autacompasión y el agradecimiento al propio cuerpo mejoran el bienestar psicológico post-parto y reducen el riesgo de depresión posparto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:58:04.265000"
+    "beneficio_medico": "La autacompasión y el agradecimiento al propio cuerpo mejoran el bienestar psicológico post-parto y reducen el riesgo de depresión posparto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:58:04.265000",
+    "updated_date": "2026-05-14T18:58:04.265000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec369",
@@ -215,11 +271,15 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración lenta y profunda activa el nervio vago, reduciendo la frecuencia cardíaca y preparando el sistema nervioso para el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "La respiración lenta y profunda activa el nervio vago, reduciendo la frecuencia cardíaca y preparando el sistema nervioso para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec36a",
@@ -229,11 +289,15 @@
     "duracion_segundos": 180,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "El escaneo corporal progresivo reduce la tensión muscular acumulada y promueve la liberación de oxitocina endógena.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "El escaneo corporal progresivo reduce la tensión muscular acumulada y promueve la liberación de oxitocina endógena.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec36b",
@@ -243,11 +307,15 @@
     "duracion_segundos": 180,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La visualización del vínculo materno-fetal libera oxitocina, la hormona del amor, que facilitará el parto y la lactancia.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "La visualización del vínculo materno-fetal libera oxitocina, la hormona del amor, que facilitará el parto y la lactancia.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec36c",
@@ -257,11 +325,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Las afirmaciones positivas reprograman el sistema límbico, reduciendo el miedo al parto (tokofobia) y mejorando los resultados obstétricos.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "Las afirmaciones positivas reprograman el sistema límbico, reduciendo el miedo al parto (tokofobia) y mejorando los resultados obstétricos.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec36d",
@@ -271,11 +343,15 @@
     "duracion_segundos": 180,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La capacidad de 'soltarse' durante el parto es una habilidad aprendida. La resistencia aumenta el dolor y la duración del parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "La capacidad de 'soltarse' durante el parto es una habilidad aprendida. La resistencia aumenta el dolor y la duración del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec36e",
@@ -285,11 +361,15 @@
     "duracion_segundos": 120,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "La práctica de gratitud consciente aumenta el bienestar psicológico prenatal y mejora la resiliencia emocional para el parto y el post-parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.957000"
+    "beneficio_medico": "La práctica de gratitud consciente aumenta el bienestar psicológico prenatal y mejora la resiliencia emocional para el parto y el post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.957000",
+    "updated_date": "2026-05-14T18:57:19.957000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec362",
@@ -299,11 +379,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La posición vertical durante el parto aprovecha la gravedad para facilitar el descenso fetal y reduce la duración del trabajo de parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "La posición vertical durante el parto aprovecha la gravedad para facilitar el descenso fetal y reduce la duración del trabajo de parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec363",
@@ -313,11 +397,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La posición de rodillas reduce la compresión sacra, alivia el dolor de espalda durante las contracciones y favorece la rotación fetal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "La posición de rodillas reduce la compresión sacra, alivia el dolor de espalda durante las contracciones y favorece la rotación fetal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec364",
@@ -327,13 +415,17 @@
     "duracion_segundos": 45,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Las cuclillas en el expulsivo abren el diámetro pélvico y usan la gravedad para facilitar el nacimiento.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay presión excesiva en la pelvis"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "Las cuclillas en el expulsivo abren el diámetro pélvico y usan la gravedad para facilitar el nacimiento.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec365",
@@ -343,11 +435,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La posición lateral izquierda optimiza la perfusión placentaria y permite descansar mientras la pelvis se mantiene en posición favorable.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "La posición lateral izquierda optimiza la perfusión placentaria y permite descansar mientras la pelvis se mantiene en posición favorable.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec366",
@@ -357,11 +453,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La posición de cuadrupedia es la más efectiva para aliviar el dolor de espalda durante las contracciones y favorecer la rotación occipito-posterior.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "La posición de cuadrupedia es la más efectiva para aliviar el dolor de espalda durante las contracciones y favorecer la rotación occipito-posterior.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec367",
@@ -371,11 +471,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "El balón de parto permite el movimiento pélvico continuo que facilita el descenso fetal y reduce la percepción de dolor.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "El balón de parto permite el movimiento pélvico continuo que facilita el descenso fetal y reduce la percepción de dolor.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061b0f76bc7c747ebec368",
@@ -385,11 +489,15 @@
     "duracion_segundos": 180,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "Conocer y practicar las transiciones antes del parto reduce el tiempo de adaptación durante el trabajo de parto real.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:57:19.943000"
+    "beneficio_medico": "Conocer y practicar las transiciones antes del parto reduce el tiempo de adaptación durante el trabajo de parto real.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:57:19.943000",
+    "updated_date": "2026-05-14T18:57:19.943000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35c",
@@ -399,13 +507,17 @@
     "duracion_segundos": 180,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La elevación pasiva de piernas facilita el retorno venoso por gravedad, reduciendo el edema péndulo en tobillos y piernas.",
+    "video_url": "",
     "alertas_especificas": [
       "No boca arriba después de la semana 20"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "La elevación pasiva de piernas facilita el retorno venoso por gravedad, reduciendo el edema péndulo en tobillos y piernas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35d",
@@ -415,11 +527,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La movilización del tobillo activa la bomba musculovenosa de la pantorrilla, impulsando el retorno venoso y linfático.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "La movilización del tobillo activa la bomba musculovenosa de la pantorrilla, impulsando el retorno venoso y linfático.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35e",
@@ -429,11 +545,15 @@
     "duracion_segundos": 30,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La flexo-extensión de los pies es el ejercicio más efectivo para activar la bomba de la pantorrilla y prevenir trombosis.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "La flexo-extensión de los pies es el ejercicio más efectivo para activar la bomba de la pantorrilla y prevenir trombosis.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35f",
@@ -443,11 +563,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Estira el soleo y el gastrocnemio, aliviando la tensión que contribuye a los calambres nocturnos y la hinchazón.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "Estira el soleo y el gastrocnemio, aliviando la tensión que contribuye a los calambres nocturnos y la hinchazón.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec360",
@@ -457,11 +581,15 @@
     "duracion_segundos": 120,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "El masaje de pies estimula los puntos reflejos y los vasos linfáticos superficiales, reduciendo la hinchazón y mejorando la circulación.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "El masaje de pies estimula los puntos reflejos y los vasos linfáticos superficiales, reduciendo la hinchazón y mejorando la circulación.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec361",
@@ -471,11 +599,15 @@
     "duracion_segundos": 120,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "La respiración profunda aumenta la presión negativa intraabdominal, facilitando el retorno venoso y el drenaje linfático.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.144000"
+    "beneficio_medico": "La respiración profunda aumenta la presión negativa intraabdominal, facilitando el retorno venoso y el drenaje linfático.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.144000",
+    "updated_date": "2026-05-14T18:56:39.144000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec359",
@@ -485,11 +617,15 @@
     "duracion_segundos": 120,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La posición lateral con apertura de cadera permite el descanso entre contracciones mientras mantiene la pelvis en posición favorable.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.130000"
+    "beneficio_medico": "La posición lateral con apertura de cadera permite el descanso entre contracciones mientras mantiene la pelvis en posición favorable.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.130000",
+    "updated_date": "2026-05-14T18:56:39.130000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35a",
@@ -499,13 +635,17 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "El panting inhibe el reflejo de empuje durante la transición, permitiendo que el cuello uterino complete la dilatación sin desgarros.",
+    "video_url": "",
     "alertas_especificas": [
       "No más de 10 segundos seguidos, riesgo de hiperventilación"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.130000"
+    "beneficio_medico": "El panting inhibe el reflejo de empuje durante la transición, permitiendo que el cuello uterino complete la dilatación sin desgarros.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.130000",
+    "updated_date": "2026-05-14T18:56:39.130000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec35b",
@@ -515,11 +655,15 @@
     "duracion_segundos": 120,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La visualización del parto positivo reduce la ansiedad anticipatoria, disminuye la percepción de dolor y mejora los resultados obstétricos.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.130000"
+    "beneficio_medico": "La visualización del parto positivo reduce la ansiedad anticipatoria, disminuye la percepción de dolor y mejora los resultados obstétricos.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.130000",
+    "updated_date": "2026-05-14T18:56:39.130000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec355",
@@ -529,11 +673,15 @@
     "duracion_segundos": 180,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración activa durante contracciones intensas mantiene el control, reduce la percepción de dolor y oxigena al bebé en el momento crítico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.129000"
+    "beneficio_medico": "La respiración activa durante contracciones intensas mantiene el control, reduce la percepción de dolor y oxigena al bebé en el momento crítico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.129000",
+    "updated_date": "2026-05-14T18:56:39.129000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec356",
@@ -543,11 +691,15 @@
     "duracion_segundos": 120,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La combinación de fibras rápidas y lentas prepara el suelo pélvico para la doble función del expulsivo: contraer y relajar.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.129000"
+    "beneficio_medico": "La combinación de fibras rápidas y lentas prepara el suelo pélvico para la doble función del expulsivo: contraer y relajar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.129000",
+    "updated_date": "2026-05-14T18:56:39.129000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec357",
@@ -557,11 +709,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La posición de rodillas con apoyo reduce la presión uterina en la vena cava y alivia el dolor lumbar durante las contracciones.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.129000"
+    "beneficio_medico": "La posición de rodillas con apoyo reduce la presión uterina en la vena cava y alivia el dolor lumbar durante las contracciones.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.129000",
+    "updated_date": "2026-05-14T18:56:39.129000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec358",
@@ -571,13 +727,17 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Las cuclillas aumentan el diámetro pélvico, facilitan el descenso fetal y permiten que la gravedad ayude en el expulsivo.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay presión excesiva en la pelvis"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.129000"
+    "beneficio_medico": "Las cuclillas aumentan el diámetro pélvico, facilitan el descenso fetal y permiten que la gravedad ayude en el expulsivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.129000",
+    "updated_date": "2026-05-14T18:56:39.129000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec34f",
@@ -587,13 +747,17 @@
     "duracion_segundos": 128,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Las contracciones máximas en el tercer trimestre fortalecen el soporte de los órganos pélvicos y previenen el prolapso post-parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No aguantes la respiración"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "Las contracciones máximas en el tercer trimestre fortalecen el soporte de los órganos pélvicos y previenen el prolapso post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec350",
@@ -603,11 +767,15 @@
     "duracion_segundos": 96,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La técnica de elevación mejora la propiocepción del suelo pélvico y el reclutamiento muscular profundo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "La técnica de elevación mejora la propiocepción del suelo pélvico y el reclutamiento muscular profundo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec351",
@@ -617,11 +785,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El reflejo de contracción pélvica ante la tos previene la incontinencia de esfuerzo, muy común en el post-parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "El reflejo de contracción pélvica ante la tos previene la incontinencia de esfuerzo, muy común en el post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec352",
@@ -631,11 +803,15 @@
     "duracion_segundos": 45,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El estornudo genera más presión intraabdominal que la tos. Aprender a controlar el suelo pélvico en este momento es clave.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "El estornudo genera más presión intraabdominal que la tos. Aprender a controlar el suelo pélvico en este momento es clave.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec353",
@@ -645,11 +821,15 @@
     "duracion_segundos": 180,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La capacidad de relajar completamente el suelo pélvico durante el expulsivo reduce desgarros perineales y el tiempo del parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "La capacidad de relajar completamente el suelo pélvico durante el expulsivo reduce desgarros perineales y el tiempo del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061ae776bc7c747ebec354",
@@ -659,13 +839,17 @@
     "duracion_segundos": 120,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "El masaje perineal semanal desde la semana 34 reduce significativamente el riesgo de desgarros de tercer y cuarto grado durante el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Consulta con tu matrona antes de comenzar el masaje perineal"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:56:39.111000"
+    "beneficio_medico": "El masaje perineal semanal desde la semana 34 reduce significativamente el riesgo de desgarros de tercer y cuarto grado durante el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:56:39.111000",
+    "updated_date": "2026-05-14T18:56:39.111000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec349",
@@ -675,13 +859,17 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Estira los aductores y abre la pelvis, preparando los tejidos para el parto. Mejora la circulación pélvica.",
+    "video_url": "",
     "alertas_especificas": [
       "No forzar las rodillas hacia el suelo"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "Estira los aductores y abre la pelvis, preparando los tejidos para el parto. Mejora la circulación pélvica.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec34a",
@@ -691,13 +879,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Estiramiento profundo de la cadera que libera el piriforme y otros rotadores externos, preparando la cadera para el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay dolor agudo en la cadera"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "Estiramiento profundo de la cadera que libera el piriforme y otros rotadores externos, preparando la cadera para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec34b",
@@ -707,13 +899,17 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Las cuclillas profundas abren el diámetro pélvico hasta un 28% más que la posición de pie, ideal para la preparación al parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No bajar demasiado si hay presión pélvica"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "Las cuclillas profundas abren el diámetro pélvico hasta un 28% más que la posición de pie, ideal para la preparación al parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec34c",
@@ -723,11 +919,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El psóas y el ilio-psóas acortados bloquean la apertura de la pelvis. Estirarlos mejora la posición fetal y facilita el descenso.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "El psóas y el ilio-psóas acortados bloquean la apertura de la pelvis. Estirarlos mejora la posición fetal y facilita el descenso.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec34d",
@@ -737,11 +937,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La rotación de cadera combinada estira rotadores internos y externos, mejorando la movilidad total necesaria para el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "La rotación de cadera combinada estira rotadores internos y externos, mejorando la movilidad total necesaria para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec34e",
@@ -751,11 +955,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "La relajación de los músculos pélvicos en reposo permite que las articulaciones se nutran y los tejidos blandos se recuperen.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.316000"
+    "beneficio_medico": "La relajación de los músculos pélvicos en reposo permite que las articulaciones se nutran y los tejidos blandos se recuperen.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.316000",
+    "updated_date": "2026-05-14T18:55:32.316000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec344",
@@ -765,11 +973,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La conexión consciente materno-fetal durante la respiración reduce el cortisol y aumenta la oxitocina, beneficiando a ambos.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.304000"
+    "beneficio_medico": "La conexión consciente materno-fetal durante la respiración reduce el cortisol y aumenta la oxitocina, beneficiando a ambos.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.304000",
+    "updated_date": "2026-05-14T18:55:32.304000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec345",
@@ -779,11 +991,15 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La respiración costal permite mantener la ventilación adecuada cuando el útero comprime el diafragma en el tercer trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.304000"
+    "beneficio_medico": "La respiración costal permite mantener la ventilación adecuada cuando el útero comprime el diafragma en el tercer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.304000",
+    "updated_date": "2026-05-14T18:55:32.304000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec346",
@@ -793,11 +1009,15 @@
     "duracion_segundos": 180,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La técnica J breathing entrena el aumento de presión intraabdominal controlado necesario para el expulsivo, reduciendo el riesgo de desgarros.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.304000"
+    "beneficio_medico": "La técnica J breathing entrena el aumento de presión intraabdominal controlado necesario para el expulsivo, reduciendo el riesgo de desgarros.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.304000",
+    "updated_date": "2026-05-14T18:55:32.304000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec347",
@@ -807,11 +1027,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La exhalación prolongada activa el nervio vago y reduce la frecuencia cardíaca, contrarrestando la respuesta de estrés.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.304000"
+    "beneficio_medico": "La exhalación prolongada activa el nervio vago y reduce la frecuencia cardíaca, contrarrestando la respuesta de estrés.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.304000",
+    "updated_date": "2026-05-14T18:55:32.304000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec348",
@@ -821,11 +1045,15 @@
     "duracion_segundos": 120,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La visualización positiva del parto reduce la kinesiofobia obstetétrica y prepara neuropsicológicamente para el proceso del parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.304000"
+    "beneficio_medico": "La visualización positiva del parto reduce la kinesiofobia obstetétrica y prepara neuropsicológicamente para el proceso del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.304000",
+    "updated_date": "2026-05-14T18:55:32.304000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec33d",
@@ -835,11 +1063,15 @@
     "duracion_segundos": 180,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración rítmica durante las contracciones reduce la percepción del dolor y mantiene la oxigenación fetal óptima.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "La respiración rítmica durante las contracciones reduce la percepción del dolor y mantiene la oxigenación fetal óptima.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec33e",
@@ -849,11 +1081,15 @@
     "duracion_segundos": 150,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "El control diferenciado del suelo pélvico en el tercer trimestre prepara el expulsivo y entrena la relajación completa necesaria.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "El control diferenciado del suelo pélvico en el tercer trimestre prepara el expulsivo y entrena la relajación completa necesaria.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec33f",
@@ -863,13 +1099,17 @@
     "duracion_segundos": 120,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Las cuclillas profundas en el tercer trimestre favorecen el encajamiento fetal y preparan el canal del parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay presión excesiva en la pelvis"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "Las cuclillas profundas en el tercer trimestre favorecen el encajamiento fetal y preparan el canal del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec340",
@@ -879,11 +1119,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La movilidad activa del sacro en el tercer trimestre mejora su capacidad para moverse durante el parto, ampliando el diámetro pélvico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "La movilidad activa del sacro en el tercer trimestre mejora su capacidad para moverse durante el parto, ampliando el diámetro pélvico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec341",
@@ -893,11 +1137,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "El balanceo en cuadrupedia es una de las posiciones más efectivas para aliviar el dolor de espalda durante el parto y favorecer la rotación fetal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "El balanceo en cuadrupedia es una de las posiciones más efectivas para aliviar el dolor de espalda durante el parto y favorecer la rotación fetal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec342",
@@ -907,13 +1155,17 @@
     "duracion_segundos": 120,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Practicar el esfuerzo de empuje mejora la coordinación neuromuscular para el expulsivo, reduciendo la duración del parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No empujar realmente, solo practicar la coordinación"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "Practicar el esfuerzo de empuje mejora la coordinación neuromuscular para el expulsivo, reduciendo la duración del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061aa476bc7c747ebec343",
@@ -923,11 +1175,15 @@
     "duracion_segundos": 60,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La posición lateral izquierda optimiza la perfusión uteroplacentaria al descomprimir la vena cava inferior.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:55:32.293000"
+    "beneficio_medico": "La posición lateral izquierda optimiza la perfusión uteroplacentaria al descomprimir la vena cava inferior.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:55:32.293000",
+    "updated_date": "2026-05-14T18:55:32.293000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec337",
@@ -937,13 +1193,17 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "El entrenamiento en posición sentada trabaja el suelo pélvico contra la presión del peso corporal, aumentando la efectividad del ejercicio.",
+    "video_url": "",
     "alertas_especificas": [
       "No aguantes la respiración"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "El entrenamiento en posición sentada trabaja el suelo pélvico contra la presión del peso corporal, aumentando la efectividad del ejercicio.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec338",
@@ -953,13 +1213,17 @@
     "duracion_segundos": 100,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Entrenar de pie reproduce las condiciones de actividad diaria, mejorando la funcionalidad real del suelo pélvico.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar si hay prolapso diagnosticado"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "Entrenar de pie reproduce las condiciones de actividad diaria, mejorando la funcionalidad real del suelo pélvico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec339",
@@ -969,13 +1233,17 @@
     "duracion_segundos": 80,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La posición de cuclillas abre la pelvis y trabaja el suelo pélvico en la posición que adoptará durante el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No bajar más de 45 grados de flexión de rodilla"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "La posición de cuclillas abre la pelvis y trabaja el suelo pélvico en la posición que adoptará durante el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec33a",
@@ -985,11 +1253,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El control gradual del suelo pélvico mejora la propiocepción y el control neuromuscular, esencial para el parto y la recuperación.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "El control gradual del suelo pélvico mejora la propiocepción y el control neuromuscular, esencial para el parto y la recuperación.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec33b",
@@ -999,11 +1271,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La contracción ref leja del suelo pélvico antes de los aumentos de presión abdominal previene la incontinencia de esfuerzo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "La contracción ref leja del suelo pélvico antes de los aumentos de presión abdominal previene la incontinencia de esfuerzo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec33c",
@@ -1013,11 +1289,15 @@
     "duracion_segundos": 90,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "El équilibrio entre contracción y relajación es clave. Un suelo pélvico hipertónico puede causar problemas igual que uno débil.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.723000"
+    "beneficio_medico": "El équilibrio entre contracción y relajación es clave. Un suelo pélvico hipertónico puede causar problemas igual que uno débil.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.723000",
+    "updated_date": "2026-05-14T18:54:32.723000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec330",
@@ -1027,13 +1307,17 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "El piriforme tenso es la causa más común de ciática en el embarazo. Su estiramiento libera el nervio ciático atrapado.",
+    "video_url": "",
     "alertas_especificas": [
       "No boca arriba después de la semana 20"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "El piriforme tenso es la causa más común de ciática en el embarazo. Su estiramiento libera el nervio ciático atrapado.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec331",
@@ -1043,13 +1327,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Los isquiotibiales cortos traccionan de la pelvis, aumentando la tensión en la columna lumbar y agravando la ciática.",
+    "video_url": "",
     "alertas_especificas": [
       "No forzar la inclinación"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "Los isquiotibiales cortos traccionan de la pelvis, aumentando la tensión en la columna lumbar y agravando la ciática.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec332",
@@ -1059,11 +1347,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El movimiento en múltiples planos aumenta la lubricación articular de las facetas lumbares y sacroilíacas.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "El movimiento en múltiples planos aumenta la lubricación articular de las facetas lumbares y sacroilíacas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec333",
@@ -1073,11 +1365,15 @@
     "duracion_segundos": 45,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Estira toda la cadena posterior que comprime el nervio ciático, proporcionando alivio inmediato y duradero.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "Estira toda la cadena posterior que comprime el nervio ciático, proporcionando alivio inmediato y duradero.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec334",
@@ -1087,13 +1383,17 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Permite estirar el piriforme en posición de pie, más funcional y accesible en etapas avanzadas del embarazo.",
+    "video_url": "",
     "alertas_especificas": [
       "No bajar demasiado"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "Permite estirar el piriforme en posición de pie, más funcional y accesible en etapas avanzadas del embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec335",
@@ -1103,11 +1403,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "La movilidad del sacro mejora el drenaje venoso y linfático de la pelvis, reduciendo la inflamación que irrita el nervio ciático.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "La movilidad del sacro mejora el drenaje venoso y linfático de la pelvis, reduciendo la inflamación que irrita el nervio ciático.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec336",
@@ -1117,11 +1421,15 @@
     "duracion_segundos": 60,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La visualización dirigida activa mecanismos de modulación del dolor a nivel cortical, reduciendo la percepción del dolor crónico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.706000"
+    "beneficio_medico": "La visualización dirigida activa mecanismos de modulación del dolor a nivel cortical, reduciendo la percepción del dolor crónico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.706000",
+    "updated_date": "2026-05-14T18:54:32.706000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec329",
@@ -1131,11 +1439,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece la musculatura de la pantorrilla, principal bomba del retorno venoso. Previene varices e hinchazón de piernas.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "Fortalece la musculatura de la pantorrilla, principal bomba del retorno venoso. Previene varices e hinchazón de piernas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32a",
@@ -1145,11 +1457,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece pectoral mayor y tríceps. Mejora la postura al abrir el pecho, contrarrestando la cifosis que genera el peso mamario.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "Fortalece pectoral mayor y tríceps. Mejora la postura al abrir el pecho, contrarrestando la cifosis que genera el peso mamario.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32b",
@@ -1159,13 +1475,17 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece el glúteo medio, clave para la estabilidad pélvica. Su déficit causa la marcha de Trendelenburg común en el embarazo.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay dolor pélvico"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "Fortalece el glúteo medio, clave para la estabilidad pélvica. Su déficit causa la marcha de Trendelenburg común en el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32c",
@@ -1175,11 +1495,15 @@
     "duracion_segundos": 80,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Activa la cadena muscular posterior y los estabilizadores profundos, mejorando el control motor global.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "Activa la cadena muscular posterior y los estabilizadores profundos, mejorando el control motor global.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32d",
@@ -1189,11 +1513,15 @@
     "duracion_segundos": 30,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "Contrarresta la postura cifótica y el peso mamario, aliviando la tensión en dorsal ancho y romboides.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "Contrarresta la postura cifótica y el peso mamario, aliviando la tensión en dorsal ancho y romboides.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32e",
@@ -1203,13 +1531,17 @@
     "duracion_segundos": 30,
     "orden": 8,
     "imagen_url": "",
-    "beneficio_medico": "La respiración enfática activa el sistema nervioso simpático de forma controlada, aumentando la alerta y la energía.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si te sientes mareada"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "La respiración enfática activa el sistema nervioso simpático de forma controlada, aumentando la alerta y la energía.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec32f",
@@ -1219,11 +1551,15 @@
     "duracion_segundos": 60,
     "orden": 9,
     "imagen_url": "",
-    "beneficio_medico": "La transición de ejercicio a reposo reduce gradualmente el cortisol y estabiliza la frecuencia cardíaca, seg uro para el feto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.692000"
+    "beneficio_medico": "La transición de ejercicio a reposo reduce gradualmente el cortisol y estabiliza la frecuencia cardíaca, seg uro para el feto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.692000",
+    "updated_date": "2026-05-14T18:54:32.692000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec327",
@@ -1233,13 +1569,17 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La marcha activa el metabolismo, mejora la circulación y libera endorfinas sin impacto articular, ideal para el segundo trimestre.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si sientes mareo"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.691000"
+    "beneficio_medico": "La marcha activa el metabolismo, mejora la circulación y libera endorfinas sin impacto articular, ideal para el segundo trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.691000",
+    "updated_date": "2026-05-14T18:54:32.691000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a6876bc7c747ebec328",
@@ -1249,13 +1589,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Las sentadillas fortalecen el tren inferior completo, preparando el cuerpo para el esfuerzo del trabajo de parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Rodillas no deben pasar la punta de los pies"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:54:32.691000"
+    "beneficio_medico": "Las sentadillas fortalecen el tren inferior completo, preparando el cuerpo para el esfuerzo del trabajo de parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:54:32.691000",
+    "updated_date": "2026-05-14T18:54:32.691000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec321",
@@ -1265,13 +1609,17 @@
     "duracion_segundos": 100,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece el pubo-coccigeo. Reduce el riesgo de incontinencia urinaria post-parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No aguantes la respiración"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.643000"
+    "beneficio_medico": "Fortalece el pubo-coccigeo. Reduce el riesgo de incontinencia urinaria post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.643000",
+    "updated_date": "2026-05-14T18:53:20.643000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec322",
@@ -1281,13 +1629,17 @@
     "duracion_segundos": 40,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Entrena las fibras musculares rápidas del suelo pélvico, mejorando la respuesta refleja.",
+    "video_url": "",
     "alertas_especificas": [
       "Mantén la respiración fluida"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.643000"
+    "beneficio_medico": "Entrena las fibras musculares rápidas del suelo pélvico, mejorando la respuesta refleja.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.643000",
+    "updated_date": "2026-05-14T18:53:20.643000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec323",
@@ -1297,11 +1649,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Mejora el control neuromuscular progresivo del suelo pélvico, esencial para el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.643000"
+    "beneficio_medico": "Mejora el control neuromuscular progresivo del suelo pélvico, esencial para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.643000",
+    "updated_date": "2026-05-14T18:53:20.643000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec324",
@@ -1311,11 +1667,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La relajación del suelo pélvico es fundamental para el parto. La hipertonicidad puede dificultar el expulsivo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.643000"
+    "beneficio_medico": "La relajación del suelo pélvico es fundamental para el parto. La hipertonicidad puede dificultar el expulsivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.643000",
+    "updated_date": "2026-05-14T18:53:20.643000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec320",
@@ -1325,13 +1685,17 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La identificación correcta del suelo pélvico es el primer paso para su entrenamiento efectivo.",
+    "video_url": "",
     "alertas_especificas": [
       "No practicar con vejiga llena"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.642000"
+    "beneficio_medico": "La identificación correcta del suelo pélvico es el primer paso para su entrenamiento efectivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.642000",
+    "updated_date": "2026-05-14T18:53:20.642000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec318",
@@ -1341,13 +1705,17 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "El transverso del abdomen es el principal estabilizador de la columna. Su activación previene el dolor lumbar y soporta el peso del útero.",
+    "video_url": "",
     "alertas_especificas": [
       "No aguantes la respiración"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "El transverso del abdomen es el principal estabilizador de la columna. Su activación previene el dolor lumbar y soporta el peso del útero.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec319",
@@ -1357,11 +1725,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La movilidad pélvica fortalece los estabilizadores lumbares y mejora la propiocepción, esencial para mantener la postura durante el embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "La movilidad pélvica fortalece los estabilizadores lumbares y mejora la propiocepción, esencial para mantener la postura durante el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31a",
@@ -1371,13 +1743,17 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El bird dog activa los músculos multífidos y los estabilizadores profundos de la columna sin generar presión abdominal excesiva.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si hay dolor lumbar"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "El bird dog activa los músculos multífidos y los estabilizadores profundos de la columna sin generar presión abdominal excesiva.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31b",
@@ -1387,13 +1763,17 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece glúteos e isquiotibiales, aliviando la carga lumbar. Los glúteos fuertes estabilizan la pelvis durante el embarazo.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar boca arriba después de la semana 20"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "Fortalece glúteos e isquiotibiales, aliviando la carga lumbar. Los glúteos fuertes estabilizan la pelvis durante el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31c",
@@ -1403,13 +1783,17 @@
     "duracion_segundos": 90,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La sentadilla fortalece cuádriceps, glúteos e isquiotibiales, preparando el cuerpo para el trabajo de parto y reduciendo el riesgo de lesiones.",
+    "video_url": "",
     "alertas_especificas": [
       "Las rodillas no deben pasar la punta de los pies"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "La sentadilla fortalece cuádriceps, glúteos e isquiotibiales, preparando el cuerpo para el trabajo de parto y reduciendo el riesgo de lesiones.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31d",
@@ -1419,13 +1803,17 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece los extensores de columna y glúteos, esenciales para mantener la postura correcta conforme crece el abdomen.",
+    "video_url": "",
     "alertas_especificas": [
       "No arquear la espalda en exceso"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "Fortalece los extensores de columna y glúteos, esenciales para mantener la postura correcta conforme crece el abdomen.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31e",
@@ -1435,11 +1823,15 @@
     "duracion_segundos": 30,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "Estira el recto abdominal y mejora la postura, contrario a la flexión que tiende a dominar en el embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "Estira el recto abdominal y mejora la postura, contrario a la flexión que tiende a dominar en el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec31f",
@@ -1449,11 +1841,15 @@
     "duracion_segundos": 60,
     "orden": 8,
     "imagen_url": "",
-    "beneficio_medico": "La coordinación respiración-core es fundamental para proteger la columna durante todos los movimientos del embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.631000"
+    "beneficio_medico": "La coordinación respiración-core es fundamental para proteger la columna durante todos los movimientos del embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.631000",
+    "updated_date": "2026-05-14T18:53:20.631000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec311",
@@ -1463,11 +1859,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La movilización rítmica de columna descomprime los discos lumbares y estira los músculos paravertebrales, principal causa del dolor lumbar en el embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "La movilización rítmica de columna descomprime los discos lumbares y estira los músculos paravertebrales, principal causa del dolor lumbar en el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec312",
@@ -1477,11 +1877,15 @@
     "duracion_segundos": 45,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Estira toda la cadena posterior (isquiotibiales, glúteos, lumbar) que se acorta y tensa con el peso del útero.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "Estira toda la cadena posterior (isquiotibiales, glúteos, lumbar) que se acorta y tensa con el peso del útero.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec313",
@@ -1491,13 +1895,17 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El piriforme comprimido puede irritar el nervio ciático. Estirar este músculo alivia la ciática embarazada.",
+    "video_url": "",
     "alertas_especificas": [
       "No boca arriba después de la semana 20"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "El piriforme comprimido puede irritar el nervio ciático. Estirar este músculo alivia la ciática embarazada.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec314",
@@ -1507,11 +1915,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza las facétas articulares de la columna lumbar y estira los rotadores profundos, aliviando la rigidez y el dolor lumbar.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "Moviliza las facétas articulares de la columna lumbar y estira los rotadores profundos, aliviando la rigidez y el dolor lumbar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec315",
@@ -1521,11 +1933,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Estira el cuadrado lumbar y los intercostales, aliviando la compresión lateral que aumenta con el crecimiento del abdomen.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "Estira el cuadrado lumbar y los intercostales, aliviando la compresión lateral que aumenta con el crecimiento del abdomen.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec316",
@@ -1535,13 +1951,17 @@
     "duracion_segundos": 90,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Los glúteos son el principal soporte posterior de la pelvis. Fortalecerlos reduce la sobrecarga sobre la columna lumbar.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar boca arriba después de la semana 20"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "Los glúteos son el principal soporte posterior de la pelvis. Fortalecerlos reduce la sobrecarga sobre la columna lumbar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061a2076bc7c747ebec317",
@@ -1551,11 +1971,15 @@
     "duracion_segundos": 60,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La posición lateral con almohadas neutraliza la columna lumbar, aliviando la compresión discal que se acumula durante el día.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:53:20.614000"
+    "beneficio_medico": "La posición lateral con almohadas neutraliza la columna lumbar, aliviando la compresión discal que se acumula durante el día.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:53:20.614000",
+    "updated_date": "2026-05-14T18:53:20.614000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec307",
@@ -1565,11 +1989,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "El estiramiento matutino activa la circulación linfática y sanguínea, reduciendo la rigidez articular típica del embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "El estiramiento matutino activa la circulación linfática y sanguínea, reduciendo la rigidez articular típica del embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec308",
@@ -1579,13 +2007,17 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Estira los glúteos y los flexores de cadera, aliviando la tensión lumbar acumulada durante el sueño.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar si hay sangrado vaginal"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "Estira los glúteos y los flexores de cadera, aliviando la tensión lumbar acumulada durante el sueño.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec309",
@@ -1595,11 +2027,15 @@
     "duracion_segundos": 30,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza las articulaciones de la cadera y la zona sacroilíaca, muy rígidas por la mañana, mejorando el rango de movimiento.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "Moviliza las articulaciones de la cadera y la zona sacroilíaca, muy rígidas por la mañana, mejorando el rango de movimiento.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec30a",
@@ -1609,11 +2045,15 @@
     "duracion_segundos": 45,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La movilización de columna en gato-vaca descomprime los discos intervertebrales y activa los estabilizadores profundos de la columna.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "La movilización de columna en gato-vaca descomprime los discos intervertebrales y activa los estabilizadores profundos de la columna.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec30b",
@@ -1623,11 +2063,15 @@
     "duracion_segundos": 30,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Descomprime la columna vertebral bajo el peso del útero en crecimiento y estira la cadena muscular posterior.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "Descomprime la columna vertebral bajo el peso del útero en crecimiento y estira la cadena muscular posterior.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec30c",
@@ -1637,11 +2081,15 @@
     "duracion_segundos": 30,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "La rotación de tobillos activa la bomba muscular de la pantorrilla, impulsando el retorno venoso y reduciendo la hinchazón.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "La rotación de tobillos activa la bomba muscular de la pantorrilla, impulsando el retorno venoso y reduciendo la hinchazón.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec30d",
@@ -1651,13 +2099,17 @@
     "duracion_segundos": 60,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "Los isquiotibiales acortados contribuyen a la hiperlordosis lumbar del embarazo. Estirarlos reduce el dolor de espalda.",
+    "video_url": "",
     "alertas_especificas": [
       "No forzar la inclinación"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "Los isquiotibiales acortados contribuyen a la hiperlordosis lumbar del embarazo. Estirarlos reduce el dolor de espalda.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec30e",
@@ -1667,11 +2119,15 @@
     "duracion_segundos": 60,
     "orden": 8,
     "imagen_url": "",
-    "beneficio_medico": "La gratitud consciente activa el sistema de recompensa cerebral, liberando oxitocina y reduciendo el cortisol matutino.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.038000"
+    "beneficio_medico": "La gratitud consciente activa el sistema de recompensa cerebral, liberando oxitocina y reduciendo el cortisol matutino.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.038000",
+    "updated_date": "2026-05-14T18:52:18.038000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec302",
@@ -1681,11 +2137,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La observación mindful de la respiración desarrolla la consciencia corporal necesaria para usar la respiración como herramienta durante el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.021000"
+    "beneficio_medico": "La observación mindful de la respiración desarrolla la consciencia corporal necesaria para usar la respiración como herramienta durante el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.021000",
+    "updated_date": "2026-05-14T18:52:18.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec303",
@@ -1695,11 +2155,15 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La respiración diafragmática maximiza el intercambio de oxígeno, mejora el retorno venoso y masajea suavemente los órganos abdominales.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.021000"
+    "beneficio_medico": "La respiración diafragmática maximiza el intercambio de oxígeno, mejora el retorno venoso y masajea suavemente los órganos abdominales.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.021000",
+    "updated_date": "2026-05-14T18:52:18.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec304",
@@ -1709,13 +2173,17 @@
     "duracion_segundos": 180,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El patrón 4-7-8 activa el sistema nervioso parasimpático con mayor intensidad, es especialmente eficaz contra la ansiedad prenatal.",
+    "video_url": "",
     "alertas_especificas": [
       "Reduce los tiempos si sientes mareo"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.021000"
+    "beneficio_medico": "El patrón 4-7-8 activa el sistema nervioso parasimpático con mayor intensidad, es especialmente eficaz contra la ansiedad prenatal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.021000",
+    "updated_date": "2026-05-14T18:52:18.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec305",
@@ -1725,11 +2193,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El conteo de la respiración ancla la mente al presente, reduciendo el pensamiento rumiativos y la ansiedad prenatal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.021000"
+    "beneficio_medico": "El conteo de la respiración ancla la mente al presente, reduciendo el pensamiento rumiativos y la ansiedad prenatal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.021000",
+    "updated_date": "2026-05-14T18:52:18.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619e276bc7c747ebec306",
@@ -1739,11 +2211,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La sonrisa genuina activa el nervio facial y desencadena la liberación de endorfinas, mejorando el estado de ánimo de forma inmediata.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:52:18.021000"
+    "beneficio_medico": "La sonrisa genuina activa el nervio facial y desencadena la liberación de endorfinas, mejorando el estado de ánimo de forma inmediata.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:52:18.021000",
+    "updated_date": "2026-05-14T18:52:18.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f7",
@@ -1753,11 +2229,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración diafragmática activa el sistema nervioso parasimpático, reduciendo cortisol y mejorando la oxigenación fetal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "La respiración diafragmática activa el sistema nervioso parasimpático, reduciendo cortisol y mejorando la oxigenación fetal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f8",
@@ -1767,11 +2247,15 @@
     "duracion_segundos": 30,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la tensión acumulada en trapecios y romboides, muy común en el embarazo por los cambios posturales.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "Alivia la tensión acumulada en trapecios y romboides, muy común en el embarazo por los cambios posturales.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f9",
@@ -1781,11 +2265,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Estira los músculos intercostales y cuadrado lumbar, aliviando la compresión costal que produce el crecimiento uterino.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "Estira los músculos intercostales y cuadrado lumbar, aliviando la compresión costal que produce el crecimiento uterino.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2fa",
@@ -1795,11 +2283,15 @@
     "duracion_segundos": 30,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza las articulaciones sacroilíacas y mejora la circulación pélvica, reduciendo la presión en la zona lumbar.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "Moviliza las articulaciones sacroilíacas y mejora la circulación pélvica, reduciendo la presión en la zona lumbar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2fb",
@@ -1809,11 +2301,15 @@
     "duracion_segundos": 30,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "Activa la circulación de miembros inferiores y fortalece suavemente los flexores de cadera sin impacto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "Activa la circulación de miembros inferiores y fortalece suavemente los flexores de cadera sin impacto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2fc",
@@ -1823,11 +2319,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "Previene calambres nocturnos, muy frecuentes en el embarazo, y mejora el retorno venoso previniendo varices.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "Previene calambres nocturnos, muy frecuentes en el embarazo, y mejora el retorno venoso previniendo varices.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2fd",
@@ -1837,11 +2337,15 @@
     "duracion_segundos": 60,
     "orden": 7,
     "imagen_url": "",
-    "beneficio_medico": "La conexión mater no fetal consciente reduce el estrés y mejora el vínculo prenatal. El cortisol bajo beneficia al bebé.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.103000"
+    "beneficio_medico": "La conexión mater no fetal consciente reduce el estrés y mejora el vínculo prenatal. El cortisol bajo beneficia al bebé.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.103000",
+    "updated_date": "2026-05-14T18:51:19.103000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f1",
@@ -1851,11 +2355,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración diafragmática lenta estimula el nervio vago, que regula las náuseas y el vómito a través del sistema nervioso parasimpático.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "La respiración diafragmática lenta estimula el nervio vago, que regula las náuseas y el vómito a través del sistema nervioso parasimpático.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f2",
@@ -1865,11 +2373,15 @@
     "duracion_segundos": 120,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La acupresión en el punto Neiguan (P6) ha demostrado en estudios clínicos reducir significativamente las náuseas y vómitos del embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "La acupresión en el punto Neiguan (P6) ha demostrado en estudios clínicos reducir significativamente las náuseas y vómitos del embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f3",
@@ -1879,11 +2391,15 @@
     "duracion_segundos": 45,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La tensión en cuello y trapecio puede agravar las náuseas. La liberación muscular suave reduce esta respuesta refleja.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "La tensión en cuello y trapecio puede agravar las náuseas. La liberación muscular suave reduce esta respuesta refleja.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f4",
@@ -1893,13 +2409,17 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Esta posición reduce la presión intraabdominal y facilita la relajación del diafragma, lo que puede aliviar las náuseas.",
+    "video_url": "",
     "alertas_especificas": [
       "Deja suficiente espacio para la barriga al separar las rodillas"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "Esta posición reduce la presión intraabdominal y facilita la relajación del diafragma, lo que puede aliviar las náuseas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f5",
@@ -1909,11 +2429,15 @@
     "duracion_segundos": 60,
     "orden": 5,
     "imagen_url": "",
-    "beneficio_medico": "La respiración nasal alterna equilibra el sistema nervioso autónomo y puede reducir la respuesta de náuseas asociada al estrés.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "La respiración nasal alterna equilibra el sistema nervioso autónomo y puede reducir la respuesta de náuseas asociada al estrés.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a0619a776bc7c747ebec2f6",
@@ -1923,11 +2447,15 @@
     "duracion_segundos": 60,
     "orden": 6,
     "imagen_url": "",
-    "beneficio_medico": "El descanso en posición lateral optimiza el flujo sanguíneo uterino y reduce la presión gástrica, coadyuvando el alivio de náuseas.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:51:19.081000"
+    "beneficio_medico": "El descanso en posición lateral optimiza el flujo sanguíneo uterino y reduce la presión gástrica, coadyuvando el alivio de náuseas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:51:19.081000",
+    "updated_date": "2026-05-14T18:51:19.081000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061792b9650a6f67bed88b",
@@ -1937,13 +2465,17 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Activa los primeros impulsos nerviosos hacia el suelo pélvico, iniciando la recuperación de la continencia y el tono muscular.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si sientes dolor. Consulta con tu matrona si no sientes nada tras 1 semana de práctica"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:26.355000"
+    "beneficio_medico": "Activa los primeros impulsos nerviosos hacia el suelo pélvico, iniciando la recuperación de la continencia y el tono muscular.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:26.355000",
+    "updated_date": "2026-05-14T18:42:26.355000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061792b9650a6f67bed88c",
@@ -1953,11 +2485,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Previene la trombosis venosa postparto, activa el retorno venoso y reduce el edema de los tobillos, muy frecuente en la primera semana.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:26.355000"
+    "beneficio_medico": "Previene la trombosis venosa postparto, activa el retorno venoso y reduce el edema de los tobillos, muy frecuente en la primera semana.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:26.355000",
+    "updated_date": "2026-05-14T18:42:26.355000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061792b9650a6f67bed88d",
@@ -1967,11 +2503,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El autocuidado emocional en la primera semana postparto reduce el riesgo de depresión perinatal y facilita la adaptación a la maternidad.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:26.355000"
+    "beneficio_medico": "El autocuidado emocional en la primera semana postparto reduce el riesgo de depresión perinatal y facilita la adaptación a la maternidad.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:26.355000",
+    "updated_date": "2026-05-14T18:42:26.355000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061792b9650a6f67bed88a",
@@ -1981,11 +2521,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Reactiva el transverso del abdomen de forma segura, base de la recuperación postparto sin dañar la cicatriz ni el periné.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:26.354000"
+    "beneficio_medico": "Reactiva el transverso del abdomen de forma segura, base de la recuperación postparto sin dañar la cicatriz ni el periné.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:26.354000",
+    "updated_date": "2026-05-14T18:42:26.355000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed883",
@@ -1995,11 +2539,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Contrarresta la compresión nocturna de los discos vertebrales y activa la musculatura estabilizadora de la columna.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.582000"
+    "beneficio_medico": "Contrarresta la compresión nocturna de los discos vertebrales y activa la musculatura estabilizadora de la columna.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.582000",
+    "updated_date": "2026-05-14T18:42:05.582000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed884",
@@ -2009,11 +2557,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Activa la bomba venosa gemelar, previniendo el edema matutino y las varices, tan frecuentes durante el embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.582000"
+    "beneficio_medico": "Activa la bomba venosa gemelar, previniendo el edema matutino y las varices, tan frecuentes durante el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.582000",
+    "updated_date": "2026-05-14T18:42:05.582000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed885",
@@ -2023,11 +2575,15 @@
     "duracion_segundos": 120,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Activa el metabolismo, eleva el estado de ánimo mediante endorfinas y mejora la circulación en las primeras horas del día.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.582000"
+    "beneficio_medico": "Activa el metabolismo, eleva el estado de ánimo mediante endorfinas y mejora la circulación en las primeras horas del día.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.582000",
+    "updated_date": "2026-05-14T18:42:05.582000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed886",
@@ -2037,11 +2593,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Las prácticas de gratitud reducen el estrés prenatal y favorecen el vínculo materno-fetal desde las primeras etapas.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.582000"
+    "beneficio_medico": "Las prácticas de gratitud reducen el estrés prenatal y favorecen el vínculo materno-fetal desde las primeras etapas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.582000",
+    "updated_date": "2026-05-14T18:42:05.582000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed880",
@@ -2051,13 +2611,17 @@
     "duracion_segundos": 180,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Trabaja las fibras de contracción lenta (tipo I), responsables del tono basal del suelo pélvico y la continencia.",
+    "video_url": "",
     "alertas_especificas": [
       "No contraigas los glúteos ni los abdominales al hacer Kegel"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.574000"
+    "beneficio_medico": "Trabaja las fibras de contracción lenta (tipo I), responsables del tono basal del suelo pélvico y la continencia.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.574000",
+    "updated_date": "2026-05-14T18:42:05.574000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed881",
@@ -2067,11 +2631,15 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Entrena la propiocepción y el control motor del suelo pélvico en toda su amplitud.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.574000"
+    "beneficio_medico": "Entrena la propiocepción y el control motor del suelo pélvico en toda su amplitud.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.574000",
+    "updated_date": "2026-05-14T18:42:05.574000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed882",
@@ -2081,11 +2649,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Un suelo pélvico que sabe relajarse es tan importante como uno que sabe contraerse. Clave para evitar desgarros en el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.574000"
+    "beneficio_medico": "Un suelo pélvico que sabe relajarse es tan importante como uno que sabe contraerse. Clave para evitar desgarros en el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.574000",
+    "updated_date": "2026-05-14T18:42:05.574000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87f",
@@ -2095,11 +2667,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Conecta la conciencia neuromuscular con el suelo pélvico, base imprescindible para un entrenamiento efectivo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.573000"
+    "beneficio_medico": "Conecta la conciencia neuromuscular con el suelo pélvico, base imprescindible para un entrenamiento efectivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.573000",
+    "updated_date": "2026-05-14T18:42:05.573000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87b",
@@ -2109,13 +2685,17 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Activa el sistema nerviosos parasimpático, reduciendo el cortisol y la frecuencia cardíaca. Ideal para contracciones de Braxton Hicks.",
+    "video_url": "",
     "alertas_especificas": [
       "Si sientes mareo, respira normal unos minutos y vuelve"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.565000"
+    "beneficio_medico": "Activa el sistema nerviosos parasimpático, reduciendo el cortisol y la frecuencia cardíaca. Ideal para contracciones de Braxton Hicks.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.565000",
+    "updated_date": "2026-05-14T18:42:05.565000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87c",
@@ -2125,11 +2705,15 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Simula la respiración necesaria en la fase de transición del parto, ayudando a no empujar antes de tiempo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.565000"
+    "beneficio_medico": "Simula la respiración necesaria en la fase de transición del parto, ayudando a no empujar antes de tiempo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.565000",
+    "updated_date": "2026-05-14T18:42:05.565000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87d",
@@ -2139,11 +2723,15 @@
     "duracion_segundos": 120,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Entrena el cerebro a mantener la respiración consciente ante el estímulo dolor, reduciendo la percepción del dolor del parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.565000"
+    "beneficio_medico": "Entrena el cerebro a mantener la respiración consciente ante el estímulo dolor, reduciendo la percepción del dolor del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.565000",
+    "updated_date": "2026-05-14T18:42:05.565000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87e",
@@ -2153,11 +2741,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Coordina la respiración con la relajación del suelo pélvico, preparando mentalmente el mecanismo del parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.565000"
+    "beneficio_medico": "Coordina la respiración con la relajación del suelo pélvico, preparando mentalmente el mecanismo del parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.565000",
+    "updated_date": "2026-05-14T18:42:05.565000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed877",
@@ -2167,11 +2759,15 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Reduce la presión sobre la columna vertebral y facilita el giro del bebé hacia la posición óptima para el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.556000"
+    "beneficio_medico": "Reduce la presión sobre la columna vertebral y facilita el giro del bebé hacia la posición óptima para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.556000",
+    "updated_date": "2026-05-14T18:42:05.556000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed878",
@@ -2181,13 +2777,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Abre el diámetro pélvico hasta un 30% adicional. Estira el periné preparando el tejido para el expulsivo.",
+    "video_url": "",
     "alertas_especificas": [
       "Evitar si el bebé está en presentación de nalgas"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.556000"
+    "beneficio_medico": "Abre el diámetro pélvico hasta un 30% adicional. Estira el periné preparando el tejido para el expulsivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.556000",
+    "updated_date": "2026-05-14T18:42:05.556000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed879",
@@ -2197,11 +2797,15 @@
     "duracion_segundos": 120,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Maximiza la apertura de la pelvis, especialmente del sacro posterior, facilitando el descenso y rotación del bebé.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.556000"
+    "beneficio_medico": "Maximiza la apertura de la pelvis, especialmente del sacro posterior, facilitando el descenso y rotación del bebé.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.556000",
+    "updated_date": "2026-05-14T18:42:05.556000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed87a",
@@ -2211,11 +2815,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La posición vertical aprovecha la gravedad, reduciendo la duración del parto y la necesidad de instrumentación.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.556000"
+    "beneficio_medico": "La posición vertical aprovecha la gravedad, reduciendo la duración del parto y la necesidad de instrumentación.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.556000",
+    "updated_date": "2026-05-14T18:42:05.556000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed873",
@@ -2225,11 +2833,15 @@
     "duracion_segundos": 180,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La relajación progresiva de Jacobson reduce el cortisol en un 20-30%, mejorando la calidad del sueño y reduciendo el estrés fetal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.547000"
+    "beneficio_medico": "La relajación progresiva de Jacobson reduce el cortisol en un 20-30%, mejorando la calidad del sueño y reduciendo el estrés fetal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.547000",
+    "updated_date": "2026-05-14T18:42:05.547000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed874",
@@ -2239,11 +2851,15 @@
     "duracion_segundos": 180,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La hipnosis prenatal y visualización positiva reduce el miedo al parto, mejora la sensación de control y puede reducir la duración del trabajo de parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.547000"
+    "beneficio_medico": "La hipnosis prenatal y visualización positiva reduce el miedo al parto, mejora la sensación de control y puede reducir la duración del trabajo de parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.547000",
+    "updated_date": "2026-05-14T18:42:05.547000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed875",
@@ -2253,11 +2869,15 @@
     "duracion_segundos": 120,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "La respiración prolongada activa el nervio vago, reduciendo la frecuencia cardíaca y preparando el cuerpo para el descanso.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.547000"
+    "beneficio_medico": "La respiración prolongada activa el nervio vago, reduciendo la frecuencia cardíaca y preparando el cuerpo para el descanso.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.547000",
+    "updated_date": "2026-05-14T18:42:05.547000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed876",
@@ -2267,11 +2887,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El contacto conşciante del vientre y las emociones positivas liberan oxitocina, fortaleciendo el vínculo prenatal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.547000"
+    "beneficio_medico": "El contacto conşciante del vientre y las emociones positivas liberan oxitocina, fortaleciendo el vínculo prenatal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.547000",
+    "updated_date": "2026-05-14T18:42:05.547000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86f",
@@ -2281,11 +2905,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza las vértebras lumbares y dorsal, aliviando la compresión discal causada por el peso del útero.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.536000"
+    "beneficio_medico": "Moviliza las vértebras lumbares y dorsal, aliviando la compresión discal causada por el peso del útero.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.536000",
+    "updated_date": "2026-05-14T18:42:05.536000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed870",
@@ -2295,11 +2923,15 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Estira la musculatura paravertebral y los romboides, aliviando la tensión acumulada por la lordosis gestacional.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.536000"
+    "beneficio_medico": "Estira la musculatura paravertebral y los romboides, aliviando la tensión acumulada por la lordosis gestacional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.536000",
+    "updated_date": "2026-05-14T18:42:05.536000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed871",
@@ -2309,11 +2941,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Estira los cuadrados lumbares y los intercostales, aliviando el dolor lateral de espalda frecuente en el segundo trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.536000"
+    "beneficio_medico": "Estira los cuadrados lumbares y los intercostales, aliviando el dolor lateral de espalda frecuente en el segundo trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.536000",
+    "updated_date": "2026-05-14T18:42:05.536000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed872",
@@ -2323,11 +2959,15 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La posición lateral izquierda optimiza la circulación hacia la placenta y reduce la presión sobre la vena cava inferior.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.536000"
+    "beneficio_medico": "La posición lateral izquierda optimiza la circulación hacia la placenta y reduce la presión sobre la vena cava inferior.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.536000",
+    "updated_date": "2026-05-14T18:42:05.536000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86b",
@@ -2337,11 +2977,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza las articulaciones sacroilíacas, alivia la tensión pélvica y mejora la circulación en el segundo trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.523000"
+    "beneficio_medico": "Moviliza las articulaciones sacroilíacas, alivia la tensión pélvica y mejora la circulación en el segundo trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.523000",
+    "updated_date": "2026-05-14T18:42:05.523000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86c",
@@ -2351,11 +2995,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la compresión del nervio ciático y mejora el flujo sanguíneo hacia la placenta.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.523000"
+    "beneficio_medico": "Alivia la compresión del nervio ciático y mejora el flujo sanguíneo hacia la placenta.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.523000",
+    "updated_date": "2026-05-14T18:42:05.523000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86d",
@@ -2365,11 +3013,15 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Abre los aductores y moviliza la cadera en todos los planos, aliviando la rigidez articular del segundo trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.523000"
+    "beneficio_medico": "Abre los aductores y moviliza la cadera en todos los planos, aliviando la rigidez articular del segundo trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.523000",
+    "updated_date": "2026-05-14T18:42:05.523000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86e",
@@ -2379,13 +3031,17 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Estira los músculos internos del muslo y abre la pelvis, preparando el cuerpo para el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Evitar si tienes dolor pélvico o síndrome de la sífisis púbica"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.523000"
+    "beneficio_medico": "Estira los músculos internos del muslo y abre la pelvis, preparando el cuerpo para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.523000",
+    "updated_date": "2026-05-14T18:42:05.523000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed867",
@@ -2395,11 +3051,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Establece la conexión inicial madre-bebé y calma el sistema nervioso, reduciendo la ansiedad del primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.477000"
+    "beneficio_medico": "Establece la conexión inicial madre-bebé y calma el sistema nervioso, reduciendo la ansiedad del primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.477000",
+    "updated_date": "2026-05-14T18:42:05.477000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed868",
@@ -2409,11 +3069,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Libera la tensión cervical acumulada por los cambios hormonales y el cansancio del primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.477000"
+    "beneficio_medico": "Libera la tensión cervical acumulada por los cambios hormonales y el cansancio del primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.477000",
+    "updated_date": "2026-05-14T18:42:05.477000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed869",
@@ -2423,11 +3087,15 @@
     "duracion_segundos": 45,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Mejora la postura y alivia la tensión en el trapecio, frecuente en las primeras semanas de embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.477000"
+    "beneficio_medico": "Mejora la postura y alivia la tensión en el trapecio, frecuente en las primeras semanas de embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.477000",
+    "updated_date": "2026-05-14T18:42:05.477000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a06177db9650a6f67bed86a",
@@ -2437,13 +3105,17 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Activa la circulación sin impacto, mejorando el retorno venoso y la oxigenación sin riesgo en el primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si sientes mareo o náuseas"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:42:05.477000"
+    "beneficio_medico": "Activa la circulación sin impacto, mejorando el retorno venoso y la oxigenación sin riesgo en el primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:42:05.477000",
+    "updated_date": "2026-05-14T18:42:05.477000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed837",
@@ -2453,11 +3125,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza toda la columna vertebral, aliviando la compresión discal causada por el peso del útero. Reduce el dolor lumbar crónico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.063000"
+    "beneficio_medico": "Moviliza toda la columna vertebral, aliviando la compresión discal causada por el peso del útero. Reduce el dolor lumbar crónico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.063000",
+    "updated_date": "2026-05-14T18:40:20.063000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed838",
@@ -2467,11 +3143,15 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Descomprime las vértebras lumbares y el sacro, y estira los músculos paravertebrales. Ideal para el dolor lumbar gestacional.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.063000"
+    "beneficio_medico": "Descomprime las vértebras lumbares y el sacro, y estira los músculos paravertebrales. Ideal para el dolor lumbar gestacional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.063000",
+    "updated_date": "2026-05-14T18:40:20.063000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed839",
@@ -2481,11 +3161,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Estira la musculatura paravertebral y los cuadrados lumbares, aliviando los espasmos musculares frecuentes en el segundo trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.063000"
+    "beneficio_medico": "Estira la musculatura paravertebral y los cuadrados lumbares, aliviando los espasmos musculares frecuentes en el segundo trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.063000",
+    "updated_date": "2026-05-14T18:40:20.063000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed83a",
@@ -2495,13 +3179,17 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El piriforme comprime el nervio ciático durante el embarazo. Este estiramiento alivia la ciatalgia gestacional.",
+    "video_url": "",
     "alertas_especificas": [
       "Si tienes dolor de ciática intenso, consulta con tu fisioterapeuta"
     ],
     "semana_maxima": 20,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.063000"
+    "beneficio_medico": "El piriforme comprime el nervio ciático durante el embarazo. Este estiramiento alivia la ciatalgia gestacional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.063000",
+    "updated_date": "2026-05-14T18:40:20.063000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed833",
@@ -2511,13 +3199,17 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Abre la pelvis hasta 30% más, facilitando el descenso del bebé. Fortalece el periné y lo prepara para el parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Evitar si el bebé está en presentación de nalgas sin indicación médica"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.054000"
+    "beneficio_medico": "Abre la pelvis hasta 30% más, facilitando el descenso del bebé. Fortalece el periné y lo prepara para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.054000",
+    "updated_date": "2026-05-14T18:40:20.054000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed834",
@@ -2527,11 +3219,15 @@
     "duracion_segundos": 180,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "El movimiento oscilatorio relaja la musculatura pélvica y favorece el posicionamiento óptimo del bebé para el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.054000"
+    "beneficio_medico": "El movimiento oscilatorio relaja la musculatura pélvica y favorece el posicionamiento óptimo del bebé para el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.054000",
+    "updated_date": "2026-05-14T18:40:20.054000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed835",
@@ -2541,13 +3237,17 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Entrena la coordinación entre la respiración, el diafragma y el suelo pélvico para el momento del expulsivo.",
+    "video_url": "",
     "alertas_especificas": [
       "No realizar si hay placenta previa o se ha indicado reposo pélvico"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.054000"
+    "beneficio_medico": "Entrena la coordinación entre la respiración, el diafragma y el suelo pélvico para el momento del expulsivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.054000",
+    "updated_date": "2026-05-14T18:40:20.054000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed836",
@@ -2557,11 +3257,15 @@
     "duracion_segundos": 300,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La visualización positiva reduce el miedo al parto (tokofobia), disminuye la percepción del dolor y mejora los resultados obstétricos.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.054000"
+    "beneficio_medico": "La visualización positiva reduce el miedo al parto (tokofobia), disminuye la percepción del dolor y mejora los resultados obstétricos.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.054000",
+    "updated_date": "2026-05-14T18:40:20.054000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82f",
@@ -2571,11 +3275,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Reactiva el diafragma tras el parto y la posible epidural. Mejora la presión intraabdominal y reinicia la conexión con el suelo pélvico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.044000"
+    "beneficio_medico": "Reactiva el diafragma tras el parto y la posible epidural. Mejora la presión intraabdominal y reinicia la conexión con el suelo pélvico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.044000",
+    "updated_date": "2026-05-14T18:40:20.044000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed830",
@@ -2585,13 +3293,17 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Reactiva los receptores neuromusculares del suelo pélvico dañados durante el parto, iniciando la recuperación de la continencia.",
+    "video_url": "",
     "alertas_especificas": [
       "No realices si tienes puntos de sutura recientes o dolor intenso"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.044000"
+    "beneficio_medico": "Reactiva los receptores neuromusculares del suelo pélvico dañados durante el parto, iniciando la recuperación de la continencia.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.044000",
+    "updated_date": "2026-05-14T18:40:20.044000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed831",
@@ -2601,11 +3313,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la tensión cervical causada por las horas de lactancia y el cuidado del recién nacido, previniendo contracturas crónicas.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.044000"
+    "beneficio_medico": "Alivia la tensión cervical causada por las horas de lactancia y el cuidado del recién nacido, previniendo contracturas crónicas.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.044000",
+    "updated_date": "2026-05-14T18:40:20.044000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed832",
@@ -2615,11 +3331,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "El autocuidado emocional en el postparto reduce el riesgo de depresión postparto y promueve el vínculo madre-bebé.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.044000"
+    "beneficio_medico": "El autocuidado emocional en el postparto reduce el riesgo de depresión postparto y promueve el vínculo madre-bebé.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.044000",
+    "updated_date": "2026-05-14T18:40:20.044000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82b",
@@ -2629,11 +3349,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Moviliza la articulación sacroilíaca, aliviando la tensión pélvica y mejorando la circulación en el primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.036000"
+    "beneficio_medico": "Moviliza la articulación sacroilíaca, aliviando la tensión pélvica y mejorando la circulación en el primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.036000",
+    "updated_date": "2026-05-14T18:40:20.036000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82c",
@@ -2643,13 +3367,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la tensión lumbar y moviliza las vértebras lumbares, reduciendo el dolor de espalda frecuente en el primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [
       "No realices este ejercicio si tienes náuseas intensas"
     ],
     "semana_maxima": 12,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.036000"
+    "beneficio_medico": "Alivia la tensión lumbar y moviliza las vértebras lumbares, reduciendo el dolor de espalda frecuente en el primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.036000",
+    "updated_date": "2026-05-14T18:40:20.036000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82d",
@@ -2659,11 +3387,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "El psoas se acorta con el crecimiento uterino. Estirarlo previene dolor lumbar y mejora la postura gestacional.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.036000"
+    "beneficio_medico": "El psoas se acorta con el crecimiento uterino. Estirarlo previene dolor lumbar y mejora la postura gestacional.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.036000",
+    "updated_date": "2026-05-14T18:40:20.036000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82e",
@@ -2673,11 +3405,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Abre los aductores y la cadera, preparando la pelvis para el crecimiento del bebé durante el primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.036000"
+    "beneficio_medico": "Abre los aductores y la cadera, preparando la pelvis para el crecimiento del bebé durante el primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.036000",
+    "updated_date": "2026-05-14T18:40:20.036000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed827",
@@ -2687,11 +3423,15 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Activa la circulación de las piernas, combate el edema y libera endorfinas, mejorando el estado de ánimo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.021000"
+    "beneficio_medico": "Activa la circulación de las piernas, combate el edema y libera endorfinas, mejorando el estado de ánimo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.021000",
+    "updated_date": "2026-05-14T18:40:20.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed828",
@@ -2701,13 +3441,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece glúteos, cuádriceps e isquiotibiales. Mejora la estabilidad pélvica y prepara las piernas para el trabajo de parto.",
+    "video_url": "",
     "alertas_especificas": [
       "Para si sientes presión en la pelvis o dolor en las rodillas"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.021000"
+    "beneficio_medico": "Fortalece glúteos, cuádriceps e isquiotibiales. Mejora la estabilidad pélvica y prepara las piernas para el trabajo de parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.021000",
+    "updated_date": "2026-05-14T18:40:20.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed829",
@@ -2717,11 +3461,15 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece el manguito rotador y mejora la postura, compensando el peso del pecho que aumenta durante el embarazo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.021000"
+    "beneficio_medico": "Fortalece el manguito rotador y mejora la postura, compensando el peso del pecho que aumenta durante el embarazo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.021000",
+    "updated_date": "2026-05-14T18:40:20.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061714b9650a6f67bed82a",
@@ -2731,11 +3479,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Previene los calambres nocturnos en las piernas, muy frecuentes en el segundo trimestre, y mejora el retorno venoso.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:20.021000"
+    "beneficio_medico": "Previene los calambres nocturnos en las piernas, muy frecuentes en el segundo trimestre, y mejora el retorno venoso.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:20.021000",
+    "updated_date": "2026-05-14T18:40:20.021000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed823",
@@ -2745,11 +3497,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece los músculos elevadores del ano, previniendo la incontinencia urinaria de esfuerzo, muy común durante el embarazo y el postparto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.992000"
+    "beneficio_medico": "Fortalece los músculos elevadores del ano, previniendo la incontinencia urinaria de esfuerzo, muy común durante el embarazo y el postparto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.992000",
+    "updated_date": "2026-05-14T18:40:19.992000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed824",
@@ -2759,11 +3515,15 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Trabaja la musculatura de forma progresiva, mejorando la coordinación neuromuscular y la conciencia corporal del suelo pélvico.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.992000"
+    "beneficio_medico": "Trabaja la musculatura de forma progresiva, mejorando la coordinación neuromuscular y la conciencia corporal del suelo pélvico.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.992000",
+    "updated_date": "2026-05-14T18:40:19.992000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed825",
@@ -2773,13 +3533,17 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Entrena las fibras musculares de contracción rápida, fundamentales para responder ante esfuerzos súbitos como toser o estornudar.",
+    "video_url": "",
     "alertas_especificas": [
       "Detente si sientes molestias en la zona pélvica"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.992000"
+    "beneficio_medico": "Entrena las fibras musculares de contracción rápida, fundamentales para responder ante esfuerzos súbitos como toser o estornudar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.992000",
+    "updated_date": "2026-05-14T18:40:19.992000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed826",
@@ -2789,11 +3553,15 @@
     "duracion_segundos": 60,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "Tan importante como el fortalecimiento es la relajación. Un suelo pélvico que sabe relajarse facilita enormemente el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.992000"
+    "beneficio_medico": "Tan importante como el fortalecimiento es la relajación. Un suelo pélvico que sabe relajarse facilita enormemente el parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.992000",
+    "updated_date": "2026-05-14T18:40:19.992000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed81f",
@@ -2803,11 +3571,15 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Activa el nervio vago, reduciendo la frecuencia cardíaca y el cortisol. Aumenta la oxigenación fetal.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.984000"
+    "beneficio_medico": "Activa el nervio vago, reduciendo la frecuencia cardíaca y el cortisol. Aumenta la oxigenación fetal.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.984000",
+    "updated_date": "2026-05-14T18:40:19.984000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed820",
@@ -2817,13 +3589,17 @@
     "duracion_segundos": 120,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Técnica validada para reducir la ansiedad prenatal. Activa el sistema parasimpático, mejorando el descanso y la calidad del sueño.",
+    "video_url": "",
     "alertas_especificas": [
       "Si te mareas, respira con normalidad unos minutos antes de continuar"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.984000"
+    "beneficio_medico": "Técnica validada para reducir la ansiedad prenatal. Activa el sistema parasimpático, mejorando el descanso y la calidad del sueño.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.984000",
+    "updated_date": "2026-05-14T18:40:19.984000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed821",
@@ -2833,11 +3609,15 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Simula la respiración de pujo durante las contracciones, preparando el diafragma y los músculos abdominales para el expulsivo.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.984000"
+    "beneficio_medico": "Simula la respiración de pujo durante las contracciones, preparando el diafragma y los músculos abdominales para el expulsivo.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.984000",
+    "updated_date": "2026-05-14T18:40:19.984000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061713b9650a6f67bed822",
@@ -2847,11 +3627,15 @@
     "duracion_segundos": 90,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La relajación progresiva reduce los niveles de estrés oxidativo, beneficiando directamente el desarrollo del bebé.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:40:19.984000"
+    "beneficio_medico": "La relajación progresiva reduce los niveles de estrés oxidativo, beneficiando directamente el desarrollo del bebé.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:40:19.984000",
+    "updated_date": "2026-05-14T18:40:19.984000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5db",
@@ -2861,14 +3645,18 @@
     "duracion_segundos": 90,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Los círculos de cadera mejoran la movilidad de las articulaciones sacroilíacas y reducen la compresión lumbar.",
+    "video_url": "",
     "alertas_especificas": [
       "Recuerda no acostarte boca arriba después de la semana 16",
       "Si sientes mareo en posición de pie, realiza sentada"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.136000"
+    "beneficio_medico": "Los círculos de cadera mejoran la movilidad de las articulaciones sacroilíacas y reducen la compresión lumbar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.136000",
+    "updated_date": "2026-05-14T18:36:08.136000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5dc",
@@ -2878,14 +3666,18 @@
     "duracion_segundos": 60,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "El balanceo pélvico alivia la presión sobre los discos lumbares y estimula la circulación en la pelvis.",
+    "video_url": "",
     "alertas_especificas": [
       "Si el equilibrio es inestable, apóyate en la pared",
       "Movimiento suave y controlado"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.136000"
+    "beneficio_medico": "El balanceo pélvico alivia la presión sobre los discos lumbares y estimula la circulación en la pelvis.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.136000",
+    "updated_date": "2026-05-14T18:36:08.136000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5dd",
@@ -2895,14 +3687,18 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La técnica 4-7-8 activa el nervio vago, que es el regulador principal del sistema nervioso autónomo, reduciendo la percepción del dolor durante las contracciones.",
+    "video_url": "",
     "alertas_especificas": [
       "Si sientes mareo, vuelve a respiración normal",
       "No aguantes con fuerza, solo suavemente"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.136000"
+    "beneficio_medico": "La técnica 4-7-8 activa el nervio vago, que es el regulador principal del sistema nervioso autónomo, reduciendo la percepción del dolor durante las contracciones.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.136000",
+    "updated_date": "2026-05-14T18:36:08.136000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5de",
@@ -2912,13 +3708,17 @@
     "duracion_segundos": 120,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "La respiración de ola sincronizada con las contracciones reduce hasta un 40% la percepción del dolor en el parto natural.",
+    "video_url": "",
     "alertas_especificas": [
       "Esta técnica simula el trabajo de parto, es normal sentir emoción o nervios"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.136000"
+    "beneficio_medico": "La respiración de ola sincronizada con las contracciones reduce hasta un 40% la percepción del dolor en el parto natural.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.136000",
+    "updated_date": "2026-05-14T18:36:08.136000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5d6",
@@ -2928,14 +3728,18 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración abdominal activa el sistema nervioso parasimpático, reduciendo el cortisol materno y mejorando la oxigenación del bebé a través de la placenta.",
+    "video_url": "",
     "alertas_especificas": [
       "No aguantes la respiración en ningún momento",
       "Si sientes mareo, para y siéntate"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.135000"
+    "beneficio_medico": "La respiración abdominal activa el sistema nervioso parasimpático, reduciendo el cortisol materno y mejorando la oxigenación del bebé a través de la placenta.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.135000",
+    "updated_date": "2026-05-14T18:36:08.135000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5d7",
@@ -2945,14 +3749,18 @@
     "duracion_segundos": 45,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Alivia la tensión cervical y de hombros, muy común en el primer trimestre por cambios posturales.",
+    "video_url": "",
     "alertas_especificas": [
       "Nunca realices círculos completos de cuello",
       "Movimientos muy lentos y controlados"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.135000"
+    "beneficio_medico": "Alivia la tensión cervical y de hombros, muy común en el primer trimestre por cambios posturales.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.135000",
+    "updated_date": "2026-05-14T18:36:08.135000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5d8",
@@ -2962,13 +3770,17 @@
     "duracion_segundos": 60,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Mejora la circulación linfatíca en los brazos, comunes especialmente en el primer trimestre.",
+    "video_url": "",
     "alertas_especificas": [
       "Si sientes mareo al estar de pie, realiza el ejercicio sentada"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.135000"
+    "beneficio_medico": "Mejora la circulación linfatíca en los brazos, comunes especialmente en el primer trimestre.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.135000",
+    "updated_date": "2026-05-14T18:36:08.135000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5d9",
@@ -2978,14 +3790,18 @@
     "duracion_segundos": 120,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece el elevador del ano y el esfinter uretral, reduciendo hasta un 30% el riesgo de incontinencia post-parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No hagas Kegel si tienes infección urinaria activa",
       "No aguantes la respiración"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.135000"
+    "beneficio_medico": "Fortalece el elevador del ano y el esfinter uretral, reduciendo hasta un 30% el riesgo de incontinencia post-parto.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.135000",
+    "updated_date": "2026-05-14T18:36:08.135000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061618626ad2a6c32ed5da",
@@ -2995,13 +3811,17 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Las contracciones rápidas del suelo pélvico mejoran la respuesta refleja que previene escapes de orina al toser o estornudar.",
+    "video_url": "",
     "alertas_especificas": [
       "Si notas fatiga muscular, para y descansa"
     ],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:36:08.135000"
+    "beneficio_medico": "Las contracciones rápidas del suelo pélvico mejoran la respuesta refleja que previene escapes de orina al toser o estornudar.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:36:08.135000",
+    "updated_date": "2026-05-14T18:36:08.135000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061604d93f8ce6c055b7a6",
@@ -3011,11 +3831,15 @@
     "duracion_segundos": 60,
     "orden": 1,
     "imagen_url": "",
-    "beneficio_medico": "La respiración profunda activa el sistema nervioso parasimpático, reduciendo el cortisol y preparando el suelo pélvico para los ejercicios.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:35:48.756000"
+    "beneficio_medico": "La respiración profunda activa el sistema nervioso parasimpático, reduciendo el cortisol y preparando el suelo pélvico para los ejercicios.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:35:48.756000",
+    "updated_date": "2026-05-14T18:35:48.756000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061604d93f8ce6c055b7a7",
@@ -3025,14 +3849,18 @@
     "duracion_segundos": 90,
     "orden": 2,
     "imagen_url": "",
-    "beneficio_medico": "Fortalece el suelo pélvico, reduce las pérdidas urinarias y prepara los tejidos para el parto y la recuperación post-parto.",
+    "video_url": "",
     "alertas_especificas": [
       "No contengas la respiración durante la contracción",
       "Deja de hacer este ejercicio si sientes dolor"
     ],
     "semana_maxima": null,
-    "repeticiones": "10",
-    "created_date": "2026-05-14T18:35:48.756000"
+    "beneficio_medico": "Fortalece el suelo pélvico, reduce las pérdidas urinarias y prepara los tejidos para el parto y la recuperación post-parto.",
+    "repeticiones": 10,
+    "created_date": "2026-05-14T18:35:48.756000",
+    "updated_date": "2026-05-14T18:35:48.756000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061604d93f8ce6c055b7a8",
@@ -3042,11 +3870,15 @@
     "duracion_segundos": 90,
     "orden": 3,
     "imagen_url": "",
-    "beneficio_medico": "Mejora la coordinación y el control neuromuscular del suelo pélvico, fundamental para el empuje durante el parto.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "5",
-    "created_date": "2026-05-14T18:35:48.756000"
+    "beneficio_medico": "Mejora la coordinación y el control neuromuscular del suelo pélvico, fundamental para el empuje durante el parto.",
+    "repeticiones": 5,
+    "created_date": "2026-05-14T18:35:48.756000",
+    "updated_date": "2026-05-14T18:35:48.756000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   },
   {
     "id": "6a061604d93f8ce6c055b7a9",
@@ -3056,10 +3888,14 @@
     "duracion_segundos": 120,
     "orden": 4,
     "imagen_url": "",
-    "beneficio_medico": "La relajación del suelo pélvico es tan importante como la contracción. Un músculo que no se relaja no puede contraerse bien.",
+    "video_url": "",
     "alertas_especificas": [],
     "semana_maxima": null,
-    "repeticiones": "",
-    "created_date": "2026-05-14T18:35:48.756000"
+    "beneficio_medico": "La relajación del suelo pélvico es tan importante como la contracción. Un músculo que no se relaja no puede contraerse bien.",
+    "repeticiones": null,
+    "created_date": "2026-05-14T18:35:48.756000",
+    "updated_date": "2026-05-14T18:35:48.756000",
+    "created_by": "joaquinchecura@gmail.com",
+    "is_sample": false
   }
 ]
