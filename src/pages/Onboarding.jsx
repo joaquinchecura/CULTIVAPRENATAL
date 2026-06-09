@@ -78,7 +78,7 @@ export default function Onboarding() {
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
             <span className="text-white text-sm font-bold">P</span>
           </div>
-          <span className="font-serif text-lg font-semibold text-foreground">PreNatal Move</span>
+          <span className="font-serif text-lg font-semibold text-foreground">Cultiva PreNatal</span>
         </div>
 
         {/* Progress dots */}

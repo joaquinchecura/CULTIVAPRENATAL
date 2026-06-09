@@ -68,7 +68,7 @@ export default function Perfil() {
       import('jspdf').then(({ jsPDF }) => {
         const doc = new jsPDF();
         doc.setFontSize(20);
-        doc.text('Informe PreNatal Move', 20, 30);
+        doc.text('Informe Cultiva PreNatal', 20, 30);
         doc.setFontSize(12);
         doc.text(`Nombre: ${profile?.nombre || 'N/A'}`, 20, 50);
         doc.text(`Semana de gestación: ${semanaActual || 'N/A'}`, 20, 60);

@@ -47,7 +47,7 @@ export default function Layout() {
       {!isRutinaActiva && (
         <div className="px-4 py-1 text-center">
           <p className="text-xs text-muted-foreground leading-tight">
-            PreNatal Move complementa pero no reemplaza el cuidado médico
+            Cultiva PreNatal complementa pero no reemplaza el cuidado médico
           </p>
         </div>
       )}

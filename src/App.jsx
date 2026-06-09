@@ -33,7 +33,7 @@ const AuthenticatedApp = () => {
       <div className="fixed inset-0 flex items-center justify-center bg-background">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="font-serif text-primary text-lg">PreNatal Move</p>
+          <p className="font-serif text-primary text-lg">Cultiva PreNatal</p>
         </div>
       </div>
     );
