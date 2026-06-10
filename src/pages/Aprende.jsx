@@ -142,10 +142,10 @@ export default function Aprende() {
         {filtrados.map((art, i) => (
           <motion.div key={art.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
             onClick={() => setSelected(art)}
-            className="bg-card rounded-2xl overflow-hidden border border-border shadow-card cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98]">
-            {/* Imagen de card - aspect-video 16:9 */}
+            className="bg-card rounded-2xl overflow-hidden border border-border shadow-card cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98] flex gap-0">
+            {/* Imagen chica horizontal - w-52 h-28 (ratio ~16:9) */}
             {art.imagen_url && (
-              <div className="relative aspect-video">
+              <div className="relative w-52 h-28 shrink-0 overflow-hidden">
                 <img 
                   src={art.imagen_url} 
                   alt={art.titulo} 
@@ -154,11 +154,13 @@ export default function Aprende() {
                 />
               </div>
             )}
-            <div className="p-4">
-              <div className={`inline-flex text-xs px-2 py-0.5 rounded-full font-medium mb-1 ${CAT_COLORS[art.categoria] || 'bg-muted text-muted-foreground'}`}>
-                {art.categoria?.replace('_', ' ')}
+            <div className="p-4 flex flex-col justify-between flex-1">
+              <div>
+                <div className={`inline-flex text-xs px-2 py-0.5 rounded-full font-medium mb-1 ${CAT_COLORS[art.categoria] || 'bg-muted text-muted-foreground'}`}>
+                  {art.categoria?.replace('_', ' ')}
+                </div>
+                <h3 className="font-serif text-sm font-semibold text-foreground line-clamp-2">{art.titulo}</h3>
               </div>
-              <h3 className="font-serif text-sm font-semibold text-foreground line-clamp-2">{art.titulo}</h3>
               <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground">
                 {art.tiempo_lectura_minutos && <span className="flex items-center gap-0.5"><Clock size={11} /> {art.tiempo_lectura_minutos} min</span>}
                 {art.medico_revisor && <span className="text-primary">✓ Validado</span>}
