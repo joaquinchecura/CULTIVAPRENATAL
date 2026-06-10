@@ -214,9 +214,15 @@ export default function Dashboard() {
               onClick={() => navigate(`/rutina/${rutinaRecomendada.id}`)}
               className="bg-card rounded-2xl overflow-hidden shadow-card border border-border cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98]"
             >
-              <div className="relative h-48 bg-gradient-to-br from-primary/30 to-accent/30">
+              {/* Imagen - aspect-video para fotos 1408x768 */}
+              <div className="relative aspect-video bg-gradient-to-br from-primary/30 to-accent/30">
                 {rutinaRecomendada.imagen_url ? (
-                  <img src={rutinaRecomendada.imagen_url} alt={rutinaRecomendada.nombre} className="w-full h-full object-cover" />
+                  <img 
+                    src={rutinaRecomendada.imagen_url} 
+                    alt={rutinaRecomendada.nombre} 
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-6xl opacity-60">🤰</span>
