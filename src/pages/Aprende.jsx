@@ -58,8 +58,16 @@ export default function Aprende() {
         </div>
 
         <div className="px-5 py-5">
+          {/* Imagen grande en detalle - aspect-video 16:9 */}
           {selected.imagen_url && (
-            <img src={selected.imagen_url} alt={selected.titulo} className="w-full h-52 object-cover rounded-2xl mb-5" />
+            <div className="relative aspect-video rounded-2xl overflow-hidden mb-5">
+              <img 
+                src={selected.imagen_url} 
+                alt={selected.titulo} 
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           )}
           <div className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold mb-3 ${CAT_COLORS[selected.categoria] || 'bg-muted text-muted-foreground'}`}>
             {CATEGORIAS.find(c => c.id === selected.categoria)?.emoji}
@@ -134,17 +142,23 @@ export default function Aprende() {
         {filtrados.map((art, i) => (
           <motion.div key={art.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
             onClick={() => setSelected(art)}
-            className="bg-card rounded-2xl overflow-hidden border border-border shadow-card cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98] flex gap-0">
+            className="bg-card rounded-2xl overflow-hidden border border-border shadow-card cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98]">
+            {/* Imagen de card - aspect-video 16:9 */}
             {art.imagen_url && (
-              <img src={art.imagen_url} alt={art.titulo} className="w-28 h-28 object-cover shrink-0" />
-            )}
-            <div className="p-4 flex flex-col justify-between flex-1">
-              <div>
-                <div className={`inline-flex text-xs px-2 py-0.5 rounded-full font-medium mb-1 ${CAT_COLORS[art.categoria] || 'bg-muted text-muted-foreground'}`}>
-                  {art.categoria?.replace('_', ' ')}
-                </div>
-                <h3 className="font-serif text-sm font-semibold text-foreground line-clamp-2">{art.titulo}</h3>
+              <div className="relative aspect-video">
+                <img 
+                  src={art.imagen_url} 
+                  alt={art.titulo} 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
+            )}
+            <div className="p-4">
+              <div className={`inline-flex text-xs px-2 py-0.5 rounded-full font-medium mb-1 ${CAT_COLORS[art.categoria] || 'bg-muted text-muted-foreground'}`}>
+                {art.categoria?.replace('_', ' ')}
+              </div>
+              <h3 className="font-serif text-sm font-semibold text-foreground line-clamp-2">{art.titulo}</h3>
               <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground">
                 {art.tiempo_lectura_minutos && <span className="flex items-center gap-0.5"><Clock size={11} /> {art.tiempo_lectura_minutos} min</span>}
                 {art.medico_revisor && <span className="text-primary">✓ Validado</span>}
