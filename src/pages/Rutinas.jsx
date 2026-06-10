@@ -126,10 +126,15 @@ export default function Rutinas() {
             className="bg-card rounded-2xl overflow-hidden shadow-card border border-border cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98]"
             onClick={() => navigate(`/rutina/${rutina.id}`)}
           >
-            {/* Imagen */}
-            <div className="relative h-40 bg-gradient-to-br from-primary/20 to-accent/20">
+            {/* Imagen - aspect-video (16:9) para fotos 1408x768 */}
+            <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
               {rutina.imagen_url ? (
-                <img src={rutina.imagen_url} alt={rutina.nombre} className="w-full h-full object-cover" />
+                <img 
+                  src={rutina.imagen_url} 
+                  alt={rutina.nombre} 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-5xl opacity-50">
