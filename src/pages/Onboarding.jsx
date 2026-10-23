@@ -31,10 +31,11 @@ export default function Onboarding() {
     nombre: '',
     fecha_ultima_menstruacion: '',
     autorizacion_medica: '',
-    objetivos: [],
+    objetivos: [], // TS se quejaba de que esto era un never[] vacío
     recordatorio_hora: '09:00',
     onboarding_completado: true,
     notificaciones_activas: true,
+    tipo_embarazo: 'unico', // Añadido para evitar errores de TS
   });
 
   const toggleObjetivo = (id) => {
@@ -72,7 +73,6 @@ export default function Onboarding() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Header */}
       <div className="px-6 pt-12 pb-6">
         <div className="flex items-center gap-2 mb-8">
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
@@ -81,7 +81,6 @@ export default function Onboarding() {
           <span className="font-serif text-lg font-semibold text-foreground">Cultiva PreNatal</span>
         </div>
 
-        {/* Progress dots */}
         <div className="flex gap-2 mb-8">
           {steps.map((_, i) => (
             <div
@@ -106,7 +105,6 @@ export default function Onboarding() {
               {steps[step].title}
             </h1>
 
-            {/* Step 0: Nombre */}
             {step === 0 && (
               <div className="space-y-4">
                 <p className="text-muted-foreground">Bienvenida a Cultiva PreNatal. Estamos aquí para acompañarte en este camino especial. 🌸</p>
@@ -123,7 +121,6 @@ export default function Onboarding() {
               </div>
             )}
 
-            {/* Step 1: Embarazo */}
             {step === 1 && (
               <div className="space-y-6">
                 <div className="space-y-2">
@@ -157,7 +154,6 @@ export default function Onboarding() {
               </div>
             )}
 
-            {/* Step 2: Autorización médica */}
             {step === 2 && (
               <div className="space-y-4">
                 <p className="text-muted-foreground">Para tu seguridad y la del bebé, es importante saber si tu médico te ha autorizado a hacer ejercicio.</p>
@@ -184,7 +180,6 @@ export default function Onboarding() {
               </div>
             )}
 
-            {/* Step 3: Objetivos */}
             {step === 3 && (
               <div className="space-y-4">
                 <p className="text-muted-foreground">Selecciona todo lo que te gustaría trabajar (puedes elegir varios):</p>
@@ -219,7 +214,6 @@ export default function Onboarding() {
         </AnimatePresence>
       </div>
 
-      {/* Footer */}
       <div className="mt-auto px-6 pb-12">
         <Button
           onClick={handleNext}

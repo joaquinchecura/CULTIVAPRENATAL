@@ -16,6 +16,8 @@ import Aprende from './pages/Aprende'
 import Progreso from './pages/Progreso'
 import Perfil from './pages/Perfil'
 import Onboarding from './pages/Onboarding'
+import ProtectedRoute from './components/ProtectedRoute';
+import ThemeProvider from './components/ThemeProvider'; // <-- IMPORTANTE
 
 const queryClientInstance = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false, retry: 1 } },
@@ -41,7 +43,6 @@ const AuthenticatedApp = () => {
     );
   }
 
-  // Si no está autenticada, mostrar SignIn de Clerk
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -76,8 +77,13 @@ const AuthenticatedApp = () => {
       <Route path="/onboarding" element={<Onboarding />} />
       <Route element={<Layout />}>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/rutinas" element={<Rutinas />} />
-        <Route path="/rutina/:id" element={<RutinaActiva />} />
+        
+        {/* Rutas protegidas */}
+        <Route element={<ProtectedRoute />}>
+          <Route path="/rutinas" element={<Rutinas />} />
+          <Route path="/rutina/:id" element={<RutinaActiva />} />
+        </Route>
+
         <Route path="/aprende" element={<Aprende />} />
         <Route path="/progreso" element={<Progreso />} />
         <Route path="/perfil" element={<Perfil />} />
@@ -97,12 +103,14 @@ function App() {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <AuthProvider>
-        <QueryClientProvider client={queryClientInstance}>
-          <Router>
-            <AuthenticatedApp />
-          </Router>
-          <Toaster />
-        </QueryClientProvider>
+        <ThemeProvider>
+          <QueryClientProvider client={queryClientInstance}>
+            <Router>
+              <AuthenticatedApp />
+            </Router>
+            <Toaster />
+          </QueryClientProvider>
+        </ThemeProvider>
       </AuthProvider>
     </ClerkProvider>
   )

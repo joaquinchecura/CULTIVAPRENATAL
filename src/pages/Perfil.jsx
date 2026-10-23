@@ -14,10 +14,16 @@ const COMPLICACIONES = [
   'Hipotiroidismo', 'Embarazo de alto riesgo', 'Cardiopatía',
 ];
 
+// Helper para fechas
+const formatToInputDate = (dateString) => {
+  if (!dateString) return '';
+  try { return dateString.split('T')[0]; } catch { return ''; }
+};
+
 export default function Perfil() {
   const { profile, loading, refetch, semanaActual, trimestre } = useUserProfile();
   const { logout } = useAuth();
-  const [form, setForm] = useState(null);
+  const [form, setForm] = useState({});
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
   const [section, setSection] = useState('embarazo');
@@ -25,14 +31,11 @@ export default function Perfil() {
   const [sesiones, setSesiones] = useState([]);
 
   useEffect(() => {
-    if (profile) setForm({ ...profile });
+    if (profile) setForm(profile);
   }, [profile]);
 
   useEffect(() => {
-    try {
-      const s = getSessions();
-      setSesiones(s);
-    } catch (e) {}
+    try { setSesiones(getSessions() || []); } catch (e) {}
   }, []);
 
   const handleSave = () => {
@@ -53,32 +56,77 @@ export default function Perfil() {
   const toggleComplicacion = (c) => {
     setForm(f => ({
       ...f,
-      complicaciones: f.complicaciones?.includes(c)
+      complicaciones: f?.complicaciones?.includes(c)
         ? f.complicaciones.filter(x => x !== c)
-        : [...(f.complicaciones || []), c]
+        : [...(f?.complicaciones || []), c]
     }));
   };
 
   const update = (key, val) => setForm(f => ({ ...f, [key]: val }));
 
-  const handleDescargarPDF = () => {
+  const handleDescargarPDF = async () => {
     setGenerandoPDF(true);
     try {
-      // Generar PDF en el frontend con jsPDF (ya está en package.json)
-      import('jspdf').then(({ jsPDF }) => {
-        const doc = new jsPDF();
-        doc.setFontSize(20);
-        doc.text('Informe Cultiva PreNatal', 20, 30);
-        doc.setFontSize(12);
-        doc.text(`Nombre: ${profile?.nombre || 'N/A'}`, 20, 50);
-        doc.text(`Semana de gestación: ${semanaActual || 'N/A'}`, 20, 60);
-        doc.text(`Rutinas completadas: ${sesiones.filter(s => s.completada).length}`, 20, 70);
-        doc.text(`Minutos totales: ${sesiones.reduce((sum, s) => sum + (s.duracion_real_minutos || 0), 0)}`, 20, 80);
-        doc.save(`informe-prenatal-${new Date().toISOString().slice(0, 10)}.pdf`);
-        setGenerandoPDF(false);
+      const { jsPDF } = await import('jspdf');
+      const { default: autoTable } = await import('jspdf-autotable');
+      
+      const doc = new jsPDF();
+      
+      // Header
+      doc.setFontSize(22);
+      doc.setTextColor(107, 142, 35); // Verde oliva
+      doc.text('Informe Cultiva PreNatal', 14, 20);
+      
+      doc.setFontSize(10);
+      doc.setTextColor(100);
+      doc.text(`Generado el: ${new Date().toLocaleDateString()}`, 14, 28);
+
+      // Info Básica
+      doc.setFontSize(12);
+      doc.setTextColor(0);
+      doc.text('Datos de la paciente', 14, 40);
+      
+      autoTable(doc, {
+        startY: 45,
+        head: [['Campo', 'Valor']],
+        body: [
+          ['Nombre', form.nombre || 'N/A'],
+          ['Semana de gestación', semanaActual ? `${semanaActual} semanas` : 'N/A'],
+          ['Trimestre', trimestre ? `${trimestre}º Trimestre` : 'N/A'],
+          ['Autorización médica', form.autorizacion_medica === 'si' ? 'Sí' : 'No / Pendiente'],
+        ],
+        theme: 'grid',
+        headStyles: { fillColor: [107, 142, 35] },
       });
+
+      // Historial de Actividad
+      doc.text('Resumen de Actividad', 14, doc.lastAutoTable.finalY + 15);
+      
+      const completadas = sesiones.filter(s => s.completada);
+      const totalMinutos = sesiones.reduce((sum, s) => sum + (s.duracion_real_minutos || 0), 0);
+      
+      autoTable(doc, {
+        startY: doc.lastAutoTable.finalY + 20,
+        head: [['Fecha', 'Rutina', 'Duración', 'Sensación']],
+        body: completadas.slice(0, 15).map(s => [
+          s.fecha_inicio ? s.fecha_inicio.split('T')[0] : 'N/A',
+          s.rutina_nombre || 'Rutina',
+          `${s.duracion_real_minutos || 0} min`,
+          s.sensacion_post || '-'
+        ]),
+        theme: 'striped',
+        headStyles: { fillColor: [107, 142, 35] },
+      });
+
+      doc.setFontSize(10);
+      doc.setTextColor(150);
+      doc.text(`Total de rutinas completadas: ${completadas.length}`, 14, doc.lastAutoTable.finalY + 10);
+      doc.text(`Total de minutos de ejercicio: ${totalMinutos} min`, 14, doc.lastAutoTable.finalY + 16);
+
+      doc.save(`CultivaPreNatal_Informe_${new Date().toISOString().slice(0, 10)}.pdf`);
     } catch (e) {
       console.error('Error generando PDF:', e);
+    } finally {
       setGenerandoPDF(false);
     }
   };
@@ -105,7 +153,6 @@ export default function Perfil() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <div className="bg-gradient-to-br from-rose-dust/20 to-background px-6 pt-14 pb-4">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
@@ -120,7 +167,6 @@ export default function Perfil() {
         </div>
       </div>
 
-      {/* Section Tabs */}
       <div className="px-4 mt-2">
         <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
           {sections.map(({ id, label, icon: Icon }) => (
@@ -137,7 +183,6 @@ export default function Perfil() {
 
       <div className="px-4 pb-6 mt-4 space-y-4">
 
-        {/* Embarazo */}
         {section === 'embarazo' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
             <div className="bg-card rounded-2xl p-5 border border-border shadow-card space-y-4">
@@ -151,14 +196,14 @@ export default function Perfil() {
 
               <div className="space-y-1.5">
                 <Label className="text-sm text-muted-foreground">Fecha de última menstruación (FUM)</Label>
-                <Input type="date" value={form.fecha_ultima_menstruacion || ''}
+                <Input type="date" value={formatToInputDate(form.fecha_ultima_menstruacion)}
                   onChange={e => update('fecha_ultima_menstruacion', e.target.value)}
                   className="h-12 rounded-xl border-border" />
               </div>
 
               <div className="space-y-1.5">
                 <Label className="text-sm text-muted-foreground">Fecha probable de parto (FPP)</Label>
-                <Input type="date" value={form.fecha_probable_parto || ''}
+                <Input type="date" value={formatToInputDate(form.fecha_probable_parto)}
                   onChange={e => update('fecha_probable_parto', e.target.value)}
                   className="h-12 rounded-xl border-border" />
               </div>
@@ -185,7 +230,6 @@ export default function Perfil() {
           </motion.div>
         )}
 
-        {/* Médico */}
         {section === 'medico' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
             <div className="bg-card rounded-2xl p-5 border border-border shadow-card space-y-4">
@@ -214,7 +258,7 @@ export default function Perfil() {
 
               <div className="space-y-1.5">
                 <Label className="text-sm text-muted-foreground">Fecha última consulta prenatal</Label>
-                <Input type="date" value={form.fecha_ultima_consulta || ''}
+                <Input type="date" value={formatToInputDate(form.fecha_ultima_consulta)}
                   onChange={e => update('fecha_ultima_consulta', e.target.value)}
                   className="h-12 rounded-xl border-border" />
               </div>
@@ -235,7 +279,6 @@ export default function Perfil() {
           </motion.div>
         )}
 
-        {/* Contactos */}
         {section === 'contactos' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
             <div className="bg-card rounded-2xl p-5 border border-border shadow-card space-y-4">
@@ -268,7 +311,6 @@ export default function Perfil() {
           </motion.div>
         )}
 
-        {/* Ajustes */}
         {section === 'ajustes' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
             <div className="bg-card rounded-2xl p-5 border border-border shadow-card space-y-4">
@@ -303,7 +345,7 @@ export default function Perfil() {
             </div>
 
             <button
-              onClick={() => logout(false)}
+              onClick={() => logout()}
               className="w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-destructive/10 text-destructive hover:bg-destructive/20"
             >
               <LogOut size={18} />
@@ -312,17 +354,14 @@ export default function Perfil() {
           </motion.div>
         )}
 
-        {/* Weekly Chart */}
         <WeeklyActivityChart sesiones={sesiones} />
 
-        {/* PDF Button */}
         <button onClick={handleDescargarPDF} disabled={generandoPDF}
           className="w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-accent text-white hover:bg-accent/90 disabled:opacity-60">
           <FileDown size={18} />
-          {generandoPDF ? 'Generando informe...' : 'Descargar informe semanal PDF'}
+          {generandoPDF ? 'Generando informe...' : 'Descargar informe PDF'}
         </button>
 
-        {/* Save Button */}
         <button onClick={handleSave} disabled={saving}
           className={`w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 ${
             saved ? 'bg-moss text-white' : 'bg-primary text-white hover:bg-primary/90'

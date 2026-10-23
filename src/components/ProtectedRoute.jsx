@@ -1,36 +1,14 @@
-import { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
-import { useAuth } from '@/lib/AuthContext';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
+import { Navigate, Outlet } from 'react-router-dom';
+import { useUserProfile } from '@/hooks/useUserProfile';
 
-const DefaultFallback = () => (
-  <div className="fixed inset-0 flex items-center justify-center">
-    <div className="w-8 h-8 border-4 border-slate-200 border-t-slate-800 rounded-full animate-spin"></div>
-  </div>
-);
+export default function ProtectedRoute() {
+  const { profile, loading } = useUserProfile();
 
-export default function ProtectedRoute({ fallback = <DefaultFallback />, unauthenticatedElement }) {
-  const { isAuthenticated, isLoadingAuth, authChecked, authError, checkUserAuth } = useAuth();
+  if (loading) return <div className="min-h-screen flex items-center justify-center">Cargando...</div>;
 
-  useEffect(() => {
-    if (!authChecked && !isLoadingAuth) {
-      checkUserAuth();
-    }
-  }, [authChecked, isLoadingAuth, checkUserAuth]);
-
-  if (isLoadingAuth || !authChecked) {
-    return fallback;
-  }
-
-  if (authError) {
-    if (authError.type === 'user_not_registered') {
-      return <UserNotRegisteredError />;
-    }
-    return unauthenticatedElement;
-  }
-
-  if (!isAuthenticated) {
-    return unauthenticatedElement;
+  // Si no hay perfil o el médico dijo que NO, bloqueamos el acceso
+  if (profile?.autorizacion_medica === 'no') {
+    return <Navigate to="/aprende" replace />;
   }
 
   return <Outlet />;

@@ -12,7 +12,7 @@ const MOLESTIAS = ['Mareo', 'Dolor abdominal', 'Contracciones', 'Sangrado', 'Fal
 export default function RutinaActiva() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { profile, semanaActual } = useUserProfile();
+  const { semanaActual } = useUserProfile();
 
   const [rutina, setRutina] = useState(null);
   const [ejercicios, setEjercicios] = useState([]);
@@ -27,18 +27,18 @@ export default function RutinaActiva() {
   const [molestias, setMolestias] = useState([]);
   const [loading, setLoading] = useState(true);
   const [startTime] = useState(new Date());
-
+  
+  // Refactor del timer
+  const [targetTime, setTargetTime] = useState(null);
+  const beepPlayedRef = useRef(false);
   const [soundsEnabled, setSoundsEnabled] = useState(true);
-  const timerRef = useRef(null);
-  const elapsedRef = useRef(null);
+  
+  const intervalRef = useRef(null);
   const { playBeep, playBell } = useSounds();
 
   useEffect(() => {
     loadRutina();
-    return () => {
-      clearInterval(timerRef.current);
-      clearInterval(elapsedRef.current);
-    };
+    return () => clearInterval(intervalRef.current);
   }, [id]);
 
   useEffect(() => {
@@ -46,45 +46,53 @@ export default function RutinaActiva() {
       const ej = ejercicios[currentIdx];
       setTimeLeft(ej.duracion_segundos || 60);
       setIsPlaying(false);
+      setTargetTime(null);
       checkAlerts(ej);
     }
   }, [currentIdx, ejercicios]);
 
+  // Lógica del Timer mejorada
   useEffect(() => {
-    if (isPlaying) {
-      timerRef.current = setInterval(() => {
-        setTimeLeft(t => {
-          if (t <= 1) {
-            clearInterval(timerRef.current);
-            handleNextExercise();
-            return 0;
-          }
-          if (t <= 4 && soundsEnabled) playBeep();
-          return t - 1;
-        });
-      }, 1000);
-      elapsedRef.current = setInterval(() => setTotalElapsed(e => e + 1), 1000);
-    } else {
-      clearInterval(timerRef.current);
-      clearInterval(elapsedRef.current);
+    if (isPlaying && targetTime) {
+      intervalRef.current = setInterval(() => {
+        const now = Date.now();
+        const remaining = Math.max(0, Math.round((targetTime - now) / 1000));
+        
+        setTimeLeft(remaining);
+        setTotalElapsed(prev => prev + 1);
+
+        if (remaining <= 4 && remaining > 0 && !beepPlayedRef.current && soundsEnabled) {
+          playBeep();
+          beepPlayedRef.current = true;
+        }
+
+        if (remaining <= 0) {
+          clearInterval(intervalRef.current);
+          handleNextExercise();
+        }
+      }, 250); // 250ms para precisión visual
     }
-    return () => {
-      clearInterval(timerRef.current);
-      clearInterval(elapsedRef.current);
-    };
-  }, [isPlaying]);
+
+    return () => clearInterval(intervalRef.current);
+  }, [isPlaying, targetTime, soundsEnabled]);
 
   const loadRutina = () => {
     try {
       const r = getRutinaById(id);
       setRutina(r);
 
-      let ejs = getEjerciciosByRutina(id);
-      let ejerciciosFiltrados = (ejs || []).sort((a, b) => (a.orden || 0) - (b.orden || 0));
-      // Filter exercises not suitable for current week
-      if (semanaActual && semanaActual > 16) {
-        ejerciciosFiltrados = ejerciciosFiltrados.filter(e => !e.semana_maxima || e.semana_maxima >= semanaActual);
+      let ejs = getEjerciciosByRutina(id) || [];
+      let ejerciciosFiltrados = ejs.sort((a, b) => (a.orden || 0) - (b.orden || 0));
+      
+      // Filtrar por semana
+      if (semanaActual) {
+        ejerciciosFiltrados = ejerciciosFiltrados.filter(e => {
+           const minOk = !e.semana_minima || semanaActual >= e.semana_minima;
+           const maxOk = !e.semana_maxima || semanaActual <= e.semana_maxima;
+           return minOk && maxOk;
+        });
       }
+      
       setEjercicios(ejerciciosFiltrados);
       if (ejerciciosFiltrados[0]) setTimeLeft(ejerciciosFiltrados[0].duracion_segundos || 60);
     } catch (e) {
@@ -98,6 +106,17 @@ export default function RutinaActiva() {
     if (!ejercicio?.alertas_especificas?.length) return;
     setShowAlert(ejercicio.alertas_especificas[0]);
     setTimeout(() => setShowAlert(null), 5000);
+  };
+
+  const togglePlay = () => {
+    if (!isPlaying) {
+      setTargetTime(Date.now() + (timeLeft * 1000));
+      beepPlayedRef.current = false;
+    } else {
+      setTimeLeft(Math.max(0, Math.round((targetTime - Date.now()) / 1000)));
+      setTargetTime(null);
+    }
+    setIsPlaying(!isPlaying);
   };
 
   const handleNextExercise = () => {
@@ -135,7 +154,7 @@ export default function RutinaActiva() {
   };
 
   const currentEjercicio = ejercicios[currentIdx];
-  const progress = currentEjercicio ? ((currentEjercicio.duracion_segundos - timeLeft) / currentEjercicio.duracion_segundos) * 100 : 0;
+  const progress = currentEjercicio ? (((currentEjercicio.duracion_segundos - timeLeft) / currentEjercicio.duracion_segundos) * 100) : 0;
   const hasMolestias = molestias.some(m => ['Mareo', 'Dolor abdominal', 'Contracciones', 'Sangrado'].includes(m));
 
   if (loading) {
@@ -201,7 +220,6 @@ export default function RutinaActiva() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Header */}
       <div className="bg-gradient-to-r from-primary/10 to-accent/10 px-4 pt-12 pb-4 flex items-center gap-3">
         <button onClick={() => navigate(-1)} className="p-2 rounded-full hover:bg-white/50 transition-all">
           <ChevronLeft size={22} className="text-foreground" />
@@ -215,16 +233,14 @@ export default function RutinaActiva() {
         </div>
       </div>
 
-      {/* Overall Progress */}
       <div className="h-1 bg-border">
         <motion.div
           className="h-full bg-primary rounded-full"
-          animate={{ width: `${((currentIdx) / ejercicios.length) * 100}%` }}
+          animate={{ width: `${(currentIdx / Math.max(1, ejercicios.length)) * 100}%` }}
           transition={{ duration: 0.5 }}
         />
       </div>
 
-      {/* Alert Banner */}
       <AnimatePresence>
         {showAlert && (
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
@@ -236,14 +252,12 @@ export default function RutinaActiva() {
         )}
       </AnimatePresence>
 
-      {/* Ejercicio Visual */}
       <div className="flex-1 flex flex-col px-4 py-4">
         <AnimatePresence mode="wait">
           {currentEjercicio && (
             <motion.div key={currentIdx} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.4 }} className="flex flex-col items-center">
 
-              {/* Imagen ejercicio */}
               <div className="w-full h-52 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden flex items-center justify-center mb-5">
                 {currentEjercicio.imagen_url ? (
                   <img src={currentEjercicio.imagen_url} alt={currentEjercicio.nombre} className="w-full h-full object-cover" />
@@ -252,10 +266,8 @@ export default function RutinaActiva() {
                 )}
               </div>
 
-              {/* Nombre */}
               <h2 className="font-serif text-2xl font-semibold text-foreground text-center mb-2">{currentEjercicio.nombre}</h2>
 
-              {/* Timer */}
               <div className="w-32 h-32 relative flex items-center justify-center mb-4">
                 <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="44" fill="none" stroke="hsl(var(--border))" strokeWidth="6" />
@@ -270,12 +282,10 @@ export default function RutinaActiva() {
                 </div>
               </div>
 
-              {/* Instrucciones */}
               <div className="bg-card rounded-2xl p-4 w-full border border-border shadow-card mb-4">
                 <p className="text-foreground text-sm leading-relaxed text-center">{currentEjercicio.instrucciones}</p>
               </div>
 
-              {/* Breathing reminder */}
               <p className="text-muted-foreground text-xs text-center mb-2">
                 💨 Inhala al preparar · exhala al ejecutar · no aguantes la respiración
               </p>
@@ -284,16 +294,14 @@ export default function RutinaActiva() {
         </AnimatePresence>
       </div>
 
-      {/* Controls */}
       <div className="px-4 pb-8 pt-2 space-y-3">
-        {/* Main controls */}
         <div className="flex items-center justify-center gap-3">
-          <button onClick={() => { setShowInfo(true); setIsPlaying(false); }}
+          <button onClick={() => { setShowInfo(true); setIsPlaying(false); setTargetTime(null); }}
             className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center shadow-card transition-all active:scale-95">
             <Info size={20} className="text-muted-foreground" />
           </button>
 
-          <button onClick={() => setIsPlaying(p => !p)}
+          <button onClick={togglePlay}
             className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-elevated transition-all active:scale-95 hover:bg-primary/90">
             {isPlaying
               ? <Pause size={32} className="text-white" />
@@ -318,7 +326,6 @@ export default function RutinaActiva() {
         </p>
       </div>
 
-      {/* Info Modal */}
       <AnimatePresence>
         {showInfo && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}

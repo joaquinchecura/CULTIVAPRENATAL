@@ -1,7 +1,6 @@
 import { Link, useLocation, Outlet } from 'react-router-dom';
 import { Home, BookOpen, BarChart2, User, ListChecks, Phone } from 'lucide-react';
 import { useUserProfile } from '@/hooks/useUserProfile';
-import ContactoFlotante from '@/components/ContactoFlotante';
 // Icon is used as a dynamic component below via destructuring from navItems
 
 const navItems = [
@@ -51,9 +50,6 @@ export default function Layout() {
           </p>
         </div>
       )}
-
-      {/* Contacto Flotante */}
-      {!isRutinaActiva && <ContactoFlotante />}
 
       {/* Bottom Nav */}
       {!isRutinaActiva && (

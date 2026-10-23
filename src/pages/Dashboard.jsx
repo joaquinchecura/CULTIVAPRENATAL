@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { getRutinas, getSessions } from '@/data';
+import { getRutinas, getSessions, getDiario, addDiarioEntry } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Flame, Phone, Stethoscope, ChevronRight, Clock, Leaf } from 'lucide-react';
 import ConsejoDelDia from '@/components/ConsejoDelDia';
@@ -33,13 +33,24 @@ export default function Dashboard() {
   }, [profile, loading, navigate]);
 
   useEffect(() => {
-    if (profile) loadData();
+    if (profile) {
+      loadData();
+      // Cargar mood del día
+      try {
+        const diarios = getDiario() || [];
+        const hoyStr = format(new Date(), 'yyyy-MM-dd');
+        const diarioHoy = diarios.find(d => d.fecha === hoyStr);
+        if (diarioHoy && diarioHoy.estado_animo) {
+          setMoodSeleccionado(diarioHoy.estado_animo);
+        }
+      } catch (e) {}
+    }
   }, [profile]);
 
   const loadData = () => {
     try {
-      const r = getRutinas();
-      const s = getSessions();
+      const r = getRutinas() || [];
+      const s = getSessions() || [];
       setRutinas(r);
       setSesiones(s);
       calcularStreak(s);
@@ -75,7 +86,6 @@ export default function Dashboard() {
       return pickRandom(resp.length ? resp : rutinas);
     }
 
-    // Filtrar por semana y trimestre
     let filtradas = rutinas.filter(r => {
       const triOk = !trimestre || r.trimestre === String(trimestre) || r.trimestre === 'todos';
       const semMinOk = !r.semana_minima || !semanaActual || semanaActual >= r.semana_minima;
@@ -91,6 +101,16 @@ export default function Dashboard() {
 
   const handleMood = (mood) => {
     setMoodSeleccionado(mood);
+    try {
+      addDiarioEntry({
+        fecha: format(new Date(), 'yyyy-MM-dd'),
+        estado_animo: mood,
+        entrada_texto: '',
+        semana_gestacion: semanaActual,
+      });
+    } catch (e) {
+      console.error("Error guardando mood", e);
+    }
   };
 
   const getTrimestreLabel = () => {
@@ -114,7 +134,6 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <div className="bg-gradient-to-br from-primary/20 via-background to-accent/10 px-6 pt-14 pb-8">
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <p className="text-sm text-muted-foreground mb-1">
@@ -128,7 +147,6 @@ export default function Dashboard() {
           )}
         </motion.div>
 
-        {/* Progress Bar */}
         {semanaActual && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.5 }} className="mt-4">
             <div className="flex justify-between text-xs text-muted-foreground mb-1.5">
@@ -154,7 +172,6 @@ export default function Dashboard() {
           </motion.div>
         )}
 
-        {/* Streak */}
         {streak > 0 && (
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }}
             className="mt-4 inline-flex items-center gap-2 bg-orange-50 border border-orange-200 px-3 py-1.5 rounded-full">
@@ -165,7 +182,6 @@ export default function Dashboard() {
       </div>
 
       <div className="px-4 space-y-4 pb-4">
-        {/* Mood Check */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
           className="bg-card rounded-2xl p-5 shadow-card border border-border">
           <h2 className="font-serif text-lg font-semibold text-foreground mb-4">¿Cómo te sientes hoy?</h2>
@@ -206,7 +222,6 @@ export default function Dashboard() {
           )}
         </motion.div>
 
-        {/* Rutina Recomendada */}
         {profile?.autorizacion_medica !== 'no' && rutinaRecomendada && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
             <h2 className="font-serif text-lg font-semibold text-foreground mb-3 px-1">Rutina recomendada hoy</h2>
@@ -214,15 +229,9 @@ export default function Dashboard() {
               onClick={() => navigate(`/rutina/${rutinaRecomendada.id}`)}
               className="bg-card rounded-2xl overflow-hidden shadow-card border border-border cursor-pointer hover:shadow-elevated transition-all duration-500 active:scale-[0.98]"
             >
-              {/* Imagen - aspect-video para fotos 1408x768 */}
               <div className="relative aspect-video bg-gradient-to-br from-primary/30 to-accent/30">
                 {rutinaRecomendada.imagen_url ? (
-                  <img 
-                    src={rutinaRecomendada.imagen_url} 
-                    alt={rutinaRecomendada.nombre} 
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+                  <img src={rutinaRecomendada.imagen_url} alt={rutinaRecomendada.nombre} className="w-full h-full object-cover" loading="lazy" />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-6xl opacity-60">🤰</span>
@@ -254,7 +263,6 @@ export default function Dashboard() {
           </motion.div>
         )}
 
-        {/* No autorizada */}
         {profile?.autorizacion_medica === 'no' && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
             className="bg-card rounded-2xl p-5 shadow-card border border-warm-alert/30">
@@ -266,7 +274,6 @@ export default function Dashboard() {
           </motion.div>
         )}
 
-        {/* Pendiente de autorización */}
         {profile?.autorizacion_medica === 'pendiente' && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
             className="bg-accent/10 border border-accent/30 rounded-2xl p-4">
@@ -274,10 +281,8 @@ export default function Dashboard() {
           </motion.div>
         )}
 
-        {/* Consejo del día */}
         <ConsejoDelDia trimestre={trimestre} semanaActual={semanaActual} />
 
-        {/* Recordatorio */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
           className="bg-secondary/10 border border-secondary/20 rounded-2xl p-4 flex items-center gap-3">
           <span className="text-2xl">🌸</span>
