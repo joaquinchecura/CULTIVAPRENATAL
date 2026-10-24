@@ -12,7 +12,7 @@ const MOLESTIAS = ['Mareo', 'Dolor abdominal', 'Contracciones', 'Sangrado', 'Fal
 export default function RutinaActiva() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { semanaActual } = useUserProfile();
+  const { profile, semanaActual } = useUserProfile();
 
   const [rutina, setRutina] = useState(null);
   const [ejercicios, setEjercicios] = useState([]);
@@ -51,7 +51,7 @@ export default function RutinaActiva() {
     }
   }, [currentIdx, ejercicios]);
 
-  // Lógica del Timer mejorada
+  // Lógica del Timer mejorada (basada en reloj real)
   useEffect(() => {
     if (isPlaying && targetTime) {
       intervalRef.current = setInterval(() => {
@@ -84,7 +84,6 @@ export default function RutinaActiva() {
       let ejs = getEjerciciosByRutina(id) || [];
       let ejerciciosFiltrados = ejs.sort((a, b) => (a.orden || 0) - (b.orden || 0));
       
-      // Filtrar por semana
       if (semanaActual) {
         ejerciciosFiltrados = ejerciciosFiltrados.filter(e => {
            const minOk = !e.semana_minima || semanaActual >= e.semana_minima;
@@ -266,19 +265,32 @@ export default function RutinaActiva() {
                 )}
               </div>
 
-              <h2 className="font-serif text-2xl font-semibold text-foreground text-center mb-2">{currentEjercicio.nombre}</h2>
+              <h2 className="font-serif text-2xl font-semibold text-foreground text-center mb-4">{currentEjercicio.nombre}</h2>
 
-              <div className="w-32 h-32 relative flex items-center justify-center mb-4">
+              {/* Timer Mejorado */}
+              <div className="w-48 h-48 relative flex items-center justify-center mb-6">
                 <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="44" fill="none" stroke="hsl(var(--border))" strokeWidth="6" />
-                  <motion.circle cx="50" cy="50" r="44" fill="none" stroke="hsl(var(--primary))" strokeWidth="6"
-                    strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 44}`}
+                  <defs>
+                    <linearGradient id="timerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="hsl(var(--primary))" />
+                      <stop offset="100%" stopColor="hsl(var(--accent))" />
+                    </linearGradient>
+                  </defs>
+                  <motion.circle 
+                    cx="50" cy="50" r="44" 
+                    fill="none" 
+                    stroke="url(#timerGradient)" 
+                    strokeWidth="6"
+                    strokeLinecap="round" 
+                    strokeDasharray={`${2 * Math.PI * 44}`}
                     strokeDashoffset={`${2 * Math.PI * 44 * (1 - progress / 100)}`}
-                    transition={{ duration: 1 }} />
+                    transition={{ duration: 1 }} 
+                  />
                 </svg>
                 <div className="text-center">
-                  <div className="font-serif text-3xl font-bold text-foreground">{timeLeft}</div>
-                  <div className="text-xs text-muted-foreground">seg</div>
+                  <div className="font-serif text-5xl font-bold text-foreground">{timeLeft}</div>
+                  <div className="text-sm text-muted-foreground font-medium">segundos</div>
                 </div>
               </div>
 
@@ -294,23 +306,19 @@ export default function RutinaActiva() {
         </AnimatePresence>
       </div>
 
-      <div className="px-4 pb-8 pt-2 space-y-3">
-        <div className="flex items-center justify-center gap-3">
+      {/* Controles Mejorados */}
+      <div className="px-4 pb-8 pt-2">
+        <div className="flex items-center justify-center gap-4">
           <button onClick={() => { setShowInfo(true); setIsPlaying(false); setTargetTime(null); }}
             className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center shadow-card transition-all active:scale-95">
             <Info size={20} className="text-muted-foreground" />
           </button>
 
           <button onClick={togglePlay}
-            className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-elevated transition-all active:scale-95 hover:bg-primary/90">
+            className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-elevated transition-all active:scale-95 hover:opacity-90">
             {isPlaying
-              ? <Pause size={32} className="text-white" />
-              : <Play size={32} className="text-white ml-1" />}
-          </button>
-
-          <button onClick={handleNextExercise}
-            className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center shadow-card transition-all active:scale-95">
-            <SkipForward size={20} className="text-muted-foreground" />
+              ? <Pause size={40} className="text-white" />
+              : <Play size={40} className="text-white ml-2" />}
           </button>
 
           <button onClick={() => setSoundsEnabled(s => !s)}
@@ -320,9 +328,9 @@ export default function RutinaActiva() {
               : <VolumeX size={20} className="text-muted-foreground" />}
           </button>
         </div>
-
-        <p className="text-center text-xs text-muted-foreground">
-          {isPlaying ? '⏸ Toca para pausar' : '▶️ Toca para comenzar'}
+        
+        <p className="text-center text-xs text-muted-foreground mt-4 font-medium">
+          {isPlaying ? '⏸ Pausar' : '▶️ Toca para comenzar'}
         </p>
       </div>
 

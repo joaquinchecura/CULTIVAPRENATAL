@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { getSessions, saveProfile } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { useAuth } from '@/lib/AuthContext';
-import { Save, AlertCircle, Baby, Phone, Bell, Shield, FileDown, LogOut } from 'lucide-react';
+import { Save, AlertCircle, Baby, Phone, Bell, Shield, FileDown, LogOut, Upload } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
@@ -69,11 +69,11 @@ export default function Perfil() {
       const doc = new jsPDF();
       
       // --- CONFIGURACIÓN DE COLORES Y FUENTES ---
-      const primaryColor = [97, 140, 86]; // Un verde oliva más elegante (RGB)
-      const textColor = [60, 60, 60]; // Gris oscuro para el texto
+      const primaryColor = [97, 140, 86]; 
+      const textColor = [60, 60, 60]; 
       
       // --- CABECERA ---
-      doc.setFont('times', 'bold'); // Usamos Times para el título principal
+      doc.setFont('times', 'bold'); 
       doc.setFontSize(24);
       doc.setTextColor(...primaryColor);
       doc.text('Cultiva PreNatal', 14, 25);
@@ -83,11 +83,9 @@ export default function Perfil() {
       doc.setTextColor(150, 150, 150);
       doc.text('Informe de Actividad Prenatal', 14, 32);
       
-      // Fecha a la derecha
       const fechaHoy = new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
       doc.text(`Generado el: ${fechaHoy}`, 196, 25, { align: 'right' });
 
-      // Línea divisoria
       doc.setDrawColor(...primaryColor);
       doc.setLineWidth(0.5);
       doc.line(14, 38, 196, 38);
@@ -108,10 +106,10 @@ export default function Perfil() {
           ['Trimestre actual', trimestre ? `${trimestre}º Trimestre` : 'No calculado'],
           ['Autorización médica', form.autorizacion_medica === 'si' ? 'Sí, autorizada' : 'No / Pendiente'],
         ],
-        theme: 'plain', // Un tema más limpio
+        theme: 'plain',
         styles: { font: 'helvetica', fontSize: 10, textColor: textColor, cellPadding: 4 },
         headStyles: { font: 'helvetica', fontStyle: 'bold', fillColor: primaryColor, textColor: 255 },
-        alternateRowStyles: { fillColor: [245, 247, 243] }, // Un verde muy pálido
+        alternateRowStyles: { fillColor: [245, 247, 243] },
       });
 
       // --- HISTORIAL DE ACTIVIDAD ---
@@ -125,7 +123,6 @@ export default function Perfil() {
       const completadas = sesiones.filter(s => s.completada);
       const totalMinutos = sesiones.reduce((sum, s) => sum + (s.duracion_real_minutos || 0), 0);
       
-      // Si no hay sesiones, mostramos un mensaje
       if (completadas.length === 0) {
         doc.setFont('helvetica', 'italic');
         doc.setFontSize(10);
@@ -144,11 +141,10 @@ export default function Perfil() {
           ]),
           theme: 'striped',
           styles: { font: 'helvetica', fontSize: 9, textColor: textColor, cellPadding: 3 },
-          headStyles: { font: 'helvetica', fontStyle: 'bold', fillColor: [120, 130, 120], textColor: 255 }, // Un gris verdoso
+          headStyles: { font: 'helvetica', fontStyle: 'bold', fillColor: [120, 130, 120], textColor: 255 },
           alternateRowStyles: { fillColor: [250, 250, 250] },
         });
         
-        // Totales debajo de la tabla
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(10);
         doc.setTextColor(...textColor);
@@ -168,13 +164,51 @@ export default function Perfil() {
         { maxWidth: 180 }
       );
 
-      // Guardar con un nombre más limpio
       doc.save(`CultivaPreNatal_Informe_${form.nombre || 'Paciente'}_${new Date().toISOString().slice(0, 10)}.pdf`);
     } catch (e) {
       console.error('Error generando PDF:', e);
     } finally {
       setGenerandoPDF(false);
     }
+  };
+
+  const handleExportData = () => {
+    const dataToExport = {
+      profile: localStorage.getItem('prenatal_profile'),
+      sessions: localStorage.getItem('prenatal_sessions'),
+      diario: localStorage.getItem('prenatal_diario'),
+      rutinas: localStorage.getItem('prenatal_rutinas'),
+    };
+    
+    const blob = new Blob([JSON.stringify(dataToExport, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `CultivaPreNatal_Backup_${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleImportData = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const importedData = JSON.parse(event.target.result);
+        if (importedData.profile) localStorage.setItem('prenatal_profile', importedData.profile);
+        if (importedData.sessions) localStorage.setItem('prenatal_sessions', importedData.sessions);
+        if (importedData.diario) localStorage.setItem('prenatal_diario', importedData.diario);
+        if (importedData.rutinas) localStorage.setItem('prenatal_rutinas', importedData.rutinas);
+        
+        alert('Datos importados con éxito. La app se reiniciará.');
+        window.location.reload();
+      } catch (error) {
+        alert('Archivo inválido. Asegúrate de que sea un backup de Cultiva PreNatal.');
+      }
+    };
+    reader.readAsText(file);
   };
 
   const getTrimestreLabel = () => {
@@ -386,17 +420,24 @@ export default function Perfil() {
               </div>
             </div>
 
+            <div className="bg-card rounded-2xl p-5 border border-border shadow-card space-y-4 mt-4">
+              <h3 className="font-serif text-base font-semibold text-foreground">Copia de seguridad</h3>
+              <p className="text-xs text-muted-foreground">Guarda tu progreso en tu móvil o cámbialo de dispositivo.</p>
+              
+              <div className="flex gap-2">
+                <button onClick={handleExportData} className="flex-1 bg-primary/10 text-primary rounded-xl py-2.5 font-semibold text-sm transition-all hover:bg-primary/20 flex items-center justify-center gap-2">
+                  <FileDown size={16} /> Exportar
+                </button>
+                <label className="flex-1 bg-secondary/10 text-secondary-foreground rounded-xl py-2.5 font-semibold text-sm transition-all hover:bg-secondary/20 flex items-center justify-center gap-2 cursor-pointer">
+                  <Upload size={16} /> Importar
+                  <input type="file" accept=".json" onChange={handleImportData} className="hidden" />
+                </label>
+              </div>
+            </div>
+            
             <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4">
               <p className="text-xs text-muted-foreground text-center">🔒 Tus datos médicos son privados y nunca se comparten con terceros.</p>
             </div>
-
-            <button
-              onClick={() => logout()}
-              className="w-full h-14 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-destructive/10 text-destructive hover:bg-destructive/20"
-            >
-              <LogOut size={18} />
-              Cerrar sesión
-            </button>
           </motion.div>
         )}
 
@@ -414,6 +455,15 @@ export default function Perfil() {
           }`}>
           <Save size={18} />
           {saving ? 'Guardando...' : saved ? '✓ Guardado' : 'Guardar cambios'}
+        </button>
+
+        {/* Botón de Cerrar Sesión movido al final de todo */}
+        <button
+          onClick={() => logout()}
+          className="w-full h-14 mt-8 rounded-2xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-500 bg-destructive/10 text-destructive hover:bg-destructive/20"
+        >
+          <LogOut size={18} />
+          Cerrar sesión
         </button>
       </div>
     </div>
