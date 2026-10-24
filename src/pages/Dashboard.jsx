@@ -48,10 +48,33 @@ export default function Dashboard() {
     }
   });
 
+  // Función para calcular la racha
+  const calcularStreak = (sesionesList) => {
+    if (!sesionesList || !sesionesList.length) return 0;
+    const completadas = sesionesList.filter(s => s.completada);
+    if (completadas.length === 0) return 0;
+    const hoy = new Date();
+    let streak = 0;
+    let fecha = new Date(hoy);
+    
+    for (let i = 0; i < 30; i++) {
+      const fechaStr = format(fecha, 'yyyy-MM-dd');
+      const tieneSesion = completadas.some(s => s.fecha_inicio?.startsWith(fechaStr));
+      if (tieneSesion) {
+        streak++;
+      } else if (i > 0) {
+        break;
+      }
+      fecha.setDate(fecha.getDate() - 1);
+    }
+    return streak;
+  };
+
   const streak = calcularStreak(sesiones);
 
   useEffect(() => {
     if (!loading && !profile) navigate('/onboarding');
+    
     // Cargar mood del día
     try {
       const diarios = getDiario() || [];
@@ -60,7 +83,9 @@ export default function Dashboard() {
       if (diarioHoy && diarioHoy.estado_animo) {
         setMoodSeleccionado(diarioHoy.estado_animo);
       }
-    } catch (e) {}
+    } catch (e) {
+      console.error("Error cargando mood", e);
+    }
   }, [profile, loading, navigate]);
 
   const handleMood = (mood) => {
@@ -109,7 +134,7 @@ export default function Dashboard() {
   };
 
   if (loading) {
-    return (
+    return (  
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="w-8 h-8 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
       </div>

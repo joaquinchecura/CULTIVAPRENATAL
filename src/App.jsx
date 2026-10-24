@@ -17,7 +17,7 @@ import Progreso from './pages/Progreso'
 import Perfil from './pages/Perfil'
 import Onboarding from './pages/Onboarding'
 import ProtectedRoute from './components/ProtectedRoute';
-import ThemeProvider from './components/ThemeProvider'; // <-- IMPORTANTE
+import ThemeProvider from './components/ThemeProvider';
 
 const queryClientInstance = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false, retry: 1 } },
@@ -101,20 +101,18 @@ function App() {
   }, []);
 
   return (
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <AuthProvider>
-        {/* 1. PRIMERO React Query */}
-        <QueryClientProvider client={queryClientInstance}>
-          {/* 2. LUEGO el ThemeProvider (que usa el hook con React Query) */}
+    <QueryClientProvider client={queryClientInstance}>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+        <AuthProvider>
           <ThemeProvider>
             <Router>
               <AuthenticatedApp />
             </Router>
             <Toaster />
           </ThemeProvider>
-        </QueryClientProvider>
-      </AuthProvider>
-    </ClerkProvider>
+        </AuthProvider>
+      </ClerkProvider>
+    </QueryClientProvider>
   )
 }
 

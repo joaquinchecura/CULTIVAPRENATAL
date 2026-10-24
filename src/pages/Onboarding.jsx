@@ -1,3 +1,4 @@
+import { useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -24,6 +25,7 @@ const steps = [
 ];
 
 export default function Onboarding() {
+  const queryClient = useQueryClient();
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
   const [saving, setSaving] = useState(false);
@@ -56,6 +58,8 @@ export default function Onboarding() {
     setSaving(true);
     try {
       saveProfile(data);
+      // ESTO ES LA CLAVE: Forzamos a React Query a actualizar el perfil
+      queryClient.setQueryData(['userProfile'], data);
       navigate('/');
     } catch (e) {
       console.error('Error guardando perfil:', e);

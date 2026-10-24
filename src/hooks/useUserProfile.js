@@ -5,12 +5,12 @@ import { differenceInWeeks, parseISO, isValid } from 'date-fns';
 export function useUserProfile() {
   const queryClient = useQueryClient();
 
-  // 1. Query para obtener el perfil
   const { data: profile, isLoading: loading, refetch } = useQuery({
     queryKey: ['userProfile'],
     queryFn: () => getProfile(),
-    staleTime: Infinity, // No recargar automáticamente a menos que cambie
+    staleTime: 1000 * 60 * 5, // <-- Cámbialo a 5 minutos (o 0 para pruebas)
   });
+  // ... el resto se queda igual
 
   // 2. Mutación para guardar el perfil
   const { mutateAsync: updateProfile, isPending: isSaving } = useMutation({
