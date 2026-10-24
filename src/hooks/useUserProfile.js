@@ -1,59 +1,49 @@
-import { useState, useEffect } from 'react';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getProfile, saveProfile } from '@/data';
+import { differenceInWeeks, parseISO, isValid } from 'date-fns';
 
 export function useUserProfile() {
-  const [profile, setProfile] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const queryClient = useQueryClient();
 
-  const fetchProfile = () => {
-    const p = getProfile();
-    setProfile(p);
-    setLoading(false);
-  };
+  // 1. Query para obtener el perfil
+  const { data: profile, isLoading: loading, refetch } = useQuery({
+    queryKey: ['userProfile'],
+    queryFn: () => getProfile(),
+    staleTime: Infinity, // No recargar automáticamente a menos que cambie
+  });
 
-  useEffect(() => {
-    fetchProfile();
-  }, []);
+  // 2. Mutación para guardar el perfil
+  const { mutateAsync: updateProfile, isPending: isSaving } = useMutation({
+    mutationFn: (newProfile) => saveProfile(newProfile),
+    onSuccess: (data) => {
+      // Actualizamos la caché para que toda la app reaccione
+      queryClient.setQueryData(['userProfile'], data);
+    },
+  });
 
-  const calcularSemana = (profile) => {
-    if (!profile) return null;
-    let semana = null;
-    if (profile.fecha_ultima_menstruacion) {
-      const fum = new Date(profile.fecha_ultima_menstruacion);
-      const hoy = new Date();
-      const dias = Math.floor((hoy.getTime() - fum.getTime()) / (1000 * 60 * 60 * 24));
-      semana = Math.floor(dias / 7);
-    } else if (profile.fecha_probable_parto) {
-      const fpp = new Date(profile.fecha_probable_parto);
-      const hoy = new Date();
-      const diasRestantes = Math.floor((fpp.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24));
-      semana = 40 - Math.floor(diasRestantes / 7);
+  // 3. Cálculos derivados (Semana y Trimestre)
+  let semanaActual = null;
+  let trimestre = null;
+
+  if (profile?.fecha_ultima_menstruacion) {
+    const fum = parseISO(profile.fecha_ultima_menstruacion);
+    if (isValid(fum)) {
+      const semanas = differenceInWeeks(new Date(), fum);
+      semanaActual = semanas > 0 ? semanas : 0;
+      
+      if (semanaActual <= 12) trimestre = 1;
+      else if (semanaActual <= 27) trimestre = 2;
+      else if (semanaActual <= 40) trimestre = 3;
     }
-    return semana && semana > 0 && semana <= 42 ? semana : null;
-  };
+  }
 
-  const getTrimestre = (semana) => {
-    if (!semana) return null;
-    if (semana <= 12) return 1;
-    if (semana <= 27) return 2;
-    if (semana <= 40) return 3;
-    return null;
-  };
-
-  const semanaActual = calcularSemana(profile);
-  const trimestre = getTrimestre(semanaActual);
-
-  const updateProfile = (newProfile) => {
-    saveProfile(newProfile);
-    setProfile(newProfile);
-  };
-
-  return { 
-    profile, 
-    loading, 
-    semanaActual, 
-    trimestre, 
-    refetch: fetchProfile,
-    updateProfile 
+  return {
+    profile,
+    loading,
+    isSaving,
+    refetch,
+    updateProfile,
+    semanaActual,
+    trimestre,
   };
 }

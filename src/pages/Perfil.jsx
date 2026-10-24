@@ -21,7 +21,7 @@ const formatToInputDate = (dateString) => {
 };
 
 export default function Perfil() {
-  const { profile, loading, refetch, semanaActual, trimestre } = useUserProfile();
+  const { profile, loading, refetch, semanaActual, trimestre, updateProfile, isSaving } = useUserProfile();
   const { logout } = useAuth();
   const [form, setForm] = useState({});
   const [saving, setSaving] = useState(false);
@@ -38,18 +38,14 @@ export default function Perfil() {
     try { setSesiones(getSessions() || []); } catch (e) {}
   }, []);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (!form) return;
-    setSaving(true);
     try {
-      saveProfile(form);
-      refetch();
+      await updateProfile(form);
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch (e) {
-      console.error('Error guardando perfil:', e);
-    } finally {
-      setSaving(false);
+    } catch (error) {
+      console.error('Error al guardar', error);
     }
   };
 
@@ -72,58 +68,108 @@ export default function Perfil() {
       
       const doc = new jsPDF();
       
-      // Header
-      doc.setFontSize(22);
-      doc.setTextColor(107, 142, 35); // Verde oliva
-      doc.text('Informe Cultiva PreNatal', 14, 20);
+      // --- CONFIGURACIÓN DE COLORES Y FUENTES ---
+      const primaryColor = [97, 140, 86]; // Un verde oliva más elegante (RGB)
+      const textColor = [60, 60, 60]; // Gris oscuro para el texto
       
+      // --- CABECERA ---
+      doc.setFont('times', 'bold'); // Usamos Times para el título principal
+      doc.setFontSize(24);
+      doc.setTextColor(...primaryColor);
+      doc.text('Cultiva PreNatal', 14, 25);
+      
+      doc.setFont('helvetica', 'normal');
       doc.setFontSize(10);
-      doc.setTextColor(100);
-      doc.text(`Generado el: ${new Date().toLocaleDateString()}`, 14, 28);
+      doc.setTextColor(150, 150, 150);
+      doc.text('Informe de Actividad Prenatal', 14, 32);
+      
+      // Fecha a la derecha
+      const fechaHoy = new Date().toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+      doc.text(`Generado el: ${fechaHoy}`, 196, 25, { align: 'right' });
 
-      // Info Básica
-      doc.setFontSize(12);
-      doc.setTextColor(0);
-      doc.text('Datos de la paciente', 14, 40);
+      // Línea divisoria
+      doc.setDrawColor(...primaryColor);
+      doc.setLineWidth(0.5);
+      doc.line(14, 38, 196, 38);
+
+      // --- DATOS DE LA PACIENTE ---
+      doc.setFont('times', 'bold');
+      doc.setFontSize(14);
+      doc.setTextColor(...textColor);
+      doc.text('Datos de la paciente', 14, 50);
       
       autoTable(doc, {
-        startY: 45,
-        head: [['Campo', 'Valor']],
+        startY: 55,
+        margin: { left: 14 },
+        head: [['Campo', 'Detalle']],
         body: [
-          ['Nombre', form.nombre || 'N/A'],
-          ['Semana de gestación', semanaActual ? `${semanaActual} semanas` : 'N/A'],
-          ['Trimestre', trimestre ? `${trimestre}º Trimestre` : 'N/A'],
-          ['Autorización médica', form.autorizacion_medica === 'si' ? 'Sí' : 'No / Pendiente'],
+          ['Nombre completo', form.nombre || 'No registrado'],
+          ['Semana de gestación', semanaActual ? `${semanaActual} semanas` : 'No calculada'],
+          ['Trimestre actual', trimestre ? `${trimestre}º Trimestre` : 'No calculado'],
+          ['Autorización médica', form.autorizacion_medica === 'si' ? 'Sí, autorizada' : 'No / Pendiente'],
         ],
-        theme: 'grid',
-        headStyles: { fillColor: [107, 142, 35] },
+        theme: 'plain', // Un tema más limpio
+        styles: { font: 'helvetica', fontSize: 10, textColor: textColor, cellPadding: 4 },
+        headStyles: { font: 'helvetica', fontStyle: 'bold', fillColor: primaryColor, textColor: 255 },
+        alternateRowStyles: { fillColor: [245, 247, 243] }, // Un verde muy pálido
       });
 
-      // Historial de Actividad
-      doc.text('Resumen de Actividad', 14, doc.lastAutoTable.finalY + 15);
+      // --- HISTORIAL DE ACTIVIDAD ---
+      const currentY = doc.lastAutoTable.finalY + 15;
+      
+      doc.setFont('times', 'bold');
+      doc.setFontSize(14);
+      doc.setTextColor(...textColor);
+      doc.text('Resumen de Actividad', 14, currentY);
       
       const completadas = sesiones.filter(s => s.completada);
       const totalMinutos = sesiones.reduce((sum, s) => sum + (s.duracion_real_minutos || 0), 0);
       
-      autoTable(doc, {
-        startY: doc.lastAutoTable.finalY + 20,
-        head: [['Fecha', 'Rutina', 'Duración', 'Sensación']],
-        body: completadas.slice(0, 15).map(s => [
-          s.fecha_inicio ? s.fecha_inicio.split('T')[0] : 'N/A',
-          s.rutina_nombre || 'Rutina',
-          `${s.duracion_real_minutos || 0} min`,
-          s.sensacion_post || '-'
-        ]),
-        theme: 'striped',
-        headStyles: { fillColor: [107, 142, 35] },
-      });
+      // Si no hay sesiones, mostramos un mensaje
+      if (completadas.length === 0) {
+        doc.setFont('helvetica', 'italic');
+        doc.setFontSize(10);
+        doc.setTextColor(150, 150, 150);
+        doc.text('Aún no hay rutinas completadas registradas.', 14, currentY + 10);
+      } else {
+        autoTable(doc, {
+          startY: currentY + 5,
+          margin: { left: 14 },
+          head: [['Fecha', 'Rutina', 'Duración', 'Sensación']],
+          body: completadas.slice(0, 20).map(s => [
+            s.fecha_inicio ? s.fecha_inicio.split('T')[0] : 'N/A',
+            s.rutina_nombre || 'Rutina',
+            `${s.duracion_real_minutos || 0} min`,
+            s.sensacion_post || '-'
+          ]),
+          theme: 'striped',
+          styles: { font: 'helvetica', fontSize: 9, textColor: textColor, cellPadding: 3 },
+          headStyles: { font: 'helvetica', fontStyle: 'bold', fillColor: [120, 130, 120], textColor: 255 }, // Un gris verdoso
+          alternateRowStyles: { fillColor: [250, 250, 250] },
+        });
+        
+        // Totales debajo de la tabla
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(10);
+        doc.setTextColor(...textColor);
+        const finalY = doc.lastAutoTable.finalY + 10;
+        doc.text(`Total de rutinas completadas: ${completadas.length}`, 14, finalY);
+        doc.text(`Total de minutos de ejercicio: ${totalMinutos} min`, 14, finalY + 6);
+      }
 
-      doc.setFontSize(10);
-      doc.setTextColor(150);
-      doc.text(`Total de rutinas completadas: ${completadas.length}`, 14, doc.lastAutoTable.finalY + 10);
-      doc.text(`Total de minutos de ejercicio: ${totalMinutos} min`, 14, doc.lastAutoTable.finalY + 16);
+      // --- PIE DE PÁGINA (Disclaimer) ---
+      const pageHeight = doc.internal.pageSize.height;
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(180, 180, 180);
+      doc.text(
+        'Este informe complementa pero no reemplaza el cuidado médico profesional. Consulte siempre con su matrona o ginecólogo.', 
+        14, pageHeight - 15, 
+        { maxWidth: 180 }
+      );
 
-      doc.save(`CultivaPreNatal_Informe_${new Date().toISOString().slice(0, 10)}.pdf`);
+      // Guardar con un nombre más limpio
+      doc.save(`CultivaPreNatal_Informe_${form.nombre || 'Paciente'}_${new Date().toISOString().slice(0, 10)}.pdf`);
     } catch (e) {
       console.error('Error generando PDF:', e);
     } finally {

@@ -103,14 +103,16 @@ function App() {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <AuthProvider>
-        <ThemeProvider>
-          <QueryClientProvider client={queryClientInstance}>
+        {/* 1. PRIMERO React Query */}
+        <QueryClientProvider client={queryClientInstance}>
+          {/* 2. LUEGO el ThemeProvider (que usa el hook con React Query) */}
+          <ThemeProvider>
             <Router>
               <AuthenticatedApp />
             </Router>
             <Toaster />
-          </QueryClientProvider>
-        </ThemeProvider>
+          </ThemeProvider>
+        </QueryClientProvider>
       </AuthProvider>
     </ClerkProvider>
   )

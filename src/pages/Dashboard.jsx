@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getRutinas, getSessions, getDiario, addDiarioEntry } from '@/data';
 import { useUserProfile } from '@/hooks/useUserProfile';
 import { Flame, Phone, Stethoscope, ChevronRight, Clock, Leaf } from 'lucide-react';
@@ -22,57 +23,54 @@ const MOODS = [
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const { profile, loading, semanaActual, trimestre } = useUserProfile();
-  const [rutinas, setRutinas] = useState([]);
-  const [sesiones, setSesiones] = useState([]);
+  
   const [moodSeleccionado, setMoodSeleccionado] = useState(null);
-  const [streak, setStreak] = useState(0);
+  
+  // Cargar Rutinas con React Query
+  const { data: rutinas = [] } = useQuery({
+    queryKey: ['rutinas'],
+    queryFn: () => getRutinas() || [],
+  });
+
+  // Cargar Sesiones con React Query
+  const { data: sesiones = [] } = useQuery({
+    queryKey: ['sesiones'],
+    queryFn: () => getSessions() || [],
+  });
+
+  // Mutación para guardar el Diario (Mood)
+  const { mutate: saveMood } = useMutation({
+    mutationFn: (newEntry) => addDiarioEntry(newEntry),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['diario'] });
+    }
+  });
+
+  const streak = calcularStreak(sesiones);
 
   useEffect(() => {
     if (!loading && !profile) navigate('/onboarding');
+    // Cargar mood del día
+    try {
+      const diarios = getDiario() || [];
+      const hoyStr = format(new Date(), 'yyyy-MM-dd');
+      const diarioHoy = diarios.find(d => d.fecha === hoyStr);
+      if (diarioHoy && diarioHoy.estado_animo) {
+        setMoodSeleccionado(diarioHoy.estado_animo);
+      }
+    } catch (e) {}
   }, [profile, loading, navigate]);
 
-  useEffect(() => {
-    if (profile) {
-      loadData();
-      // Cargar mood del día
-      try {
-        const diarios = getDiario() || [];
-        const hoyStr = format(new Date(), 'yyyy-MM-dd');
-        const diarioHoy = diarios.find(d => d.fecha === hoyStr);
-        if (diarioHoy && diarioHoy.estado_animo) {
-          setMoodSeleccionado(diarioHoy.estado_animo);
-        }
-      } catch (e) {}
-    }
-  }, [profile]);
-
-  const loadData = () => {
-    try {
-      const r = getRutinas() || [];
-      const s = getSessions() || [];
-      setRutinas(r);
-      setSesiones(s);
-      calcularStreak(s);
-    } catch (e) {
-      console.error('Error cargando datos:', e);
-    }
-  };
-
-  const calcularStreak = (sesiones) => {
-    const completadas = sesiones.filter(s => s.completada);
-    if (completadas.length === 0) return;
-    const hoy = new Date();
-    let streak = 0;
-    let fecha = new Date(hoy);
-    for (let i = 0; i < 30; i++) {
-      const fechaStr = format(fecha, 'yyyy-MM-dd');
-      const tieneSesion = completadas.some(s => s.fecha_inicio?.startsWith(fechaStr));
-      if (tieneSesion) streak++;
-      else if (i > 0) break;
-      fecha.setDate(fecha.getDate() - 1);
-    }
-    setStreak(streak);
+  const handleMood = (mood) => {
+    setMoodSeleccionado(mood);
+    saveMood({
+      fecha: format(new Date(), 'yyyy-MM-dd'),
+      estado_animo: mood,
+      entrada_texto: '',
+      semana_gestacion: semanaActual,
+    });
   };
 
   const getRutinaRecomendada = () => {
@@ -98,20 +96,6 @@ export default function Dashboard() {
   };
 
   const rutinaRecomendada = getRutinaRecomendada();
-
-  const handleMood = (mood) => {
-    setMoodSeleccionado(mood);
-    try {
-      addDiarioEntry({
-        fecha: format(new Date(), 'yyyy-MM-dd'),
-        estado_animo: mood,
-        entrada_texto: '',
-        semana_gestacion: semanaActual,
-      });
-    } catch (e) {
-      console.error("Error guardando mood", e);
-    }
-  };
 
   const getTrimestreLabel = () => {
     if (!trimestre) return '';
